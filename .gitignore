@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Exilesoft.MyTime/config
+/Exilesoft.Models/bin
+/Exilesoft.Models/obj
+/Exilesoft.MyTime/bin
+/Exilesoft.MyTime/obj
+/Exilesoft.MyTime.Tests/bin/Debug
+/Exilesoft.MyTime.Tests/obj
+/ThirdParty
+/TimeManager/bin/Debug
+/TimeManager/obj/x86
+/TimeManager/TimeManager/obj/x86
+*.suo

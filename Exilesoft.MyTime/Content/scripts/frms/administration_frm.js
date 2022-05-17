@@ -1,6 +1,4 @@
-﻿const { Serializer } = require("node:v8");
-
-function AdministrationForm() {
+﻿function AdministrationForm() {
    
     this.loadSpecialEventPage = function () {
         hide("systemContentPage");
@@ -56,25 +54,6 @@ function AdministrationForm() {
         } else {
             alert(result.message);
         }
-    };
-
-
-    this.SendEmailSuccess = function (result) {
-        if (true) {
-            console.log("loggedddddddddddddd")
-            alert('Email successfully sent.');
-            var url = "Administration/MissingTimeEntries";
-            var t = setTimeout("new HomeLogin().LoadPage('" + url + "')", 100);
-        } else {
-            alert(result.message);
-        }
-    };
-
-    this.SendEmailFailed = function () {
-            alert('Email sending failed.');
-            var url = "Administration/MissingTimeEntries";
-            var t = setTimeout("new HomeLogin().LoadPage('" + url + "')", 100);
-       
     };
    
     this.UnPlannedLeaves = function() {
@@ -190,26 +169,6 @@ function AdministrationForm() {
         var url = "Administration/ManualAttendanceBulk";
         var t = setTimeout("new HomeLogin().LoadPage('" + url + "')", 100);
     };
-
-    this.MissingEntries = function () {
-        var url = "Administration/MissingTimeEntries";
-        var t = setTimeout("new HomeLogin().LoadPage('" + url + "')", 100);
-    };
-
-    this.SendEmail = function (entry) {
-        console.log(JSON.stringify(entry));
-
-        //$.ajax({
-        //    url: "/Administration/SendEmail",
-        //    type: "POST",
-        //    data: entry,
-        //    contentType: "application/json",
-        //    success: this.SaveEmployeeDetailsSuccess,
-        //    error: ConnectionError
-        //});
-
-        azyncGet("/Administration/SendEmail?entry=" + JSON.stringify(entry), null, this.SendEmailSuccess, this.SendEmailFailed );
-    }
     
     this.SaveManualAttendenceDetails = function () {
         var user = {

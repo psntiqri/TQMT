@@ -87,6 +87,14 @@
       visibility: visible;
       opacity: 0.9;
     }
+
+    .timeWrapper{
+        display : flex
+    }
+
+    .templateWrapper{
+        padding : 20px;
+    }
 </style>
 <script src="~/Content/scripts/jquery.validate.js" type="text/javascript"></script>
 <div id="DIV_PageInnerContent">
@@ -103,434 +111,537 @@
 
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <div style="padding-top: 15px;">
-                        <table class="dataEntryTable" style="display: inline;">
+                    <div class="timeWrapper">
+                        <div style="padding-top: 15px;">
+                            <table class="dataEntryTable" style="display: inline;">
 
-                            @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "WorkingFromHomeForm" }))
-                            {
-
-                                <tr id="trEmployee" style="visibility: hidden">
-                                    <td style="width: 30px">Employee</td>
-                                    <td style="width: 300px;">
-                                        @* @Html.DropDownList("EmployeeId", ViewBag.EmployeeList as SelectList, new { onchange = "new Attendence().ViewAttendence()" })*@
-                                        @Html.DropDownList("EmployeeId", Model.EmployeeList, new { onchange = "new Attendence().ViewAttendence()" })
-
-                                    </td>
-                                </tr>
-                                if ((User.IsInRole("Administrator")) || (ViewBag.Roles.Contains("SystemAdmin")))
+                                @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "WorkingFromHomeForm" }))
                                 {
 
-                                    <script>
+                                    <tr id="trEmployee" style="visibility: hidden">
+                                        <td style="width: 30px">Employee</td>
+                                        <td style="width: 300px;">
+                                            @* @Html.DropDownList("EmployeeId", ViewBag.EmployeeList as SelectList, new { onchange = "new Attendence().ViewAttendence()" })*@
+                                            @Html.DropDownList("EmployeeId", Model.EmployeeList, new { onchange = "new Attendence().ViewAttendence()" })
 
-                                        document.getElementById("trEmployee").style.visibility = 'visible'
-                                    </script>
+                                        </td>
+                                    </tr>
+                                    if ((User.IsInRole("Administrator")) || (ViewBag.Roles.Contains("SystemAdmin")))
+                                    {
 
-                                }
+                                        <script>
 
-                                <tr>
-                                    <td style="width: 30px">Supervisor : </td>
-                                    <td style="width: 300px;">
-                                        @Html.DropDownList("SupervisorId", Model.SupervisorList)
+                                            document.getElementById("trEmployee").style.visibility = 'visible'
+                                        </script>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Start Time &nbsp;: </td>
-                                    <td>
-                                        @Html.TextBox("AttendanceDateIn", Model.AttendanceDateIn)
-                                    </td>
-                                </tr>
+                                    }
 
-                                <tr>
-                                    <td>End Time &nbsp;&nbsp;: </td>
-                                    <td>
-                                        @Html.TextBox("AttendanceDateOut", Model.AttendanceDateOut)
+                                    <tr>
+                                        <td style="width: 30px">Supervisor : </td>
+                                        <td style="width: 300px;">
+                                            @Html.DropDownList("SupervisorId", Model.SupervisorList)
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Reason &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
-                                    <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Start Time &nbsp;: </td>
+                                        <td>
+                                            @Html.TextBox("AttendanceDateIn", Model.AttendanceDateIn)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>End Time &nbsp;&nbsp;: </td>
+                                        <td>
+                                            @Html.TextBox("AttendanceDateOut", Model.AttendanceDateOut)
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reason &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                                        <td>
 
 
-                                        @Html.TextAreaFor(model => model.Description)
+                                            @Html.TextAreaFor(model => model.Description)
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><b>Task List</b></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <table id="EmployeeTaskListTableParent">
-                                            <tr>
-                                                <td>
-                                                    <table id="EmployeeTaskListTable">
-                                                        <tr class="TaskListTable_hd">
-                                                            <td class="TaskListTable_hd_td">
-                                                                Task
-                                                            </td>
-                                                            <td class="TaskListTable_hd_td">
-                                                                Hours
-                                                            </td>
-                                                            <td class="TaskListTable_hd_td">
-                                                                Minutes
-                                                            </td>
-                                                        </tr>
-                                                        @if (Model.IsUpdate)
-                                                        {
-                                                            for (int index = 0; index < Model.TaskList.Count; index++)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Task List</b></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <table id="EmployeeTaskListTableParent">
+                                                <tr>
+                                                    <td>
+                                                        <table id="EmployeeTaskListTable">
+                                                            <tr class="TaskListTable_hd">
+                                                                <td class="TaskListTable_hd_td">
+                                                                    Task
+                                                                </td>
+                                                                <td class="TaskListTable_hd_td">
+                                                                    Hours
+                                                                </td>
+                                                                <td class="TaskListTable_hd_td">
+                                                                    Minutes
+                                                                </td>
+                                                            </tr>
+                                                            @if (Model.IsUpdate)
+                                                            {
+                                                                for (int index = 0; index < Model.TaskList.Count; index++)
+                                                                {
+                                                                    <tr class="wft-task">
+                                                                        <td class="wft-task-td">
+                                                                            <textarea id="desc-@(index+1)" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required>@Model.TaskList[index].Description</textarea>
+                                                                        </td>
+                                                                        <td class="wft-task-td">
+                                                                            <input type="number" id="hours-@(index+1)" name="taskHours" class="wft-task-hours" value="@Model.TaskList[index].Hours" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />
+                                                                        </td>
+                                                                        <td class="wft-task-td">
+                                                                            <input type="number" id="minutes-@(index+1)" name="taskMinutes" class="wft-task-minutes" value="@Model.TaskList[index].Minutes" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />
+                                                                        </td>
+                                                                        @if (index > 0)
+                                                                        {
+                                                                            <td class="wft-task-td">
+                                                                                <input type="button" value="" title="Remove" data-toggle="tooltip" class="wft-remove-btn" onclick="DeleteTaskRow(this, @(index+1))">
+                                                                            </td>
+                                                                        }
+                                                                        <td></td>
+                                                                    </tr>
+                                                                }
+                                                            }
+                                                            else
                                                             {
                                                                 <tr class="wft-task">
                                                                     <td class="wft-task-td">
-                                                                        <textarea id="desc-@(index+1)" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required>@Model.TaskList[index].Description</textarea>
+                                                                        <textarea id="desc-1" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required />
                                                                     </td>
                                                                     <td class="wft-task-td">
-                                                                        <input type="number" id="hours-@(index+1)" name="taskHours" class="wft-task-hours" value="@Model.TaskList[index].Hours" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />
+                                                                        <input type="number" id="hours-1" name="taskHours" class="wft-task-hours" value="" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />
                                                                     </td>
                                                                     <td class="wft-task-td">
-                                                                        <input type="number" id="minutes-@(index+1)" name="taskMinutes" class="wft-task-minutes" value="@Model.TaskList[index].Minutes" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />
+                                                                        <input type="number" id="minutes-1" name="taskMinutes" class="wft-task-minutes" value="0" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />
                                                                     </td>
-                                                                    @if (index > 0)
-                                                                    {
-                                                                        <td class="wft-task-td">
-                                                                            <input type="button" value="" title="Remove" data-toggle="tooltip" class="wft-remove-btn" onclick="DeleteTaskRow(this, @(index+1))">
-                                                                        </td>
-                                                                    }
                                                                     <td></td>
                                                                 </tr>
                                                             }
+
+                                                        </table>
+                                                        @if (Model.TaskList != null)
+                                                        {
+                                                            @Html.Hidden("hdnTaskCount", Model.TaskList.Count + 1)
                                                         }
                                                         else
                                                         {
-                                                            <tr class="wft-task">
-                                                                <td class="wft-task-td">
-                                                                    <textarea id="desc-1" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required />
-                                                                </td>
-                                                                <td class="wft-task-td">
-                                                                    <input type="number" id="hours-1" name="taskHours" class="wft-task-hours" value="" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />
-                                                                </td>
-                                                                <td class="wft-task-td">
-                                                                    <input type="number" id="minutes-1" name="taskMinutes" class="wft-task-minutes" value="0" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />
-                                                                </td>
-                                                                <td></td>
-                                                            </tr>
+                                                            @Html.Hidden("hdnTaskCount", 2)
                                                         }
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div id="EmployeeTaskList">
+                                                            <button onclick="addNewTask()" class="ButtonForm">Add Another Task</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
 
-                                                    </table>
-                                                    @if (Model.TaskList != null)
-                                                    {
-                                                        @Html.Hidden("hdnTaskCount", Model.TaskList.Count + 1)
-                                                    }
-                                                    else
-                                                    {
-                                                        @Html.Hidden("hdnTaskCount", 2)
-                                                    }
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <table>
-                                            <tr>
-                                                <td>
-                                                    <div id="EmployeeTaskList">
-                                                        <button onclick="addNewTask()" class="ButtonForm">Add Another Task</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td style="padding-left: 5px;padding-top:5px;">
-                                        @if (Model.IsUpdate)
-                                        {
-                                            @Html.Hidden("hdnUpdateRecordId", Model.UpdateRecordId)
-                                            <input id="UpdateData" type="submit" class="ButtonForm" value="Update" onclick="updateData()" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
-                                        }
-                                        else
-                                        {
-                                            <input id="SaveData" type="submit" class="ButtonForm" value="Save" onclick="saveData()" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
-                                        }
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="2">
-
-                                        <div id="webgridid">
-                                            @{ var grid = new WebGrid(source: Model.WorkingFromHomeRowList, rowsPerPage: 50, canPage: true,ajaxUpdateContainerId: "webgridid");
-                                                grid.Pager(WebGridPagerModes.NextPrevious);}
-                                            @MvcHtmlString.Create(grid.GetHtml(tableStyle: "webGrid", headerStyle: "webGridHeader", alternatingRowStyle: "webGridAlt",
-                                 htmlAttributes: new { id = "employeeGrid", width = "auto" },
-                                        columns: grid.Columns(
-                                            grid.Column(header: "Date", format: @<text> <p style="width:100px">@item.year-@item.Month-@item.Day</p></text>),
-                                            grid.Column(header: "Start Time", format: @<text><p style="width:100px">
-                                                    @item.InHour : @item.InMinute
-                                                </p></text>),
-                                            grid.Column(header: "End Time", format: @<text><p style="width:100px">
-                                                    @item.OutHour : @item.OutMinute
-                                                </p></text>),
-                                            grid.Column(header: "Description", format: @<text><p style="width:400px">
-                                                @item.Description
-                                                <br /><ul>
-                                                @{
-                                                    if (item.TaskList != null)
-                                                    {
-                                                    string[] tasks = item.TaskList.Split(new string[] { "#;" }, StringSplitOptions.None);            
-                                                        foreach (var task in tasks)
-                                                        {   
-                                                            <li><span style="white-space: pre-line">@task</span></li>
-                                                        }
-                                                    }
-                                                }</ul>
-                                            </p></text>),
-                                            grid.Column(header: "Status", format: @<text> @if (@item.ApproveType == 0)
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td style="padding-left: 5px;padding-top:5px;">
+                                            @if (Model.IsUpdate)
                                             {
-                                                        <div style="display:flex;">
-                                                            <div style="display:inline-block;">
-                                                                <img src=@item.ApproverImgUrl width="48">
-                                                            </div>
-                                                            <div style="width:100px;display:inline-block;padding-left:5px;">Pending to @item.ApproverName</div>
-                                                            <div class="tooltip">
-                                                                <input type="button" class="wft-edit-btn" onclick="new Attendence().UpdateButtonPress('@item.EmployeeId', '@item.Id');"><span class="tooltiptext">Update</span>
-                                                            </div>
-                                                            <div class="tooltip">
-                                                                <input type="button" class="wft-delete-btn" onclick="deleteButtonPress('@item.EmployeeId', '@item.Id');"><span class="tooltiptext">Delete</span>
-                                                            </div>
-                                                                @*<a href="#">
-                                                                    <span class="glyphicon glyphicon-glass"></span>
-                                                                    <i class="icon-pencil"></i>
-                                                                </a>*@
-                                                        </div>}
-                                            else if (@item.ApproveType == 1)
-                                            {<div style="display:flex;">
-                                                    <div style="display:inline-block;">
-                                                        <img src=@item.ApproverImgUrl width="48">
-                                                    </div>
-                                                    <div style="width:100px;display:inline-block;padding-left:5px;">Confirmed by @item.ApproverName</div>
-                                            </div>}
-                                            else if (@item.ApproveType == 2)
-                                            {<div style="display:flex;">
-                                                <div style="display:inline-block;">
-                                                <img src=@item.ApproverImgUrl width="48">
+                                                @Html.Hidden("hdnUpdateRecordId", Model.UpdateRecordId)
+                                                <input id="UpdateData" type="submit" class="ButtonForm" value="Update" onclick="updateData()" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                                            }
+                                            else
+                                            {
+                                                <input id="SaveData" type="submit" class="ButtonForm" value="Save" onclick="saveData()" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                                            }
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>@*Template Name*@</td>
+                                        <td>
+                                            @*<input type="text" id="templateName" class="templateName" name="templateName" value="" />
+                                            <input type="hidden" id="hdnTemplateId" name="hdnTemplateId" value="">*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td>
+
+                                            @*<input id="AddTemplate" type="submit" class="ButtonForm" value="Add Template" onclick="saveTemplate()" /><div style="display: inline; color: green; font-weight: bold;"></div>
+                                            <input id="AddTemplateAs" type="submit" class="ButtonForm" value="Add Template As" onclick="saveTemplateAs()" /><div style="display: inline; color: green; font-weight: bold;"></div>
+                                            <input id="ClearTemplate" type="submit" class="ButtonForm" value="Clear Template" onclick="clearTemplate()" /><div style="display: inline; color: green; font-weight: bold;"></div>*@
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2">
+
+                                            <div id="webgridid">
+                                                @{ var grid = new WebGrid(Model.WorkingFromHomeRowList, rowsPerPage: 100, canPage: false);}
+                                                @MvcHtmlString.Create(grid.GetHtml(tableStyle: "webGrid", headerStyle: "webGridHeader", alternatingRowStyle: "webGridAlt",
+                                     htmlAttributes: new { id = "employeeGrid", width = "auto" },
+                                            columns: grid.Columns(
+                                                grid.Column(header: "Date", format: @<text> <p style="width:100px">@item.year-@item.Month-@item.Day</p></text>),
+grid.Column(header: "Start Time", format: @<text><p style="width:100px">
+                @item.InHour : @item.InMinute
+            </p></text>),
+grid.Column(header: "End Time", format: @<text><p style="width:100px">
+                @item.OutHour : @item.OutMinute
+            </p></text>),
+grid.Column(header: "Description", format: @<text><p style="width:400px">
+                @item.Description
+                <br /><ul>
+                    @{
+if (item.TaskList != null)
+{
+string[] tasks = item.TaskList.Split(new string[] { "#;" }, StringSplitOptions.None);
+foreach (var task in tasks)
+{
+        <li><span style="white-space: pre-line">@task</span></li>
+}
+}
+                    }
+                </ul>
+            </p></text>),
+grid.Column(header: "Status", format: @<text> @if (@item.ApproveType == 0)
+{
+        <div style="display:flex;">
+            <div style="display:inline-block;">
+                <img src=@item.ApproverImgUrl width="48">
+            </div>
+            <div style="width:100px;display:inline-block;padding-left:5px;">Pending to @item.ApproverName</div>
+            <div class="tooltip">
+                <input type="button" class="wft-edit-btn" onclick="new Attendence().UpdateButtonPress('@item.EmployeeId', '@item.Id');"><span class="tooltiptext">Update</span>
+            </div>
+            <div class="tooltip">
+                <input type="button" class="wft-delete-btn" onclick="deleteButtonPress('@item.EmployeeId', '@item.Id');"><span class="tooltiptext">Delete</span>
+            </div>
+            @*<a href="#">
+            <span class="glyphicon glyphicon-glass"></span>
+            <i class="icon-pencil"></i>
+        </a>*@
+        </div>}
+else if (@item.ApproveType == 1)
+{<div style="display:flex;">
+            <div style="display:inline-block;">
+                <img src=@item.ApproverImgUrl width="48">
+            </div>
+            <div style="width:100px;display:inline-block;padding-left:5px;">Confirmed by @item.ApproverName</div>
+        </div>}
+else if (@item.ApproveType == 2)
+{<div style="display:flex;">
+            <div style="display:inline-block;">
+                <img src=@item.ApproverImgUrl width="48">
+            </div>
+            <div style="width:100px;display:inline-block;padding-left:5px;">Rejected by @item.ApproverName</div>
+        </div>} </text>)
+)).ToString())
                                             </div>
-                                                <div style="width:100px;display:inline-block;padding-left:5px;">Rejected by @item.ApproverName</div>
-                                            </div>} </text>)
-                                            )).ToString())
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
 
-                                <script type="text/javascript">
+                                    <script type="text/javascript">
 
-                                    function saveData() {
-                                        var requiredValidity = ValidateRequiredFields();
-                                        if (requiredValidity) {
-                                            if ($.ErrorList.length > 0) {
-                                                alert('Please correct the task times');
-                                            }
-                                            else {
-                                                if ($('#Description').val() != "") {
-                                                    new Attendence().SaveWorkingHome();
+                                        function saveData() {
+                                            var requiredValidity = ValidateRequiredFields();
+                                            if (requiredValidity) {
+                                                if ($.ErrorList.length > 0) {
+                                                    alert('Please correct the task times');
                                                 }
                                                 else {
-                                                    alert('Description is mandatory');
+                                                    if ($('#Description').val() != "") {
+                                                        new Attendence().SaveWorkingHome();
+                                                    }
+                                                    else {
+                                                        alert('Description is mandatory');
+                                                    }
                                                 }
-                                            }
-                                        }
-                                        else {
-                                            alert('Please fill the task information');
-                                        }
-                                    }
-
-                                   function updateData() {
-                                        var requiredValidity = ValidateRequiredFields();
-                                        if (requiredValidity) {
-                                            if ($.ErrorList.length > 0) {
-                                                alert('Please correct the task times');
                                             }
                                             else {
-                                                if ($('#Description').val() != "") {
-                                                    new Attendence().UpdateWorkingHome();
+                                                alert('Please fill the task information');
+                                            }
+                                        }
+
+                                        function clearTemplate() {
+                                            new Attendence().ClearTemplate();
+                                        }
+
+                                        function saveTemplate() {
+                                            if ($("#templateName").val() == "") {
+                                                $("#templateName").css("background-color", '#fba');
+                                                alert('Please Fill All The Required Fields');
+                                            } else {
+
+                                                if ($("#hdnTemplateId").val() > 0) {
+                                                    new Attendence().UpdateTemplate($("#hdnTemplateId").val());
+                                                    loadTemplateDetails();
+                                                } else {
+                                                    new Attendence().SaveTemplate();
+                                                    loadTemplateDetails();
+                                                }
+                                            }
+                                        }
+
+                                        function saveTemplateAs() {
+                                            if ($("#templateName").val() == "") {
+                                                $("#templateName").css("background-color", '#fba');
+                                                alert('Please Fill All The Required Fields');
+                                            } else {
+                                                new Attendence().SaveTemplate();
+                                                loadTemplateDetails();
+                                            }
+                                        }
+
+                                        $(function () {
+                                            loadTemplateDetails();
+                                        });
+
+                                        function loadTemplateDetails() {
+                                            new Attendence().LoadTemplateDetails();
+                                        }
+
+
+                                        function loadTemplate() {
+
+                                            var rowId = event.target.parentNode.parentNode.id;
+                                            var data = document.getElementById(rowId).querySelectorAll(".nr");
+
+                                            var templateId = data[0].innerHTML;
+                                            new Attendence().LoadTemplate(templateId);
+                                        }
+
+                                        function removeTemplate() {
+                                            var rowId =
+                                                event.target.parentNode.parentNode.id;
+                                            var data =
+                                                document.getElementById(rowId).querySelectorAll(".nr");
+                                            var templateId = data[0].innerHTML;
+                                            if (confirm("Are you sure want to delete this record ?") == true) {
+                                                new Attendence().RemoveTemplate(templateId);
+                                                loadTemplateDetails();
+                                            } else {
+
+                                            }
+                                        }
+                                        function updateData() {
+                                            var requiredValidity = ValidateRequiredFields();
+                                            if (requiredValidity) {
+                                                if ($.ErrorList.length > 0) {
+                                                    alert('Please correct the task times');
                                                 }
                                                 else {
-                                                    alert('Description is mandatory');
+                                                    if ($('#Description').val() != "") {
+                                                        new Attendence().UpdateWorkingHome();
+                                                    }
+                                                    else {
+                                                        alert('Description is mandatory');
+                                                    }
                                                 }
                                             }
-                                        }
-                                        else {
-                                            alert('Please fill the task information');
-                                        }
-                                    }
-
-                                    function validateHh(inputField) {
-                                        if (inputField.value != "") {
-                                            var isValid = /^([01]?\d|2[0-3])$/.test(inputField.value);
-                                            if (isValid) {
-                                                inputField.style.backgroundColor = '#fff';
-                                                removeArrayItem(inputField.id);
-                                            } else {
-                                                inputField.style.backgroundColor = '#fba';
-                                                if($.inArray(inputField.id, $.ErrorList)<0) {
-                                                    $.ErrorList.push(inputField.id);
-                                                } 
+                                            else {
+                                                alert('Please fill the task information');
                                             }
-                                            return isValid;
                                         }
-                                        else {
-                                            inputField.style.backgroundColor = '#fff';
-                                            removeArrayItem(inputField.id);
-                                            return true;
-                                        }
-                                    }
 
-                                    function validateMm(inputField) {
-                                        if (inputField.value != "") {
-                                            var isValid = /^([0-5]?\d)$/.test(inputField.value);
-                                            if (isValid) {
-                                                inputField.style.backgroundColor = '#fff';
-                                                removeArrayItem(inputField.id);
-                                            } else {
-                                                inputField.style.backgroundColor = '#fba';
-                                                if($.inArray(inputField.id, $.ErrorList)<0) {
-                                                    $.ErrorList.push(inputField.id);
+                                        function validateHh(inputField) {
+                                            if (inputField.value != "") {
+                                                var isValid = /^([01]?\d|2[0-3])$/.test(inputField.value);
+                                                if (isValid) {
+                                                    inputField.style.backgroundColor = '#fff';
+                                                    removeArrayItem(inputField.id);
+                                                } else {
+                                                    inputField.style.backgroundColor = '#fba';
+                                                    if ($.inArray(inputField.id, $.ErrorList) < 0) {
+                                                        $.ErrorList.push(inputField.id);
+                                                    }
                                                 }
+                                                return isValid;
                                             }
-                                            return isValid;
+                                            else {
+                                                inputField.style.backgroundColor = '#fff';
+                                                removeArrayItem(inputField.id);
+                                                return true;
+                                            }
                                         }
-                                        else {
-                                            inputField.style.backgroundColor = '#fff';
-                                            removeArrayItem(inputField.id);
-                                            return true;
+
+                                        function validateMm(inputField) {
+                                            if (inputField.value != "") {
+                                                var isValid = /^([0-5]?\d)$/.test(inputField.value);
+                                                if (isValid) {
+                                                    inputField.style.backgroundColor = '#fff';
+                                                    removeArrayItem(inputField.id);
+                                                } else {
+                                                    inputField.style.backgroundColor = '#fba';
+                                                    if ($.inArray(inputField.id, $.ErrorList) < 0) {
+                                                        $.ErrorList.push(inputField.id);
+                                                    }
+                                                }
+                                                return isValid;
+                                            }
+                                            else {
+                                                inputField.style.backgroundColor = '#fff';
+                                                removeArrayItem(inputField.id);
+                                                return true;
+                                            }
                                         }
-                                    }
 
-                                    function removeArrayItem(removeItem) {
-                                        $.ErrorList = jQuery.grep($.ErrorList, function(value) {
-                                          return value != removeItem;
-                                        });
-                                    }
-
-                                    function ValidateRequiredFields() {
-                                        var valid = true;
-                                        var table = $("#EmployeeTaskListTable");
-                                        table.find('.wft-task-desc').each(function (index, element) {
-                                            if (element.value == "") {
-                                                valid = false;
-                                                element.style.backgroundColor = '#fba';
-                                            }
-                                        });
-
-                                        table.find('.wft-task-hours').each(function (index, element) {
-                                            if (element.value == "") {
-                                                valid = false;
-                                                element.style.backgroundColor = '#fba';
-                                            }
-                                        });
-
-                                        table.find('.wft-task-minutes').each(function (index, element) {
-                                            if (element.value == "") {
-                                                valid = false;
-                                                element.style.backgroundColor = '#fba';
-                                            }
-                                        });
-
-                                        return valid;
-                                    }
-
-                                    function DeleteTaskRow(o, id) {
-                                        var itemHH = 'hours-'.concat(id);
-                                        removeArrayItem(itemHH);
-                                        var itemMM = 'minutes-'.concat(id);
-                                        removeArrayItem(itemMM);
-
-                                        var p=o.parentNode.parentNode;
-                                        p.parentNode.removeChild(p);
-                                    }
-
-                                    $(function () {
-
-                                        $('#AttendanceDateIn').datetimepicker({
-                                            dateFormat: "yy-mm-dd"
-                                        });
-                                        $('#AttendanceDateOut').datetimepicker({
-                                            dateFormat: "yy-mm-dd"
-                                        });
-                                    });
-                                    $('#ui-datepicker-div').css('display', 'none');
-
-
-                                    $(document).ready(function () {
-                                        $('#SaveData').attr("disabled", true);
-                                        //$('#AttendanceDateIn').addClass("invalid");
-                                        //$('#AttendanceDateOut').addClass("invalid");
-                                        $.TaskCount = 2;
-                                        $.TaskCount = $('#hdnTaskCount').val();
-                                        $.ErrorList = [];
-                                    });
-
-                                    $('#AttendanceDateIn').change(function () {
-
-                                        var input = $(this);
-                                        var is_name = input.val();
-                                        if (is_name) { input.removeClass("invalid").addClass("valid"); }
-                                        else { input.removeClass("valid").addClass("invalid"); }
-
-                                        if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
-                                            $('#SaveData').attr("disabled", false);
+                                        function removeArrayItem(removeItem) {
+                                            $.ErrorList = jQuery.grep($.ErrorList, function (value) {
+                                                return value != removeItem;
+                                            });
                                         }
-                                        else {
+
+                                        function ValidateRequiredFields() {
+                                            var valid = true;
+                                            var table = $("#EmployeeTaskListTable");
+                                            table.find('.wft-task-desc').each(function (index, element) {
+                                                if (element.value == "") {
+                                                    valid = false;
+                                                    element.style.backgroundColor = '#fba';
+                                                }
+                                            });
+
+                                            table.find('.wft-task-hours').each(function (index, element) {
+                                                if (element.value == "") {
+                                                    valid = false;
+                                                    element.style.backgroundColor = '#fba';
+                                                }
+                                            });
+
+                                            table.find('.wft-task-minutes').each(function (index, element) {
+                                                if (element.value == "") {
+                                                    valid = false;
+                                                    element.style.backgroundColor = '#fba';
+                                                }
+                                            });
+
+                                            return valid;
+                                        }
+
+                                        function DeleteTaskRow(o, id) {
+                                            var itemHH = 'hours-'.concat(id);
+                                            removeArrayItem(itemHH);
+                                            var itemMM = 'minutes-'.concat(id);
+                                            removeArrayItem(itemMM);
+
+                                            var p = o.parentNode.parentNode;
+                                            p.parentNode.removeChild(p);
+                                        }
+
+                                        $(function () {
+
+                                            $('#AttendanceDateIn').datetimepicker({
+                                                dateFormat: "yy-mm-dd"
+                                            });
+                                            $('#AttendanceDateOut').datetimepicker({
+                                                dateFormat: "yy-mm-dd"
+                                            });
+                                        });
+                                        $('#ui-datepicker-div').css('display', 'none');
+
+
+                                        $(document).ready(function () {
                                             $('#SaveData').attr("disabled", true);
+                                            //$('#AttendanceDateIn').addClass("invalid");
+                                            //$('#AttendanceDateOut').addClass("invalid");
+                                            $.TaskCount = 2;
+                                            $.TaskCount = $('#hdnTaskCount').val();
+                                            $.ErrorList = [];
+                                        });
+
+                                        $('#AttendanceDateIn').change(function () {
+
+                                            var input = $(this);
+                                            var is_name = input.val();
+                                            if (is_name) { input.removeClass("invalid").addClass("valid"); }
+                                            else { input.removeClass("valid").addClass("invalid"); }
+
+                                            if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
+                                                $('#SaveData').attr("disabled", false);
+                                            }
+                                            else {
+                                                $('#SaveData').attr("disabled", true);
+                                            }
+                                        });
+
+                                        $('#AttendanceDateOut').change(function () {
+
+                                            var input = $(this);
+                                            var is_name = input.val();
+                                            if (is_name) { input.removeClass("invalid").addClass("valid"); }
+                                            else { input.removeClass("valid").addClass("invalid"); }
+
+                                            if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
+                                                $('#SaveData').attr("disabled", false);
+                                            }
+                                            else {
+                                                $('#SaveData').attr("disabled", true);
+                                            }
+                                        });
+
+                                        function addNewTask() {
+                                            var table = $('#EmployeeTaskListTable')
+                                            table.append('<tr class="wft-task">' +
+                                                '<td class="wft-task-td">' +
+                                                '<textarea id="desc-' + $.TaskCount + '" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required />' +
+                                                '</td>' +
+                                                '<td class="wft-task-td">' +
+                                                '<input type="number" id="hours-' + $.TaskCount + '" name="taskHours" class="wft-task-hours" value="" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />' +
+                                                '</td>' +
+                                                '<td class="wft-task-td">' +
+                                                '<input type="number" id="minutes-' + $.TaskCount + '" name="taskMinutes" class="wft-task-minutes" value="0" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />' +
+                                                '</td>' +
+                                                '<td class="wft-task-td">' +
+                                                '<input type="button" value="" title="Remove" data-toggle="tooltip" class="wft-remove-btn" onclick="DeleteTaskRow(this, ' + $.TaskCount + ')">' +
+                                                '</td>' +
+                                                '</tr>');
+                                            $.TaskCount++;
                                         }
-                                    });
 
-                                    $('#AttendanceDateOut').change(function () {
-
-                                        var input = $(this);
-                                        var is_name = input.val();
-                                        if (is_name) { input.removeClass("invalid").addClass("valid"); }
-                                        else { input.removeClass("valid").addClass("invalid"); }
-
-                                        if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
-                                            $('#SaveData').attr("disabled", false);
+                                        function deleteButtonPress(employeeId, recordId) {
+                                            if (confirm("Do you want to delete this record?")) {
+                                                new Attendence().DeleteWorkingFromHome(employeeId, recordId);
+                                            }
                                         }
-                                        else {
-                                            $('#SaveData').attr("disabled", true);
-                                        }
-                                    });
 
-                                    function addNewTask() {
-                                        var table = $('#EmployeeTaskListTable')
-                                        table.append('<tr class="wft-task">' +
-                                                            '<td class="wft-task-td">' +
-                                                                '<textarea id="desc-' + $.TaskCount + '" name="taskDescription" class="wft-task-desc" value="" placeholder="Add Task Description" rows="2" cols="80" required />' +
-                                                            '</td>' +
-                                                            '<td class="wft-task-td">' +
-                                                                '<input type="number" id="hours-' + $.TaskCount + '" name="taskHours" class="wft-task-hours" value="" min="0" max="24" size="2" maxlength="2" placeholder="HH" onchange="validateHh(this);" />' +
-                                                            '</td>' +
-                                                            '<td class="wft-task-td">' +
-                                                                '<input type="number" id="minutes-' + $.TaskCount + '" name="taskMinutes" class="wft-task-minutes" value="0" min="0" max="60" size="2" maxlength="2" placeholder="MM" onchange="validateMm(this);" />' +
-                                                            '</td>' +
-                                                            '<td class="wft-task-td">' +
-                                                                '<input type="button" value="" title="Remove" data-toggle="tooltip" class="wft-remove-btn" onclick="DeleteTaskRow(this, ' + $.TaskCount + ')">' +
-                                                            '</td>' +
-                                                        '</tr>');
-                                        $.TaskCount++;
-                                    }
-
-                                    function deleteButtonPress(employeeId, recordId) {
-                                        if (confirm("Do you want to delete this record?")) {
-                                            new Attendence().DeleteWorkingFromHome(employeeId, recordId);
-                                        }
-                                    }
-
-                                </script>
-                            }
-                        </table>
+                                    </script>
+                                }
+                            </table>
+                        </div>
+                        <div class="templateWrapper">
+                            Template Name |
+                            <input type="text" id="templateName" class="templateName" name="templateName" value="" />
+                            <input type="hidden" id="hdnTemplateId" name="hdnTemplateId" value="">
+                            <br />
+                            <br />
+                            <table border="1" id="tblTemplate">
+                            </table>
+                            <br />
+                            <input id="AddTemplate" type="submit" class="ButtonForm" value="Add Template" onclick="saveTemplate()" /><div style="display: inline; color: green; font-weight: bold;"></div>
+                            <input id="AddTemplateAs" type="submit" class="ButtonForm" value="Add Template As" onclick="saveTemplateAs()" /><div style="display: inline; color: green; font-weight: bold;"></div>
+                            <input id="ClearTemplate" type="submit" class="ButtonForm" value="Clear Template" onclick="clearTemplate()" /><div style="display: inline; color: green; font-weight: bold;"></div>
+                        </div>
                     </div>
                 </fieldset>
 

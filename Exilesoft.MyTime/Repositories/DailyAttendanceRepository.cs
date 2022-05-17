@@ -39,12 +39,6 @@ namespace Exilesoft.MyTime.Repositories
         private static IList<Holiday> holidayList = new List<Holiday>();
         private static IList<Leave> leaveList = new List<Leave>();
         private static int plannedMinitsforDay = 0;
-        private static decimal actualOnpremH = 0;
-        private static decimal actualOnpremMin = 0;
-
-        private static decimal highlightTotalCoverage = 0;
-        private static decimal highlightTotalWFHPercentage = 0;
-
 
 
 
@@ -90,11 +84,9 @@ namespace Exilesoft.MyTime.Repositories
             IList<EmployeeEnrollment> _employeeList = new List<EmployeeEnrollment>();
 
             decimal _totalActualMinits = 0;
-            decimal _totalActualWFHMins = 0;
             int _noOfDays = 0;
             double leaveCount = 0;
             decimal totalTeamCompletedPrecentage = 0;
-            decimal totalTeamCompletedWFHPrecentage = 0;
             int _plannedMinitsforDay = int.Parse(ConfigurationManager.AppSettings["PlannedMinitsPerDay"].ToString());
             IList<Leave> leaveListNew = new List<Leave>();
 
@@ -125,7 +117,7 @@ namespace Exilesoft.MyTime.Repositories
 
             #endregion
             leaveListNew = leaveListNew.Where(a => a.Status == "Pending" || a.Status == "Approved").ToList();
-            
+
             if (model.FromDate < model.ToDate)
             {
                 leaveList = leaveListNew;
@@ -174,20 +166,12 @@ namespace Exilesoft.MyTime.Repositories
                     decimal _actualMinits = employeeAttendance.ActualMinits;
                     employeeAttendance.ActualHours = (_actualMinits / 60).ToString("#.##");
                     if (employeeAttendance.PlannedMinits > 0)
-                    {
                         employeeAttendance.Precentage = ((_actualMinits / employeeAttendance.PlannedMinits) * 100).ToString("#.##");
-                    }
                     else
-                    {
                         employeeAttendance.Precentage = "0";
-                    }
-                        
 
                     if (employeeAttendance.Precentage.Equals(string.Empty))
-                    {
                         employeeAttendance.Precentage = "0";
-                    }
-                   
                     totalTeamCompletedPrecentage += decimal.Parse(employeeAttendance.Precentage);
                 }
             }
@@ -207,9 +191,7 @@ namespace Exilesoft.MyTime.Repositories
             // Requested by Anuradha
             attendanceCoverageReportModel.TotalTeamWorkCoverage = "0";
             if (attendanceCoverageReportModel.EmployeeCoverageList.Count > 0)
-            { 
                 attendanceCoverageReportModel.TotalTeamWorkCoverage = (totalTeamCompletedPrecentage / attendanceCoverageReportModel.EmployeeCoverageList.Count).ToString("#.##");
-            }
             attendanceCoverageReportModel.TotalLeaveCount = leaveCount.ToString();
 
             return attendanceCoverageReportModel;
@@ -410,14 +392,11 @@ namespace Exilesoft.MyTime.Repositories
         /// </summary>
         /// <param name="model">Viewmodel from the client with data</param>
         /// <returns>HTML Report to be displayed</returns>
-
-        
         internal static string GetEmployeesHorsSummeryData(ViewModels.DailyAttendanceViewModel model)
         {
             #region --- Local Variables----
 
             StringBuilder _sb = new StringBuilder();
-            StringBuilder _sb_top = new StringBuilder();
             StringBuilder _employeeStringBuilder = new StringBuilder();
             attendanceCoverageReportModel = new ViewModels.AttendaceReportStructure();
             DateTime _tempDate = model.FromDate.Value;
@@ -491,9 +470,6 @@ namespace Exilesoft.MyTime.Repositories
 
                 // Implementation of the report hedder part HTML. 
                 _tempDate = model.FromDate.Value;
-                
-                
-                
                 _sb.Append("<h3>Attendance Summary</h3>");
                 _sb.Append("<table class=\"summery_report\"><tr>");
                 _sb.Append("<td class=\"employee_clm hedder_clm\">Employee Name</td>");
@@ -628,7 +604,7 @@ namespace Exilesoft.MyTime.Repositories
                 if (_totalPlannedMinits > 0)
                 {
                     _totalPlannedStrHrs = (_totalPlannedMinits / 60).ToString();
-                    _totalPlannedStrMnts= (_totalPlannedMinits % 60).ToString();
+                    _totalPlannedStrMnts = (_totalPlannedMinits % 60).ToString();
                 }
                 if (_totalActualMinits > 0)
                 {
@@ -637,16 +613,13 @@ namespace Exilesoft.MyTime.Repositories
                 }
 
                 _sb.Append(string.Format("<tr><td colspan=\"{0}\" class=\"summerytd\">", (_timeDuration.Days + 3)));
-                _sb.Append("<strong>Report summary</strong><br>");
+                _sb.Append("<strong>Report summery</strong><br>");
                 _sb.Append(string.Format("Report From : {0} To : {1}<br>", model.FromDate.Value.ToShortDateString(),
                     model.ToDate.Value.ToShortDateString()));
                 _sb.Append(string.Format("Total planned hours : {0} Hrs {1} Mnts ", _totalPlannedStrHrs, _totalPlannedStrMnts));
                 _sb.Append(string.Format("Total actual hours : {0} Hrs {1} Mnts<br>", _totalActualStrHrs, _totalActualStrMnts));
                 _sb.Append("</td></tr></table>");
 
-                highlightTotalCoverage = ((_totalActualMinits*100) /_totalPlannedMinits);
-
-                actualOnpremMin = _totalActualMinits;
                 #endregion
             }
 
@@ -719,16 +692,17 @@ namespace Exilesoft.MyTime.Repositories
                 IDictionary<DateTime, int> _totalRowData = new Dictionary<DateTime, int>();
                 var empIdList = attendanceCoverageReportModel.EmployeeCoverageList.Select(e => e.EmployeeID).ToList();
 
-                IList<WorkingFromHomeTask> allTasks= dbContext.WorkingFromHomeTasks
-                            .Join(dbContext.PendingAttendances,t=>t.PendingAttendanceId,p=>p.Id,(t,p)=> new{
-                                WorkingFromHomeTask=t,
-                                PendingAttendances=p
+                IList<WorkingFromHomeTask> allTasks = dbContext.WorkingFromHomeTasks
+                            .Join(dbContext.PendingAttendances, t => t.PendingAttendanceId, p => p.Id, (t, p) => new
+                            {
+                                WorkingFromHomeTask = t,
+                                PendingAttendances = p
                             }).
-                            Where(t => empIdList.Contains( t.WorkingFromHomeTask.EmployeeId) && 
+                            Where(t => empIdList.Contains(t.WorkingFromHomeTask.EmployeeId) &&
                             DbFunctions.TruncateTime(t.WorkingFromHomeTask.Date) >= DbFunctions.TruncateTime(model.FromDate) &&
                             DbFunctions.TruncateTime(t.WorkingFromHomeTask.Date) <= DbFunctions.TruncateTime(model.ToDate) &&
-                            t.PendingAttendances.ApproveType==1).
-                            Select(t=>t.WorkingFromHomeTask).
+                            t.PendingAttendances.ApproveType == 1).
+                            Select(t => t.WorkingFromHomeTask).
                             ToList();
 
                 // Generation of body section for all employees
@@ -749,7 +723,7 @@ namespace Exilesoft.MyTime.Repositories
 
                         if (_totalTaskMinits > 0)
                             _sb.Append(string.Format("<td class=\"hourstd {0}\">{1} </td>", _statusClass,
-                                string.Format("{0}:{1}", _totalTaskMinits/60 , _totalTaskMinits%60)));
+                                string.Format("{0}:{1}", _totalTaskMinits / 60, _totalTaskMinits % 60)));
                         else
                             _sb.Append(string.Format("<td class=\"hourstd {0}\">0 </td>", _statusClass));
 
@@ -763,7 +737,7 @@ namespace Exilesoft.MyTime.Repositories
                         _tempDate = _tempDate.AddDays(1);
                     } while (_tempDate <= model.ToDate);
                     _sb.Append(string.Format("<td class=\"hourstd\">{0} </td>",
-                        _employeeTotal > 0 ? string.Format("{0}:{1}", _employeeTotal/60, _employeeTotal%60) : "0"));
+                        _employeeTotal > 0 ? string.Format("{0}:{1}", _employeeTotal / 60, _employeeTotal % 60) : "0"));
                     _sb.Append("</tr>");
                 }
 
@@ -774,7 +748,7 @@ namespace Exilesoft.MyTime.Repositories
                 foreach (var daySum in _totalRowData)
                 {
                     _sb.Append(string.Format("<td class=\"hourstd\">{0} </td>",
-                        daySum.Value > 0 ? string.Format("{0}:{1}", daySum.Value/60, daySum.Value%60) : "0"));
+                        daySum.Value > 0 ? string.Format("{0}:{1}", daySum.Value / 60, daySum.Value % 60) : "0"));
                     _daySumTotal += daySum.Value;
                 }
                 _sb.Append(string.Format("<td class=\"hourstd\">{0} </td>",
@@ -789,15 +763,15 @@ namespace Exilesoft.MyTime.Repositories
 
                 #endregion
 
-                 #region ---- Generating the report summery ----
+                #region ---- Generating the report summery ----
 
-                 //Adding the report summery sections HTML to the reoprt.
-                 TimeSpan _timeDuration = model.ToDate.Value - model.FromDate.Value;
+                //Adding the report summery sections HTML to the reoprt.
+                TimeSpan _timeDuration = model.ToDate.Value - model.FromDate.Value;
 
-                 _sb.Append(string.Format("<tr><td colspan=\"{0}\" class=\"summerytd\">", (_timeDuration.Days + 2)));
-                 _sb.Append("<strong>Report summary</strong><br>");
-                 _sb.Append(string.Format("Report From : {0} To : {1}<br>", model.FromDate.Value.ToShortDateString(),
-                     model.ToDate.Value.ToShortDateString()));
+                _sb.Append(string.Format("<tr><td colspan=\"{0}\" class=\"summerytd\">", (_timeDuration.Days + 2)));
+                _sb.Append("<strong>Report summery</strong><br>");
+                _sb.Append(string.Format("Report From : {0} To : {1}<br>", model.FromDate.Value.ToShortDateString(),
+                    model.ToDate.Value.ToShortDateString()));
 
                 var _daySumTotalHrs = "0";
                 var _daySumTotalMnts = "0";
@@ -809,20 +783,12 @@ namespace Exilesoft.MyTime.Repositories
                 }
 
                 _sb.Append(string.Format("Total task hours : {0} Hrs {1} Mnts<br>", _daySumTotalHrs, _daySumTotalMnts));
-                _sb.Append(string.Format("WFH % from the total attendance : {0}%", ((_daySumTotal/actualOnpremMin)*100).ToString("#.##")));
                 _sb.Append("</td></tr></table>");
-                highlightTotalWFHPercentage = ((_daySumTotal / actualOnpremMin) * 100);
 
-
-                 #endregion
+                #endregion
             }
-            StringBuilder _sb_top = new StringBuilder();
-            _sb_top.Append("<h3>Attendance Highlights</h3>");
-            _sb_top.Append("<label>"+string.Format("Total Coverage : {0}%<br>", highlightTotalCoverage.ToString("#.##"))+ "</label>");
-            _sb_top.Append("<label>" + string.Format("WFH % from the total attendance : {0}%", highlightTotalWFHPercentage.ToString("#.##")) + "</label>");
-            _sb_top.Append("<seperator>");
-            _sb_top.Append(_sb.ToString());
-            return _sb_top.ToString();
+
+            return _sb.ToString();
         }
 
         internal static void GenerateCoverageReportMonthly(ViewModels.AttendanceReportViewModel model, string reportHTML, string bodyHTML, string rowHTML)
@@ -2119,7 +2085,7 @@ namespace Exilesoft.MyTime.Repositories
 
         }
 
-      
+
         //[DelphiAuthentication]
         public static string sendReport(string message)
         {
@@ -2923,11 +2889,11 @@ namespace Exilesoft.MyTime.Repositories
             var leaveList = LeaveRepository.GetApprovedLeaveForRpt(date, date);
 
 
-           
+
             _totalPlannedMinits = 0;
             _totalActualMinits = 0;
 
-           
+
 
             #endregion --- Local variables ---
 
@@ -3896,7 +3862,6 @@ namespace Exilesoft.MyTime.Repositories
 
 
             double _totalInTimeForAllEmployee = 0;
-            double _totalInTimeWFHForAllEmployee = 0;
 
             // calculation for each employee
             foreach (var _employee in model.SelectedEmployeeList)
@@ -4041,7 +4006,7 @@ namespace Exilesoft.MyTime.Repositories
                     ThenBy(a => a.Second);
 
             var _firstInAttendance = _employeeAttendanceList.FirstOrDefault(a => a.Year == queryDate.Year
-                && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "in");
+                && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "in" && a.LocationId != 27);
             if (_firstInAttendance != null)
             {
                 // Gets the first attendance record with in
@@ -4054,7 +4019,7 @@ namespace Exilesoft.MyTime.Repositories
 
                 // Gets the last out attendance as the employee OUT time
                 var outattendanceList = _employeeAttendanceList.Where(a => a.Year == queryDate.Year
-                    && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "out");
+                    && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "out" && a.LocationId != 27);
 
                 if (outattendanceList.Count() > 0)
                     _lastAttendance = outattendanceList.Last();
@@ -4071,7 +4036,9 @@ namespace Exilesoft.MyTime.Repositories
                     // Calculates the time on work if the last out recourd can be found
                     // if last out was not found and the date is equal to system date? then consider 
                     // current time as the last out.
-                    TimeSpan _ts = _lastOutTime.Value - _firstInTime;
+                    //TimeSpan _ts = _lastOutTime.Value - _firstInTime;
+                    // _totalInTime += (int)_ts.TotalMinutes;
+                    TimeSpan _ts = CalculateTotalTime(_firstInTime, _lastOutTime, _employeeAttendanceList, queryDate);
                     _totalInTime += (int)_ts.TotalMinutes;
 
                     foreach (var _employeeCoverage in attendanceCoverageReportModel.EmployeeCoverageList)
@@ -4086,6 +4053,87 @@ namespace Exilesoft.MyTime.Repositories
             }
 
             return _totalInTime;
+        }
+
+        private static TimeSpan CalculateTotalTime(DateTime firstInTime, DateTime? lastOutTime, IOrderedEnumerable<Attendance> employeeAttendanceList, DateTime queryDate)
+        {
+            var wfhInAttendance = employeeAttendanceList.FirstOrDefault(a => a.Year == queryDate.Year
+                && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "in" && a.LocationId == 27);
+
+            var wfhOutAttendance = employeeAttendanceList.LastOrDefault(a => a.Year == queryDate.Year
+                && a.Month == queryDate.Month && a.Day == queryDate.Day && a.InOutMode == "out" && a.LocationId == 27);
+            DateTime? wfhInTime = null;
+            DateTime? wfhIOutTime = null;
+            TimeSpan? ts = null;
+
+            if (wfhInAttendance != null)
+            {
+                wfhInTime = new DateTime(wfhInAttendance.Year, wfhInAttendance.Month, wfhInAttendance.Day, wfhInAttendance.Hour, wfhInAttendance.Minute, wfhInAttendance.Second);
+            }
+
+            if (wfhOutAttendance != null)
+            {
+                wfhIOutTime = new DateTime(wfhOutAttendance.Year, wfhOutAttendance.Month, wfhOutAttendance.Day, wfhOutAttendance.Hour, wfhOutAttendance.Minute, wfhOutAttendance.Second);
+            }
+
+
+            if (firstInTime < wfhInTime && lastOutTime > wfhIOutTime)
+            {
+                ts = lastOutTime - firstInTime;
+            }
+            else if (firstInTime > wfhInTime && lastOutTime < wfhIOutTime)
+            {
+                ts = wfhIOutTime - wfhInTime;
+            }
+            else if (firstInTime > wfhIOutTime)
+            {
+                ts = (lastOutTime.Value - firstInTime) + (wfhIOutTime - wfhInTime);
+            }
+            else if (firstInTime == wfhIOutTime)
+            {
+                ts = lastOutTime.Value - wfhInTime;
+            }
+            else if (firstInTime > wfhInTime && lastOutTime > wfhIOutTime)
+            {
+                ts = lastOutTime.Value - wfhInTime;
+            }
+            else if (firstInTime > wfhInTime && lastOutTime == wfhIOutTime)
+            {
+                //xx
+                ts = wfhIOutTime - wfhInTime;
+            }else if(firstInTime == wfhInTime && lastOutTime > wfhIOutTime)
+            {
+                ts = lastOutTime - firstInTime;
+            }else if(firstInTime == wfhInTime && lastOutTime == wfhIOutTime)
+            {
+                ts = lastOutTime - firstInTime;
+            }else if(firstInTime == wfhInTime && lastOutTime < wfhIOutTime)
+            {
+                ts = wfhIOutTime - wfhInTime;
+            }else if (firstInTime < wfhInTime && lastOutTime == wfhIOutTime)
+            {
+                ts = lastOutTime - firstInTime;
+            }else if (lastOutTime == wfhInTime)
+            {
+                ts = wfhIOutTime - firstInTime;
+                //ts = wfhIOutTime - firstInTime;
+            }else if(lastOutTime < wfhInTime)//firstInTime < wfhInTime && lastOutTime < wfhIOutTime
+            {
+                ts = (lastOutTime.Value - firstInTime) + (wfhIOutTime - wfhInTime);
+                //ts = wfhIOutTime - firstInTime;
+                //ts = wfhIOutTime - firstInTime;
+            }
+            else if(firstInTime < wfhInTime && lastOutTime < wfhIOutTime)
+            {
+                ts = wfhIOutTime - firstInTime;
+                //ts = (lastOutTime.Value - firstInTime) + (wfhIOutTime - wfhInTime);
+            }
+            else
+            {
+                ts = lastOutTime - firstInTime;
+            }
+
+            return ts.Value;
         }
 
         private static int GetEmployeeTaskMinits(int employeeID, DateTime queryDate, IList<WorkingFromHomeTask> allTasks)
@@ -4302,10 +4350,10 @@ namespace Exilesoft.MyTime.Repositories
 
         public static IList<WorkingFromHomeTask> GetTaskListForEmployeeByDate(int employeeId, DateTime date)
         {
-            return dbContext.WorkingFromHomeTasks.Where(a => a.EmployeeId == employeeId 
-            && a.Date.Year == date.Year 
-            && a.Date.Month == date.Month 
-            && a.Date.Day == date.Day).ToList();            
+            return dbContext.WorkingFromHomeTasks.Where(a => a.EmployeeId == employeeId
+            && a.Date.Year == date.Year
+            && a.Date.Month == date.Month
+            && a.Date.Day == date.Day).ToList();
         }
     }
     public enum MonthsOfyear

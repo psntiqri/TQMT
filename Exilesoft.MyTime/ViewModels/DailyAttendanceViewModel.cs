@@ -33,14 +33,12 @@ namespace Exilesoft.MyTime.ViewModels
         {
             this.EmployeeCoverageList = new List<EmployeeAttandaceCoverage>();
             this.EmployeeOutOfOfficeList = new List<EmployeeOutOfOffice>();
-            this.EmployeeOutOfWFHList = new List<EmployeeOutOfWFH>();
             this.HolidayDateList = new List<HolidayOnView>();
         }
                 
         public string ResultGraphData { get; set; }
         public IList<EmployeeAttandaceCoverage> EmployeeCoverageList { get; set; }
         public IList<EmployeeOutOfOffice> EmployeeOutOfOfficeList { get; set; }
-        public IList<EmployeeOutOfWFH> EmployeeOutOfWFHList { get; set; }
         public IList<HolidayOnView> HolidayDateList { get; set; }
 
         public string Duration { get; set; }
@@ -48,11 +46,9 @@ namespace Exilesoft.MyTime.ViewModels
         public int LoggedDays { get; set; }
         public decimal TotalPlanned { get; set; }
         public decimal TotalActual { get; set; }
-        public decimal TotalActualWFH { get; set; }
         public decimal TotalOutOfOffice { get; set; }
         public decimal TotalPlannedLeave { get; set; }
         public decimal WorkCoverage { get; set; }
-        public decimal WFHPercentage { get; set; }
         public string TotalTeamWorkCoverage { get; set; }
         public string TotalLeaveCount { get; set; }
 
@@ -71,18 +67,9 @@ namespace Exilesoft.MyTime.ViewModels
         public string ActualHours { get; set; }
         public string PlannedHors { get; set; }
         public string Precentage { get; set; }
-        public string WFHPrecentage { get; set; }
     }
 
     public class EmployeeOutOfOffice
-    {
-        public int EmployeeID { get; set; }
-        public decimal OutMinits { get; set; }
-        public string OutDate { get; set; }
-        public decimal FromTime { get; set; }
-        public decimal ToTime { get; set; }
-    }
-    public class EmployeeOutOfWFH
     {
         public int EmployeeID { get; set; }
         public decimal OutMinits { get; set; }
