@@ -1,0 +1,32 @@
+﻿@model Exilesoft.Models.EmployeeOnSite
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this on site entry?</h3>
+<fieldset>
+    <legend>OnSite</legend>
+
+    <div class="display-label">Employee</div>
+    <div class="display-field">
+      @ViewBag.employeName
+    </div>
+
+    <div class="display-label">From Date</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FromDate)
+    </div>
+     <div class="display-label">To Date</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ToDate)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back", "Index")
+    </p>
+}

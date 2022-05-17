@@ -1,0 +1,342 @@
+﻿@model Exilesoft.MyTime.Models.Employee
+@{
+    ViewBag.Title = "My Profile";
+}
+@{
+    Layout = null;
+}
+<script src="~/Content/scripts/frms/employee_frm.js"></script>
+<style>
+    textarea {
+        font-size: 1.2em !important;
+        font-family: 'MS Shell Dlg' !important;
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px !important;
+    }
+
+    fieldset {
+        border: 1px solid #d4d4d4;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        padding: 0.2em 0.5em;
+        border: 1px solid #d4d4d4;
+        color: #333;
+        font-size: 90%;
+    }
+</style>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">My Profile - @Model.Name
+            </td>
+            <td style="text-align: right; width: 15px;">
+                <table class="optionTable" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td onclick="new EmployeeForm().EditEmployeProfile();" style="cursor: pointer; background-color: #fff; padding-bottom: 3px !important; padding-right: 8px !important">
+                            <img src="../../Content/images/edit_profile.png" />
+                        </td>
+                        <td onclick="new EmployeeForm().EditEmployeProfile();" style="cursor: pointer; background-color: #fff; font-size: 15px;">Edit My Profile
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable" style="display: inline">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.Title)
+                                </td>
+                                <td style="width: 250px;">: @Html.Raw(ViewBag.TitleValue)
+                                </td>
+                                <td rowspan="10" style="vertical-align: top;">
+                                    <fieldset style="padding: 10px; margin: 0px !important;">
+                                        <legend>Profile Image</legend>
+                                        <table style="margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px;">
+                                            <tr>
+                                                <td style="padding-bottom: 0px;">
+                                                    @if (string.IsNullOrEmpty(Model.ImagePath))
+                                                    {
+                                                        <img class="imageThumbnail" id="Image_Preview" src="../../Content/images/default_user.png" />  
+                                                    }
+                                                    else
+                                                    {
+                                                        <img class="imageThumbnail" id="Image_Preview" src="../../Content/images/employee/@Model.ImagePath" />
+                                                    }
+                                                </td>
+                                                @Html.HiddenFor(model => model.ImagePath)
+                                            </tr>
+
+                                        </table>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.FirstName)
+                                </td>
+                                <td>: @Html.Raw(Model.FirstName)
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.LastName)</td>
+                                <td>: @Html.Raw(Model.LastName)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.Name)</td>
+                                <td>: @Html.Raw(Model.Name)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.Gender)
+                                </td>
+                                <td>: @Html.Raw(ViewBag.GenderValue)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.NICNumber)
+                                </td>
+                                <td>: @Html.Raw(Model.NICNumber)
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.PassportNumber)</td>
+                                <td>: @Html.Raw(Model.PassportNumber)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.DateOfBirth)
+                                </td>
+                                <td>: @Html.Raw(Model.DateOfBirth != null ? Model.DateOfBirth.Value.ToShortDateString() : "-")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Html.LabelFor(model => model.CivilStatus)</td>
+                                <td>: @Html.Raw(ViewBag.CivilStatusvalue)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.HomePhone)
+                                </td>
+                                <td style="width: 300px;">: @Html.Raw(Model.HomePhone)
+                                </td>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.MobileNumber)
+                                </td>
+                                <td>: @Html.Raw(Model.MobileNumber)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.SkypeID)
+                                </td>
+                                <td>: @Html.Raw(Model.SkypeID)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.MSNID)
+                                </td>
+                                <td>: @Html.Raw(Model.MSNID)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.PrimaryEmailAddress)
+                                </td>
+                                <td>: @Html.Raw(Model.PrimaryEmailAddress)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.SecondaryEmailAddress)
+                                </td>
+                                <td>: @Html.Raw(Model.SecondaryEmailAddress)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.CurrentAddress)
+                                </td>
+                                <td>: @Html.Raw(Model.CurrentAddress)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.PermanentAddress)
+                                </td>
+                                <td>: @Html.Raw(Model.PermanentAddress)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Career Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.Designation)
+                                </td>
+                                <td style="width: 300px;">: @Html.Raw(Model.Designation)
+                                </td>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.DateJoined)
+                                </td>
+                                <td>: @Html.Raw(Model.DateJoined != null ? Model.DateJoined.ToShortDateString() : "-")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.DateCareerStarted)
+                                </td>
+                                <td>: @Html.Raw(Model.DateCareerStarted != null ? Model.DateCareerStarted.Value.ToShortDateString() : "-")
+                                </td>
+                                <td>@Html.LabelFor(model => model.PreviousEmployer)</td>
+                                <td>: @Html.Raw(Model.PreviousEmployer)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Employee Qualification</legend>
+                    <div style="padding: 10px;">
+                        <div class="demo_jui">
+                            <table cellpadding="0" cellspacing="0" border="0" class="display" id="EmployeeQualificationDataTable">
+                                <thead>
+                                    <tr>
+                                        <th style="display: none;"></th>
+                                        <th style="display: none;"></th>
+                                        <th>Institute</th>
+                                        <th>Qualification</th>
+                                        <th>DateAwarded</th>
+                                        <th>Note</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in (ViewBag.QualificationList as List<Exilesoft.MyTime.Models.EmployeeQualification>).Select((value, i) => new { i, value }))
+                                    {
+                                        <tr>
+                                            <td style="display: none">@Html.Raw(item.i.ToString())</td>
+                                            <td style="display: none" class="gridIconColumn DeleteLink">Delete</td>
+                                            <td>@Html.Raw(item.value.Institute != null ? item.value.Institute.Name : string.Empty)</td>
+                                            <td>@item.value.Qualification</td>
+                                            <td>@Html.Raw(item.value.DateAwarded != null ? item.value.DateAwarded.Value.ToShortDateString() : string.Empty)</td>
+                                            <td>@item.value.Notes</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Emergency Contact Details</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.EmergencyContactName)
+                                </td>
+                                <td style="width: 300px;">: @Html.Raw(Model.EmergencyContactName)
+                                </td>
+                                <td style="width: 140px; vertical-align: top" rowspan="3">
+                                    @Html.LabelFor(model => model.EmergencyContactAddress)
+                                </td>
+                                <td rowspan="3" style="vertical-align: top">: @Html.Raw(Model.EmergencyContactAddress)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EmergencyContactRelationship)
+                                </td>
+                                <td>: @Html.Raw(Model.EmergencyContactRelationship)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EmergencyContactNumber)
+                                </td>
+                                <td>: @Html.Raw(Model.EmergencyContactNumber)
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    hide("Div_SystemLodingCntent");
+    show("systemContentPage");
+
+    function EditMyProfile() {
+        window.location.replace("../../Employee/MyProfileUpdate");
+    }
+
+    $(document).ready(function () {
+        $("#TBL_PageMainTable").width($("#DIV_PageInnerContent").width() - 20);
+    });
+
+    $(window).resize(function () {
+        $("#TBL_PageMainTable").width($("#DIV_PageInnerContent").width() - 20);
+    });
+
+</script>
+
+@Html.HiddenFor(model => model.Id)
+
+<script>
+    $("#EmployeeQualificationDataTable").html();
+    $("#EmployeeQualificationDataTable").dataTable().fnDestroy();
+
+    oTable = $('#EmployeeQualificationDataTable').dataTable({
+        "bJQueryUI": true,
+        "sPaginationType": "full_numbers",
+        "bScrollInfinite": true,
+        "bFilter": true,
+        "bCollapse": true,
+        "bAutoWidth": false,
+        "iDisplayLength": 200,
+        "aoColumnDefs": [
+            { sClass: "gridHiddenColumn", "aTargets": [0], "bSortable": false },
+            { sClass: "gridHiddenColumn", "aTargets": [1], "bSortable": false }
+        ]
+    });
+
+
+</script>

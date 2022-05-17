@@ -1,0 +1,332 @@
+﻿@model Exilesoft.MyTime.ViewModels.DailyAttendanceViewModel
+@{
+    ViewBag.Title = "Team Attendance Analysis";
+}
+@{
+    Layout = null;
+}
+<script src="../../Scripts/jquery.idTabs.min.js"></script>
+<style>
+    .summery_report {
+        border: 1px solid #d7d7d7 !important;
+        border-collapse: collapse !important;
+    }
+
+        .summery_report td {
+            border: 1px solid #d7d7d7 !important;
+            border-collapse: collapse !important;
+            white-space: nowrap !important;
+        }
+
+    .hedder_clm {
+        background-color: #EFEFEF !important;
+        font-weight: bold !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        text-align: center !important;
+    }
+
+    .employee_clm {
+        min-width: 200px !important;
+        padding: 3px !important;
+        text-align: left !important;
+    }
+
+    .plan_span {
+        font-size: 11px !important;
+    }
+
+    .hourstd {
+        text-align: center !important;
+        padding: 3px !important;
+    }
+
+    .nametd {
+        padding: 3px !important;
+    }
+
+    .work_done {
+        color: green !important;
+    }
+
+    .work_incomplete {
+        color: red !important;
+    }
+
+    .summerytd {
+        padding: 10px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+</style>
+
+<style>
+    /*  idTabs ~ Sean Catchpole  */
+
+
+    /* Style for Usual tabs */
+    .usual {
+        background: #FFF;
+        color: #111;
+        padding: 5px !important;
+        border: 1px solid #d7d7d7;
+    }
+
+        .usual li {
+            list-style: none;
+            float: left;
+        }
+
+        .usual ul {
+            padding: 0px !important;
+            padding-left: 0px !important;
+            margin: 0px !important;
+        }
+
+            .usual ul a {
+                display: block;
+                padding: 2px 10px;
+                text-decoration: none!important;
+                margin: 1px;
+                margin-left: 0;
+                color: #000;
+                background: #eaeaea;
+                border: 1px solid #d7d7d7;
+                border-bottom: 0px;
+            }
+
+                .usual ul a:hover {
+                    color: #FFF;
+                    background: #8a8a8a;
+                }
+
+                .usual ul a.selected {
+                    margin-bottom: 0;
+                    color: #FFF;
+                    background: #088bcd !important;
+                    border-bottom: 1px solid snow;
+                    cursor: default;
+                    border-bottom: 0px;
+                }
+
+        .usual div {
+            padding: 10px 10px 10px 10px;
+            clear: left;
+            border: 1px solid #d7d7d7;
+        }
+
+            .usual div a {
+                color: #000;
+                font-weight: bold;
+            }
+</style>
+
+<table class="clearTable">
+    <tr>
+        <td style="width: 300px; border-right-width: 0px; border-right-style: solid; vertical-align: top; border-right-color: #e0e0e0; padding-right: 15px;">
+
+            <div class="DIV_employeeFindWrapper">
+                <table style="border: 0px; border-collapse: collapse;">
+                    <tr>
+                        <td style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                            <div id="Report_Dateselection_Tab" class="usual">
+                                <ul>
+                                    <li><a href="#tabs1" class="selected">By Month</a></li>
+                                    <li><a href="#tabs2">By Date</a></li>
+                                </ul>
+                                <div id="tabs1">
+                                    <table class="clearTable">
+                                        <tr>
+                                            <td>
+                                                <select id="Dropdown_Year" name="Dropdown_Year" onchange="ChangeDateMonth();" class="DropdownListFull">
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2025">2025</option>
+                                                </select>
+                                            </td>
+                                            <td style="padding-left: 5px;"></td>
+                                            <td>
+                                                <select id="Dropdown_Month" name="Dropdown_Month" onchange="ChangeDateMonth();" class="DropdownListFull">
+                                                    <option value="0">January</option>
+                                                    <option value="1">February</option>
+                                                    <option value="2">March</option>
+                                                    <option value="3">April</option>
+                                                    <option value="4">May</option>
+                                                    <option value="5">June</option>
+                                                    <option value="6">July</option>
+                                                    <option value="7">August</option>
+                                                    <option value="8">September</option>
+                                                    <option value="9">October</option>
+                                                    <option value="10">November</option>
+                                                    <option value="11">December</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="tabs2">
+                                    <table class="clearTable">
+                                        <tr>
+                                            <td>From</td>
+                                            <td style="width: 100px;">@Html.TextBoxFor(model => model.FromDate, new { @Value = Model.FromDate.Value.ToString("dd/MM/yyyy"), onchange = "new DailyAttendance().ReportRangeChange();", style = "width: 85px;", id = "Textbox_FromDate" })</td>
+                                            <td style="text-align: center;">&nbsp;To&nbsp;</td>
+                                            <td style="width: 100px;">@Html.TextBoxFor(model => model.ToDate, new { @Value = Model.ToDate.Value.ToString("dd/MM/yyyy"), onchange = "new DailyAttendance().ReportRangeChange();", style = "width: 85px;", id = "Textbox_ToDate" })</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#Report_Dateselection_Tab ul").idTabs("tabs2");
+                            </script>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                            <table class="clearTable">
+                                <tr>
+                                    <td style="width: 95px;">Analysis Report</td>
+                                    <td style="width: 20px;">
+                                        <input type="radio" name="ReportType" onchange="new DailyAttendance().ChangeReportType();" checked="checked" id="Radio_ReportType_Analysis" /></td>
+                                    <td style="text-align: right; width: 130px;">Summary Report</td>
+                                    <td>
+                                        <input type="radio" name="ReportType" onchange="new DailyAttendance().ChangeReportType();" id="Radio_ReportType_Summery" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="TeamNamesDropDown" style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                            <select id="teamSelect" class="DropdownListFull" onchange="new DailyAttendance().ChangeSelectedTeam();">
+                            </select>
+                            <input id="teamSelectValue" type="hidden" value="" />
+                        </td>
+                    </tr>
+                   
+                  
+                </table>
+            </div>
+            <br />
+            
+
+        </td>
+
+        <td style="vertical-align: top;">
+            <div id="DIV_ReportGraphWrapper" style="padding-top: 25px; padding-right: 25px; padding-bottom: 25px;">
+                <div id="DIV_ReportViewer" style="height: 400px; display: none;"></div>
+                <div id="DIV_ReportViewerSummery" style="display: none; margin-top: 35px; padding-left: 25px; padding-bottom: 0px; font-size: 11px; color: #8a8a8a; border: 0px;">
+                </div>
+                <div id="DIV_PleaseAddToViewReport" style="padding-left: 25px; font-size: 20px; color: #8a8a8a; border: 0px;">
+                    Please select the required employees to view the analysis report.
+                </div>
+            </div>
+            <div id="DIV_ReportSummeryWrapper" style="padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; display: none;">
+                <div id="DIV_SummeryReportViewer" style="min-height: 400px; display: none;"></div>
+                <div id="DIV_PleaseAddToViewSummeryReport" style="padding-left: 25px; font-size: 20px; color: #8a8a8a; border: 0px;">
+                    Please select the required employees to view the summary report.
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div id="DIV_GrapfUpdateWaitMessage" style="display: none;">
+    <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px;">
+        <img src="../../Content/images/loder_wait.gif" /><br />
+        Loading data. Please wait.
+    </div>
+</div>
+<script type="text/javascript">
+    new DailyAttendance().RefreshTeamDropDown();
+</script>
+<script type="text/javascript">
+    function CreateButtonClick() {
+        show("DIV_SaveTeamButton");
+        show("DIV_SaveTeamNameText");
+        hide("DIV_CreateTeamButton");
+    }
+
+    function teamSelectChanged() {
+        var teamId = $("#teamSelect").val();
+        new DailyAttendance().ChangeSelectedTeam(teamId);
+    }
+</script>
+<script type="text/javascript">
+    function SaveButtonClick() {
+        var groupName = $("#DIV_SaveTeamNameTextBox").val();
+        if (groupName == "") {
+            show("ErrorMsgTeamNameEmpty");
+        }
+        else {
+            new DailyAttendance().AddTeamToDb(groupName);
+            $("#teamSelectValue").val(groupName);
+        }
+    }
+</script>
+<script language="javascript">
+    AddWatermark("TextBox_User_GlobalSearch", " Please type to search");
+    var _selectedEmployeeList = new Array();
+    $('#Textbox_FromDate').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+    $('#Textbox_ToDate').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth();
+    $('#Dropdown_Year').val(year);
+    $('#Dropdown_Month').val(month);
+
+
+    function ChangeDateMonth() {
+        var year = parseInt($('#Dropdown_Year').val());
+        var month = parseInt($('#Dropdown_Month').val());
+
+        var startDate = new Date(year, month, 1);
+        month = month + 1;
+        if (month == 12) {
+            month = 0;
+            year = year + 1;
+        }
+
+        var endDate = new Date(year, month, 1);
+        endDate.setDate(-1);
+        endDate.setDate(endDate.getDate() + 1);
+
+        $('#Textbox_FromDate').val(startDate.getDate() + '/' + (startDate.getMonth() + 1) + '/' + startDate.getFullYear());
+        $('#Textbox_ToDate').val(endDate.getDate() + '/' + (endDate.getMonth() + 1) + '/' + endDate.getFullYear());
+
+        new DailyAttendance().ReportRangeChange();
+    }
+
+    ChangeDateMonth();
+
+</script>
+

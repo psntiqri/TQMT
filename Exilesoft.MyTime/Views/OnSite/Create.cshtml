@@ -1,0 +1,102 @@
+﻿@model Exilesoft.Models.EmployeeOnSite
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<table class="clearTable">
+    <tr>
+        <td>
+            <h2 style="margin-bottom: 0px !important">Create a new on site entry</h2>
+        </td>
+        <td style="text-align: right; padding-top: 15px;">
+            @Html.ActionLink("Back To List", "Index")
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+    $(function () {
+        $('.date').datepicker(
+            {
+                dateFormat: "dd/mm/yy",
+                showOtherMonths: true,
+                selectOtherMonths: true
+            });
+
+        $.validator.addMethod('date',
+        function (value, element, params) {
+            if (this.optional(element)) {
+                return true;
+            }
+
+            var ok = true;
+            try {
+                $.datepicker.parseDate('dd/mm/yy', value);
+            }
+            catch (err) {
+                ok = false;
+            }
+            return ok;
+        });
+
+        $('#ui-datepicker-div').css('display', 'none');
+    });
+
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>OnSite</legend>
+       
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EmployeeId, "Employee")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("EmployeeId", String.Empty)
+            @Html.ValidationMessageFor(model => model.EmployeeId)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FromDate)
+        </div>
+
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.FromDate, new { @class = "date" })
+            @Html.ValidationMessageFor(model => model.FromDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ToDate)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.ToDate, new { @class = "date" })
+            @Html.ValidationMessageFor(model => model.ToDate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LocationId, "Location")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("LocationId", String.Empty)
+            @Html.ValidationMessageFor(model => model.LocationId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MobileNumber)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.MobileNumber)
+            @Html.ValidationMessageFor(model => model.MobileNumber)
+        </div>
+        
+        <div class="editor-field">
+            @Html.LabelFor(model => model.IsPermanant)
+            @Html.CheckBoxFor(model => model.IsPermanant, new { @class = "IsPermanant" })
+            @Html.ValidationMessageFor(model => model.IsPermanant)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}

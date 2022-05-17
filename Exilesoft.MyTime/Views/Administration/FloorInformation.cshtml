@@ -1,0 +1,202 @@
+﻿@{
+    ViewBag.Title = "Floor Information";
+}
+@{
+    Layout = null;
+}
+<script type="text/javascript">
+    $(function () {
+        $('#pickeddate').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            dateFormat: "dd/mm/yy"
+        });
+
+        $('#tb2').dataTable({
+            "bPaginate": false,
+            "bLengthChange": false,
+            "bFilter": false,
+            "bSort": true,
+            "bInfo": false,
+            "bAutoWidth": false
+        });
+    });
+
+    function LoadActionUrl(url) {
+        window.location.replace("./" + url);
+    }
+
+</script>
+<script src="~/Content/scripts/frms/administration_frm.js"></script>
+<script src="~/Content/scripts/frms/quickfind_frm.js"></script>
+
+<input type="hidden" id="SelectedPickDate" value="@ViewBag.PickDate" />
+<input type="hidden" id="SearchUserType" value="@ViewBag.SearchUserType" />
+<style>
+    .EmployeeList {
+        width: 300px;
+        overflow: auto;
+        height: 350px;
+    }
+
+    .TBL_EmployeeList {
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .AttendenceList {
+        width: 400px;
+        overflow: auto;
+        height: 350px;
+    }
+
+    .TBL_AttendenceList {
+        width: 400px;
+    }
+
+    .cleartable td {
+        border-bottom-style: none !important;
+    }
+
+    .TD_QuickListEmpImg {
+        width: 55px;
+        overflow: hidden;
+        padding: 0px !important;
+        vertical-align: top;
+    }
+
+    .QuickListEmpImg {
+        width: 45px;
+        border-bottom-style: dotted;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+
+    #DIV_EmployeeListHedding {
+        position: absolute;
+        font: 100 1.35em/1.15 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        top: 175px;
+        left: 50px;
+        right: 20px;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+
+
+    #DIV_AttendanceHistoryHedding {
+        position: absolute;
+        font: 100 1.35em/1.15 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        top: 175px;
+        left: 400px;
+        right: 20px;
+        height: 30px;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+
+    #DIV_AttendanceHistoryDetail {
+        position: absolute;
+        font: 100 1.35em/1.15 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        font-size: 14px;
+        top: 200px;
+        left: 400px;
+        right: 20px;
+        height: 30px;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+</style>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable" >
+        <tr >
+            <td class="left_hedder_inner">Floor Information
+            </td>
+            
+            <td style="cursor: pointer;text-align:center;border: solid #000 1px !important; width:80px;" class="optionTableSelected" id="TD_EmployeeAttendanceOption" onclick="new QuickFind().SwitchUserType('Employee');">Employee
+            </td>
+            <td style="cursor: pointer;text-align:center;border: solid #000 1px !important; width:80px;" id="TD_VisitorAttendanceOption" onclick="new QuickFind().SwitchUserType('Visitor');" >Visitor
+            </td>
+            <td style="text-align: right; width: 15px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+
+
+                <fieldset>
+                    <legend>Search option</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable" style="display: inline;">
+
+                            @using (Html.BeginForm())
+                            {
+                        
+                                <tr>
+                                    <td>Location</td>
+                                    <td>
+                                        @Html.DropDownList("LocationId", (SelectList)ViewBag.LocationList)
+                                    </td>
+                                </tr>   
+                                                  
+                                <tr>
+                                    <td colspan="2">Selected Date
+                                            <input id="pickeddate" value = "@ViewBag.PickDate" name="pickeddate"style="width:105px;" type="text"/>
+                                    </td>
+
+                                    <td>
+
+                                        <input type="submit" class="ButtonForm" value="Search" onclick="new AdministrationForm().FindFloorInformation();" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                                    </td>
+                                </tr>                        
+                       
+                                
+                            }
+                        </table>
+                    </div>
+                </fieldset>
+            </td>
+
+        </tr>
+
+        <tr>
+        </tr>
+    </table>
+    <div style="clear: both"></div>
+    <div>
+
+        <div id="DIV_EmployeeListHedding">Employee List</div>
+        <div style="clear: both"></div>
+        <div id="DIV_EmployeeQuickFindList" style="margin-top: 30px;">
+            <div style="padding-top: 30px;">
+                <table class="cleartable">
+                    <tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="DIV_AttendanceHistoryHedding">Detail In/Out information</div>
+        <div id="DIV_AttendanceHistoryDetail">
+            <div style="padding-top: 30px;">
+                <table class="cleartable">
+                    <tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="DIV_EmptyIntialState" style="display: none">
+</div>
+
+<script script type="text/javascript">
+    $(document).ready(function () {
+        document.getElementById("DIV_EmployeeQuickFindList").innerHTML = $("#DIV_EmptyIntialState").html();
+        document.getElementById("DIV_AttendanceHistoryDetail").innerHTML = $("#DIV_EmptyIntialState").html();
+    });
+
+    $(document).ready(function () {
+        hide("Div_SystemLodingCntent");
+        show("systemContentPage");
+    });
+</script>
+

@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="~/Content/scripts/jquery-1.5.1.min.js"></script>
+</head>
+<body>
+    <div style="display:none;">
+        <div>
+            @using (Html.BeginForm("SaveImage", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input type="file" id="file" onchange="ChangeUpload();" name="file" />
+                <input type="submit" value="OK" id="ButtonUploadFile" />
+            }
+        </div>
+        <script language="javascript">
+
+            var _fileUploadBegin = null;
+            function OpenUploader(begin) {
+                _fileUploadBegin = begin;
+                $("#file").trigger('click');
+            }
+
+            function ChangeUpload() {
+                var ext = $('#file').val().split('.').pop().toLowerCase();
+                if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+                    alert('Invalid image type. Please try again.');
+                    return;
+                }
+
+                _fileUploadBegin();
+                $("#ButtonUploadFile").trigger('click');
+            }
+
+            function UploadComplete() {
+                var fileName = $("#SPAN_FileName").html();
+                parent._lastUploadedImageSucsess(fileName);
+            }
+        </script>
+        @if (!string.IsNullOrEmpty(ViewData["UploadImageScript"].ToString()))
+        {
+            @Html.Raw(ViewData["UploadImageScript"].ToString())     
+        
+            <script language="javascript">
+                UploadComplete();
+            </script>
+           
+        }
+    </div>
+</body>
+</html>

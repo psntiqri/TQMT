@@ -1,0 +1,19 @@
+﻿<h2>Visit Information</h2>
+
+<div class="search_pane" data-ng-controller="VisitorCtrl">
+    <div class="clear float-left" style="background-color: orange">
+        <div>
+            <span class="text-box-search">Card Id:</span><input type="text" id="txtCardId" class="search_button" data-ng-model="$parent.VisitorPass.CardId" required="Please Enter the Card Id" />
+            <span class="text-box-search">Purpose:</span><input type="text" id="txtPurpose" class="search_button" data-ng-model="$parent.Visit.Purpose" required="" />
+            <span class="text-box-search">Category:</span> @*   <input type="text" id="txtCategory" class="search_button" data-ng-model="$parent.Visit.Category" data-ng-options="c.Description for c in GetCardAccessLevels"/>*@
+
+            <select class="search_button" data-ng-model="$parent.Visit.Category" data-ng-options="c.Description for c in GetCardAccessLevels" required=""><option value="">--Select Category--</option></select>
+
+            <span class="text-box-search">Description:</span><input type="text" id="txtDescription" class="search_button" data-ng-model="$parent.Visit.Description" />
+            @* <div>
+                <input class="search_button" type="submit" value="Allocate Card" data-ng-click="$parent.AddVisitorVisit()" /><input type="button" value="Cancel" class="search_button" />
+            </div>*@
+        </div>
+    </div>
+</div>
+

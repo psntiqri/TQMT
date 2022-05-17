@@ -1,0 +1,500 @@
+﻿@model Exilesoft.MyTime.Models.Employee
+@{
+    ViewBag.Title = "My Profile";
+}
+@{
+    Layout = null;
+}
+
+<style>
+    textarea {
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px !important;
+    }
+
+    fieldset {
+        border: 1px solid #d4d4d4;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        padding: 0.2em 0.5em;
+        border: 1px solid #d4d4d4;
+        color: #333;
+        font-size: 90%;
+    }
+</style>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">Edit My Profile - @Model.Name
+            </td>
+            <td style="text-align: right; width: 15px;">
+                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                @Html.HiddenFor(model => model.Id)
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable" style="display: inline">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.Title) <span class="requiredspan">*</span>
+                                </td>
+                                <td style="width: 300px;">
+                                    @Html.DropDownListFor(model => model.Title, (SelectList)ViewBag.TitleList, new { @class = "TextBoxSmall" })
+                                    @Html.ValidationMessageFor(model => model.Title)
+                                    <script>
+                                        $('#Title').val('@Model.Title');
+                                        function updateDisplayName() {
+                                            $('#Name').val($('#FirstName').val() + ' ' + $('#LastName').val());
+                                        }
+                                    </script>
+                                </td>
+                                <td rowspan="10" style="vertical-align:top;">
+                                    <fieldset style="padding: 10px; margin: 0px !important;">
+                                        <legend>Profile Image</legend>
+                                        <table style="margin: 0px; padding: 0px; border-collapse: collapse; border-spacing: 0px;">
+                                            <tr>
+                                                <td style="padding-bottom: 0px;">
+                                                    @if (string.IsNullOrEmpty(Model.ImagePath))
+                                                    {
+                                                        <img class="imageThumbnail" id="Image_Preview" src="../../Content/images/default_user.png" />  
+                                                    }
+                                                    else
+                                                    {
+                                                        <img class="imageThumbnail" id="Image_Preview" src="../../Content/images/employee/@Model.ImagePath" />
+                                                    }
+                                                </td>
+                                                @Html.HiddenFor(model => model.ImagePath)
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="changeImageButton" onclick="new EmployeeForm().OpenUploader()">
+                                                        Change Image
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div style="height: 1px;">
+                                            <iframe src="../../FileUpload/Index" id="ProfileImage_UploderFrame" width="1" height="1"
+                                                frameborder="0"></iframe>
+                                        </div>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.FirstName) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.FirstName, new { onblur = "updateDisplayName();", @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.FirstName)
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.LastName) <span class="requiredspan">*</span></td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.LastName, new { onblur = "updateDisplayName();", @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.LastName)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.Name) <span class="requiredspan">*</span></td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "TextBoxLarge" })
+                                    @Html.ValidationMessageFor(model => model.Name)</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.Gender) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.DropDownListFor(model => model.Gender, (SelectList)ViewBag.GenderList, new { @class = "TextBoxSmall" })
+                                    @Html.ValidationMessageFor(model => model.Gender)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.NICNumber) 
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.NICNumber, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.NICNumber)
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>@Html.LabelFor(model => model.PassportNumber)</td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.PassportNumber, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.PassportNumber)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.DateOfBirth) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.DateOfBirth, new { @Value = Model.DateOfBirth != null ? Model.DateOfBirth.Value.ToString("dd/MM/yyyy") : string.Empty, @class = "TextBoxDate" })
+                                    @Html.ValidationMessageFor(model => model.DateOfBirth)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Html.LabelFor(model => model.CivilStatus)</td>
+                                <td>
+                                    @Html.DropDownListFor(model => model.CivilStatus, (SelectList)ViewBag.CivilStatuses, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.CivilStatus)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.HomePhone)
+                                </td>
+                                <td style="width: 300px;">
+                                    @Html.TextBoxFor(model => model.HomePhone, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.HomePhone)
+                                </td>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.MobileNumber) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.MobileNumber, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.MobileNumber)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.SkypeID)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.SkypeID, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.SkypeID)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.MSNID)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.MSNID, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.MSNID)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.PrimaryEmailAddress) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.PrimaryEmailAddress, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.PrimaryEmailAddress)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.SecondaryEmailAddress)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.SecondaryEmailAddress, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.SecondaryEmailAddress)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.CurrentAddress)
+                                </td>
+                                <td>
+                                    @Html.TextAreaFor(model => model.CurrentAddress, new { @class = "TextBoxLarge", style = "width: 250px;" })
+                                    @Html.ValidationMessageFor(model => model.CurrentAddress)
+                                </td>
+                                <td>
+                                    @Html.LabelFor(model => model.PermanentAddress)
+                                </td>
+                                <td>
+                                    @Html.TextAreaFor(model => model.PermanentAddress, new { @class = "TextBoxLarge", style = "width: 250px;" })
+                                    @Html.ValidationMessageFor(model => model.PermanentAddress)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Career Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.Designation)
+                                </td>
+                                <td style="width: 300px;">
+                                    @Html.TextBoxFor(model => model.Designation, new { @class = "TextBoxMedium", disabled = "disabled", @readonly = "readonly" })
+                                    @Html.ValidationMessageFor(model => model.Designation)
+                                </td>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.DateJoined)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.DateJoined, new { @Value = Model.DateJoined != null ? Model.DateJoined.ToString("dd/MM/yyyy") : string.Empty, @class = "TextBoxDate", disabled = "disabled", @readonly = "readonly" })
+                                    @Html.ValidationMessageFor(model => model.DateJoined)
+                                </td>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(model => model.DateCareerStarted)
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(model => model.DateCareerStarted, new { @Value = Model.DateCareerStarted != null ? Model.DateCareerStarted.Value.ToString("dd/MM/yyyy") : string.Empty, @class = "TextBoxDate" })
+                                        @Html.ValidationMessageFor(model => model.DateCareerStarted)
+                                    </td>
+                                    <td>@Html.LabelFor(model => model.PreviousEmployer)</td>
+                                    <td>
+                                        @Html.TextBoxFor(model => model.PreviousEmployer, new { @class = "TextBoxLarge" })
+                                        @Html.ValidationMessageFor(model => model.PreviousEmployer)
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Employee Qualification</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td>
+                                    <div class="demo_jui">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="display" id="EmployeeQualificationDataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th style="display: none;"></th>
+                                                    <th></th>
+                                                    <th>Institute</th>
+                                                    <th>Qualification</th>
+                                                    <th>DateAwarded</th>
+                                                    <th>Note</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in (ViewBag.QualificationList as List<Exilesoft.MyTime.Models.EmployeeQualification>).Select((value, i) => new { i, value }))
+                                                {
+                                                    <tr>
+                                                        <td style="display: none">@Html.Raw(item.i.ToString())</td>
+                                                        <td class="gridIconColumn DeleteLink">Delete</td>
+                                                        <td>@Html.Raw(item.value.Institute != null ? item.value.Institute.Name : string.Empty)</td>
+                                                        <td>@item.value.Qualification</td>
+                                                        <td>@Html.Raw(item.value.DateAwarded != null ? item.value.DateAwarded.Value.ToShortDateString() : string.Empty)</td>
+                                                        <td>@item.value.Notes</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top: 20px;">
+                                    <table class="dataEntryTable">
+                                        <tr>
+                                            <td style="width: 120px;">Institute <span class="requiredspan">*</span>
+                                            </td>
+                                            <td style="width: 300px;">
+                                                @Html.DropDownList("Dropdown_Institute", (SelectList)ViewBag.InstituteList, new { @class = "TextBoxMedium", style = "width: 200px;" })
+                                            </td>
+                                            <td style="width: 120px;">Qualification <span class="requiredspan">*</span>
+                                            </td>
+                                            <td>
+                                                <input id="QualificationName" name="QualificationName" class="TextBoxLarge" value="" type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 120px;">Date Awarded
+                                            </td>
+                                            <td style="width: 300px;">
+                                                <input class="TextBoxDate" id="DateAwarded" name="DateAwarded" value="" type="text">
+                                            </td>
+                                            <td style="width: 120px;">Note
+                                            </td>
+                                            <td>
+                                                <input class="TextBoxLarge" id="QualificationNote" name="QualificationNote" value="" type="text">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="3">
+                                                <input type="button" value="Add Qualification" class="ButtonForm" onclick="new EmployeeForm().AddQualification();">
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Emergency Contact Details</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td style="width: 140px;">
+                                    @Html.LabelFor(model => model.EmergencyContactName)
+                                </td>
+                                <td style="width: 300px;">
+                                    @Html.TextBoxFor(model => model.EmergencyContactName, new { @class = "TextBoxLarge" })
+                                    @Html.ValidationMessageFor(model => model.EmergencyContactName)
+                                </td>
+                                <td style="width: 140px;vertical-align:top" rowspan="3">
+                                    @Html.LabelFor(model => model.EmergencyContactAddress)
+                                </td>
+                                <td rowspan="3" style="vertical-align:top">
+                                    @Html.TextAreaFor(model => model.EmergencyContactAddress, new { @class = "TextBoxLarge", style = "width: 250px;" })
+                                    @Html.ValidationMessageFor(model => model.EmergencyContactAddress)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EmergencyContactRelationship)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.EmergencyContactRelationship, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.EmergencyContactRelationship)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EmergencyContactNumber)
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.EmergencyContactNumber, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.EmergencyContactNumber)
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="button" value="Update My Profile" class="ButtonForm" onclick="new EmployeeForm().UpdateMyProfile();">
+                    </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script language="javascript">
+    var _selectedEmployeeList = new Array();
+    $('#DateJoined').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2020',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    $('#DateOfBirth').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2020',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    $('#DateCareerStarted').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2020',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    $('#DateAwarded').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2020',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    $("#EmployeeQualificationDataTable").html();
+    $("#EmployeeQualificationDataTable").dataTable().fnDestroy();
+
+    oTable = $('#EmployeeQualificationDataTable').dataTable({
+        "bJQueryUI": true,
+        "sPaginationType": "full_numbers",
+        "bScrollInfinite": true,
+        "bFilter": true,
+        "bCollapse": true,
+        "bAutoWidth": false,
+        "iDisplayLength": 200,
+        "aoColumnDefs": [
+            { sClass: "gridHiddenColumn", "aTargets": [0], "bSortable": false },
+            { sClass: "gridIconColumn DeleteLink", "aTargets": [1], "bSortable": false }
+        ]
+    });
+
+    function AttachDeleteEvent() {
+        $('#EmployeeQualificationDataTable .DeleteLink').die("click");
+        $('#EmployeeQualificationDataTable .DeleteLink').live('click', function () {
+            DeleteRow(this);
+        });
+    }
+
+    function DeleteRow(obj) {
+        var objectID;
+        var nTds = $('td', $(obj).closest('tr'));
+        var objectID = $(nTds[0]).text();
+
+        new EmployeeForm().DeleteQualification(objectID);
+    }
+
+    AttachDeleteEvent();
+
+</script>

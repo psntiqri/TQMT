@@ -1,0 +1,190 @@
+﻿#DIV_GlassPageContent {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000;
+    color: #fff;
+    font: 1.3em/1.1 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+
+#DIV_InsideOffice {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 150px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-width: 10px;
+    border-bottom-color: #81C200;
+    border-left-color: #81C200;
+    text-align: left;
+    text-indent: 10px;
+}
+
+#DIV_InsideOfficeCount {
+    position: fixed;
+    top: 10px;
+    width: 140px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #81C200;
+    text-align: right;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+
+#DIV_OutOfOffice {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    right: 150px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-width: 10px;
+    border-bottom-color: #1e90ff;
+    border-left-color: #1e90ff;
+    text-align: left;
+    text-indent: 10px;    
+}
+
+#DIV_OutOfOfficeCount {
+    position: fixed;
+    top: 50px;
+    width: 140px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #1e90ff;
+    text-align: right;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+
+#DIV_AtWork {
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    right: 150px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-width: 10px;
+    border-bottom-color: #ffb400;
+    border-left-color: #ffb400;
+    text-align: left;
+    text-indent: 10px;    
+}
+#DIV_AtWorkCount {
+    position: fixed;
+    top: 90px;
+    width: 140px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ffb400;
+    text-align: right;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+
+ #DIV_Absent {
+    position: fixed;
+    top: 130px;
+    left: 10px;
+    right: 150px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-width: 10px;
+    border-bottom-color: #fd483b;
+    border-left-color: #fd483b;
+    text-align: left;
+    text-indent: 10px;    
+}
+#DIV_AbsentCount {
+    position: fixed;
+    top: 130px;
+    width: 140px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #fd483b;
+    text-align: right;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+
+#DIV_OnSite {
+    position: fixed;
+    top: 170px;
+    left: 10px;
+    right: 150px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-width: 10px;
+    border-bottom-color: #d70bd5;
+    border-left-color: #d70bd5;
+    text-align: left;
+    text-indent: 10px;   
+}
+#DIV_OnSiteCount {
+    position: fixed;
+    top: 170px;
+    width: 140px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #d70bd5;
+    text-align: right;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+
+#DIV_StatusAsAt {
+    position: fixed;
+    top: 210px;
+    left: 10px;
+    right: 10px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 2;
+    text-align: center;
+    
+}

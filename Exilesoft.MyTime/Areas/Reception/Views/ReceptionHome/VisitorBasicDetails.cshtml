@@ -1,0 +1,27 @@
+﻿<div class="search_pane clear float-left" data-ng-controller="VisitorCtrl" style="background-color: aqua">
+    <span class="pane_heading clear">Visitor Details</span>
+    <span class="text-box-search">Mobile No:</span><input type="text" id="txtMobileNo" class="search_button" data-ng-keypress="$parent.SearchByMobileNo($event)" data-ng-model="$parent.Visitor.mobileNo" required />
+    <span class="text-box-search">NIC/Passport No:</span><input type="text" id="txtIdentificationNo" class="search_button" data-ng-model="$parent.Visitor.VisitorIdNo" data-ng-keypress="$parent.SearchByIdentityNo($event)" required />
+    <span class="text-box-search">Name:</span><input type="text" id="txtName" class="search_button" data-ng-model="$parent.Visitor.VisitorName" required />
+    <span class="text-box-search">Employee Visiting:</span><input type="text" id="txtEmplyeeVisiting" class="search_button" data-ng-model="$parent.Visit.EmpVisiting" required /><br />
+
+    @if (ViewBag.deviceType == "desktop")
+    {
+        <span class="text-box-search">Company:</span>
+        <input type="text" id="txtCompany" class="search_button" data-ng-model="$parent.Visitor.Company" />
+        <span class="text-box-search">Email:</span>
+        <input type="text" id="txtEmail" class="search_button" data-ng-model="$parent.Visitor.Email" />
+      
+    }
+    else if (ViewBag.deviceType == "Mobile")
+    {
+        <div>
+            <input class="search_button" type="button" value="Submit" /><input type="button" value="Clear" class="search_button" />
+        </div>
+    }
+
+
+
+
+</div>
+

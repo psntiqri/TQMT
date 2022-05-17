@@ -1,0 +1,226 @@
+﻿@model Exilesoft.MyTime.ViewModels.Administration.EmployeeEnrollmentViewModel
+
+@{
+    ViewBag.Title = "UserManagement";
+}
+@{
+    Layout = null;
+}
+
+<script src="~/Content/scripts/frms/employeeEnrollment_frms.js"></script>
+<link href="~/Content/style/main.css" rel="stylesheet" />
+
+<style type="text/css">
+    .green {
+   
+    background: none repeat scroll 0 0 #F1F1F1;
+    clear: both;
+    color: Green;
+    float: left;
+    padding: 2px 10px;
+    }
+
+    .red {
+        background: none repeat scroll 0 0 #F1F1F1;
+        clear: both;
+        color: Red;
+        float: left;
+        padding: 2px 10px;
+    }
+
+    .dropdownMedium {
+        width: 158px !important;        
+    }
+
+    .checkavailabilitybtn {
+        margin-left: 5px;
+        padding: 4px 5px;
+    }
+
+    legend {
+        border: 1px solid #D4D4D4;
+        color: #333333;
+        font-size: 90%;
+        padding: 0.2em 0.5em;
+    }
+
+    fieldset {
+        border: 1px solid #D4D4D4;
+        margin-bottom: 15px;
+    }
+
+    .searchTextBox {
+    background-position: 135px 5px;
+    float: left;
+    font-style: normal !important;
+    margin: 0;
+    vertical-align: top;
+    color: #333333;
+    width: 150px;
+    background-image: url('../Content/images/zoom_16x16.png');
+    background-repeat: no-repeat;
+}
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var urlGetEmployee = '@Url.Action("GetEmployees", "UserManagement")';
+
+        $('#employeeNameTextBox').autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: urlGetEmployee,
+                    data: { query: request.term },
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                label: item.Name,
+                                value: item.Id,
+                            }
+                        }));
+                    },
+                    error: function (err) {
+                    }
+                })
+            },
+            select: function (event, ui) {
+                var employeeId = ui.item.value;
+                var employeeName = ui.item.label;
+
+                $('#employeeIdHidden').val(employeeId);
+                $('#employeeNameTextBox').val(employeeName);
+
+                var urlGetEnrollment = '@Url.Action("GetEmployeesEnrollDetails", "UserManagement")';
+
+                $.ajax({
+                    url: urlGetEnrollment,
+                    data: { employeeId: employeeId },
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function (data) {
+                        $('#enrollmentNoTextBox').val(data.CardNo);
+                        $('#userNameTextBox').val(data.UserName);
+                        $('#isEnableCheckBox').prop('checked', data.IsEnable);
+                        var dropDown = $('#privilegesDropdown'), options = dropDown.find('option'), i = 0;
+                        for (i; i < options.length; i++) {
+                            if (parseInt(options[i].value) === data.Privillage) {
+                                dropDown.prop('selectedIndex', i);
+                                return;
+                            }
+                            console.log(i);
+                        }
+                    },
+                    error: function (err) {
+                    }
+                })
+
+
+                return false;
+            },
+            minLength: 1
+        });
+
+        $("#userNameTextBox").keyup(function () {
+            var status = $("#divStatus");
+            status.html("").removeClass();
+        });
+
+        $("#btnCheck").click(function () {
+            var name = $("#userNameTextBox").val();
+            var status = $("#divStatus");
+            if (name != "") {
+                status.html("Checking....").removeClass();
+
+                $.ajax({
+                    url: '@Url.Action("CheckUserName", "UserManagement")',
+                    data: { userName: name },
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function (data) {
+                        if (data == true) {
+                            status.html(name + " is not available").addClass("red");
+                        } else {
+                            status.html(name + " is available").addClass("green");
+                        }
+                    },
+                    error: function (err) {
+                    }
+                })
+            }
+        });
+
+    })
+</script>
+
+<div id="DIV_PageInnerContent">
+<table class="clearTable" id="TBL_PageMainTable">
+    <tr>
+            <td class="left_hedder_inner">User Management
+            </td>
+        <td style="text-align: right; width: 15px;">
+                
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding-top: 10px;">
+           
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div style="padding-top: 15px;">
+                    <table class="dataEntryTable" style="display:inline;">
+                        <tr>
+                            <td style="width: 140px">Employee</td>
+                            <td style="width: 300px;">
+                                <input type="text" id ="employeeNameTextBox" class="TextBoxMedium searchTextBox"/>
+                                @Html.HiddenFor(model => model.EmployeeId, new { id = "employeeIdHidden" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >Enrollment No</td>
+                            <td >
+                                @Html.TextBoxFor(model => model.CardNo, new { id = "enrollmentNoTextBox", @class = "TextBoxMedium" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >User Name</td>
+                            <td >
+                                @Html.TextBoxFor(model => model.UserName, new { id = "userNameTextBox", minlength = 3, maxlength = 3, @class = "TextBoxMedium" })
+                                <input type="button" id="btnCheck" class="changeImageButton checkavailabilitybtn" value="Check availability" />
+                                <br />
+                                <div id="divStatus"></div>
+                            </td>
+                        </tr>
+                  @*      <tr>
+                            <td >Privillage</td>
+                            <td>
+                                @Html.DropDownListFor(model => model.Privillage, (SelectList)ViewBag.Privileges, new { id = "privilegesDropdown", @class = "TextBoxMedium dropdownMedium" })
+                            </td>
+                        </tr>*@
+                        <tr>
+                            <td >User Enable</td>
+                            <td>
+                                @Html.CheckBoxFor(model => model.IsEnable, new { id = "isEnableCheckBox" })
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </fieldset>
+            
+            <div>
+              <input type="button" value="Save" class="ButtonForm" onclick="new EmployeeEnrollmentForm().SaveEmployeeEnrollmentDetails();">
+              <input type="button" value="Cancel" class="ButtonForm" onclick="">
+            </div>
+        </td>
+        
+    </tr>
+</table>
+</div>
+
+
+
+

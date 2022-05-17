@@ -1,0 +1,111 @@
+﻿@using Exilesoft.MyTime.Controllers
+@{
+    ViewBag.Title = "New Attendance Record";
+}
+@{
+    Layout = null;
+}
+<div id="DIV_PageInnerContent">
+    <table id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">New Attendance Record
+            </td>
+            <td style="text-align: right; width: 15px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+
+                <table>
+                    <tr>
+                        <td>Location</td>
+                        <td>
+                            @Html.DropDownList("LocationId", (SelectList)ViewBag.LocationList)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mode</td>
+                        <td>
+                            <select class="valid" id="InOutMode" name="InOutMode">
+                                <option value="in">In</option>
+                                <option value="out">Out</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td>
+                            @Html.TextBox("AttendanceDate")
+                        </td>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#AttendanceDate').datetimepicker({
+                                    dateFormat: "dd/mm/yy"
+                                });
+                            });
+                            $('#ui-datepicker-div').css('display', 'none');
+
+                            $(document).ready(function () {
+                                $('#SaveData').attr("disabled", true);
+
+                                //$('#AttendanceDate').addClass("invalid");
+                            });
+
+                            $('#AttendanceDate').change(function () {
+
+                                var input = $(this);
+                                var is_name = input.val();
+                                if (is_name) { input.removeClass("invalid").addClass("valid"); }
+                                else { input.removeClass("valid").addClass("invalid"); }
+
+                                if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
+                                    $('#SaveData').attr("disabled", false);
+                                }
+                                else {
+                                    $('#SaveData').attr("disabled", true);
+                                }
+                            });
+                        </script>
+                        <td>
+                            <input Id="SaveData" type="submit" class="ButtonForm" value="Create" onclick="new AdministrationForm().SaveManualAttendenceBulkDetails();" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                        </td>
+                        <td>
+                            <input type="submit" class="ButtonForm" value="Back" onclick="new AdministrationForm().ManualAttendance();" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                        </td>
+                    </tr>
+                </table>
+               <fieldset>
+                
+                    <legend>Personal Information</legend>
+                    
+               <table class="dataEntryTable" style="display: inline;">
+                            <tr>
+                                <td>
+
+                                    <div>
+                                        @{ var grid = new WebGrid(ViewBag.EmployeeList, rowsPerPage: 100, canPage: false, canSort: false, sortFieldName: "Employee Name");}
+                                        @MvcHtmlString.Create(grid.GetHtml(tableStyle: "webGrid", headerStyle: "webGridHeader", alternatingRowStyle: "webGridAlt",
+                                        htmlAttributes: new { id = "employeeGrid", width = "700px" },
+                                        columns: grid.Columns(
+                                            grid.Column(header: "{CheckBoxHeading}", format:
+                                            @<text><input class="box" type="checkbox" name="Prints" id="assignChkBx" value="@item.ID"/></text>),
+                                            grid.Column("Name", "Employee Name")
+                                       )).ToString().Replace("{CheckBoxHeading}", "<input type='checkbox' name='Prints' id='assignChkBx'/>"))
+
+                                        <script>
+                                            $(function () {
+                                                $("#assignChkBx").click(function () {
+                                                    $(".box").attr("checked", $(this).attr("checked") ? true : false);
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+              </fieldset>
+            </td>
+
+        </tr>
+    </table>
+</div>
+

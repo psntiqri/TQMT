@@ -1,0 +1,133 @@
+﻿@using System.Web.UI.WebControls
+@{
+    ViewBag.Title = "Visitor Details";
+}
+
+<div data-ng-controller="VisitorCtrl" id="divvisitor">
+
+    <form name="frmVisitor" >
+        <input type="hidden" id="txtVisitorId" class="search_button" data-ng-model="Visitor.VisitorId" />
+        
+            <span class="pane_heading clear">Visitor Information</span>
+        
+
+	    <div class="control-group">
+		    <div align="right"> Fields marked by <span style="color: red">*</span> are required </div>
+		    <label class="control-label">Mobile No: </label>
+		    <div class="controls" style="width: 100%;float: left;">
+			    <input type="tel" id="txtMobileNo" name="MobileNo" data-ng-keydown="SearchByMobileNo($event)" data-ng-model="Visitor.mobileNo" data-ng-maxlength="15" data-ng-pattern="telephoneNovalidation" data-ng-class="{error: MobileNo.$invalid}" />
+			    @*<span data-ng-show="MobileNo.$error.required" class="help-inline">Mobile No is Required</span>*@
+				<span>E.g. 0094772300902</span>
+		    </div>
+			
+			</div>
+
+	    <div class="control-group">
+		     <label class="control-label">NIC/Passport No: <span style="color: red">*</span> </label>
+			<div class="controls">
+			    <input type="text" id="txtIdentificationNo" data-ng-model="Visitor.VisitorIdNo" data-ng-keypress="SearchByIdentityNo($event)" required />
+		    </div>
+	    </div>
+        <div class="control-group">
+            <label class="control-label">Name: <span style="color: red">*</span> </label>
+            <div class="controls">
+                <input type="text" id="txtName" data-ng-model="Visitor.VisitorName" required />
+            </div>
+        </div>
+
+        @if (ViewBag.deviceType == "Mobile")
+        {
+            <div class="control-group">
+                <label class="control-label">Company:</label>
+                <div class="controls">
+                    <input type="text" id="txtCompany" data-ng-model="Visitor.Company" />
+                </div>
+            </div>
+            <div class="control-group">
+                <div data-ng-include="'ReceptionHome/EmployeeSearch'" data-ng-controller="EmployeeCtrl" onload=" init(false) "></div>
+            </div>
+        }
+
+
+        @if (ViewBag.deviceType == "desktop")
+        {
+        <div class="control-group">
+                <label class="control-label">Company:</label>
+                <div class="controls">
+                    <input type="text" id="txtCompany" data-ng-model="Visitor.Company" />
+                </div>
+        </div>
+            <div class="control-group">
+                <label class="control-label">Email:</label>
+                <div class="controls">
+                    <input type="email" id="txtEmail" data-ng-model="Visitor.Email" />
+                </div>
+            </div>
+        }
+        else if (ViewBag.deviceType == "Mobile")
+        {
+            <div class="control-group">
+                <div class="controls">                    
+                    <input type="button" value="Submit" class="btn" data-loading-text="Submitting..."  id="btnVisitorSubmit" data-ng-click="checkRequiredFieldsForMobile(Visitor)"/>
+                    <input type="button" value="Clear" class="btn" data-ng-click="ClearFields()"/>
+                </div>
+            </div>
+        }
+
+        @if (ViewBag.deviceType == "desktop")
+        {
+        
+              
+            <span class="pane_heading clear">Visit Information</span>
+            <input type="hidden" id="txtVisitId" class="search_button" data-ng-model="Visit.VisitId" />
+            <div class="control-group">
+                <label class="control-label">Card Id:<span style="color: red">*</span></label>
+                <div>
+                    <input type="text" id="txtCardId" data-ng-model="VisitorPass.CardId" required />
+                </div>
+            </div>
+            <div class="control-group">
+                @if (ViewBag.deviceType == "desktop")
+                {
+                    <div data-ng-include="'Reception/ReceptionHome/EmployeeSearch'" data-ng-controller="EmployeeCtrl" onload=" init(false) "></div>
+                }
+            </div>
+            
+            <div class="control-group">
+                <label class="control-label">Purpose:</label>
+                <div class="controls">
+	            <input type="text" id="txtPurpose" data-ng-model="Visit.Purpose" />
+                </div>
+            </div>
+            <div class="control-group" style="display: none;">
+                <label class="control-label">Floor:</label>
+                <div class="controls">
+                    <select data-ng-model="Visit.Category" data-ng-options="c.Description for c in GetCardAccessLevels" required />
+                    <option value="">--Select Floor--</option>
+
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Details:</label>
+                <div class="controls">
+                    <textarea id="txtDescription" name="txtDescription" cols="40" rows="3" data-ng-model="Visit.Description"></textarea>
+                </div>
+            </div>
+      
+        }
+        @if (ViewBag.deviceType == "desktop")
+        {
+            <div class="control-group">
+                <div class="controls">
+                    <input type="button" value="Allocate Card" data-ng-click="checkRequiredFieldsForDesktop(Visitor,VisitorPass,false)" class="btn" data-ng-disabled="Visitor.isAllocateButtonDisabled" />
+                    <input type="button" value="Update" data-ng-click="checkRequiredFieldsForDesktop(Visitor,VisitorPass,true)" class="btn" data-ng-show="Visitor.isAllocateButtonDisabled" />
+                    <input type="button" value="Clear All" data-ng-click="ClearFields()" class="btn" />
+                </div>
+
+            </div>
+        }
+    </form>
+
+
+
+</div>

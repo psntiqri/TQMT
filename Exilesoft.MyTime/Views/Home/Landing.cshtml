@@ -1,0 +1,270 @@
+﻿@using Exilesoft.MyTime.Controllers
+@{
+    Layout = null;
+}
+
+<script src="~/Content/scripts/frms/dashbord_frm.js"></script>
+<script src="~/Content/scripts/frms/attendence_frm.js"></script>
+<script>
+    function BlinkComment() {
+        if (document.getElementById("DIV_SendComment").style.display == "none") {
+            $("#DIV_SendComment").slideDown(500);
+            $("#DIV_CommentLink").slideUp(500);
+            AddWatermark("TextBox_MainComment", "Please enter your comment…");
+
+        }
+        else {
+            $("#DIV_SendComment").slideUp(500);
+            $("#DIV_CommentLink").slideDown(500);
+        }
+    }
+
+    function SendComment() {
+        var _sendMailObject = {
+            comment: $('#TextBox_MainComment').val()
+        };
+        if (_sendMailObject.comment == "" || _sendMailObject.comment == "Please enter your comment…") {
+            alert("Please enter your comment.");
+            return;
+        }
+
+        azyncPost("/Home/SendComment", _sendMailObject, SendCommentSuccessfull, ConnectionError);
+    }
+
+    function SendCommentSuccessfull(result) {
+        if (result == "Successful") {
+            alert("Your comment recorded successfully.");
+            BlinkComment();
+            $('#TextBox_MainComment').val("");
+        }
+        else {
+            alert(result);
+        }
+    }
+</script>
+<div id="system_header">
+    <table class="cleartable">
+        <tr>
+            <td style="padding-top: 3px;"></td>
+            <td style="padding-top: 3px; text-align: right; padding-right: 15px;"></td>
+        </tr>
+    </table>
+</div>
+<div id="topnav_pane">
+
+    <table border="0" style="padding: 0px; margin: 0px; border-collapse: collapse;">
+        <tr>
+            @if ((User.IsInRole("Administrator")) || (User.IsInRole("Employee")) || (User.IsInRole("SystemAdmin")) || (User.IsInRole("Manager")) || (User.IsInRole("TopManager")))
+            {
+
+
+                <td class="syste_hedder_link_selected" style="padding-left: 15px;" onclick="new HomeLogin().ShowHome(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                Home
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Now Picture
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td class="syste_hedder_link" id="EmployeeQuickFindTD" onclick="new HomeLogin().QuickFind(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                Quick Find
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Find Employees
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="syste_hedder_link" onclick="new HomeLogin().ShowAnalysis(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                Analysis
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Trend Analysis
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="syste_hedder_link" onclick="new HomeLogin().ShowOnSite(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                On Site
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Manage On Site
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="syste_hedder_link" onclick="new Attendence().WorkingHome(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                Working From Home
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Report time at home.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            }
+
+
+
+
+            @if ((User.IsInRole("Administrator")) || (User.IsInRole("Manager")))
+            {
+
+
+                if (ViewBag.HavingAttendence == true)
+                {
+                    <td class="syste_hedder_link" onclick="new Attendence().ConfirmAttendence(this);">
+                        <table class="cleartable" style="text-align: left;">
+                            <tr>
+                                <td class="system_hedder_max">
+                                    Confirm Attendence
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left_hedder_small_Link">
+                                    Confirm Pending Attendence.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                }
+
+
+                <td class="syste_hedder_link" onclick="new HomeLogin().Administration(this);">
+                    <table class="cleartable" style="text-align: left;">
+                        <tr>
+                            <td class="system_hedder_max">
+                                Admin
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left_hedder_small_Link">
+                                Manage Admin activity
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            }
+
+        </tr>
+    </table>
+</div>
+
+<div id="systemContentPage"></div>
+<div style="clear: both"></div>
+<div style="z-index: 90000; position: absolute; top: 2px;">
+    <div style="color: #bdbdbd; display: inline-block; font-size: 11px;">© 2013 tiqri. All rights reserved. </div>
+    <div style="color: #bdbdbd; display: inline-block; font-size: 11px;">Version 2.3.6</div>
+</div>
+<div style="clear: both"></div>
+<div id="Div_SystemLodingCntent" style="display: block;">
+    <table class="loading_messagetable">
+        <tr>
+            <td style="padding-left: 15px; padding-right: 15px;">
+                <table class="cleartable" style="text-align: left; width: 420px">
+                    <tr>
+                        <td class="right_hedder_max">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right_hedder_mid" align="center">
+                            Loading content. Please Wait..
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px;" align="center">
+                            <img src="~/Content/images/loding.gif" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 15px;">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="DIV_ComentWrapper">
+    <div id="DIV_CommentLink" onclick="BlinkComment();">
+        Tell Us Your Comments
+    </div>
+    <div id="DIV_SendComment" style="display: none;">
+        <div id="DIV_SendCommentHedder">
+            <div>
+                <table style="border: 0px; border-collapse: collapse; width: 100%; background-color: transparent !important;">
+                    <tr>
+                        <td style="border: 0px; border-collapse: collapse; background-color: transparent !important;">Tell Us Your Comments</td>
+                        <td style="border: 0px; border-collapse: collapse; background-color: transparent !important; text-align: right">
+                            <span id="SPAN_HideComment" onclick="BlinkComment();">Hide Comment</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <table style="border: 0px; border-collapse: collapse; width: 100%; background-color: transparent !important;">
+                <tr>
+                    <td style="border: 0px; border-collapse: collapse; background-color: transparent !important;">
+                        <textarea id="TextBox_MainComment"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 0px; border-collapse: collapse; background-color: transparent !important; text-align: right;">
+                        <input type="button" id="Button_SendComment" value="Send Comment" onclick="SendComment();" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div></div>
+@*@Html.ActionLink("Sign out", "SignOut", "Home")*@
+<a href="/Home/SignOut" id="logoffLink">Sign Out</a>
+
+<script>
+    $(document).ready(function () {
+        //Todo : This change has done for demo purpose .Remove once demo done
+        var userName = '@(ViewBag.Name)'.toLowerCase();
+        var landingUrl = "new HomeLogin().LoadPage(\"/Home/Dashboard\")";
+
+        if (userName === "ugl") {
+            landingUrl = "new HomeLogin().ShowTeamForCustomer(this)";
+        }
+        var t = setTimeout(landingUrl, 500);
+
+        $(".inline").colorbox({ inline: true, width: "500px" });
+
+    });
+
+</script>

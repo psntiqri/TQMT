@@ -1,0 +1,116 @@
+﻿@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Analysis";
+}
+
+<script src="~/Content/scripts/frms/daily_atten_frm.js"></script>
+<style>
+    .dygraph-legend {
+        white-space: nowrap;
+        font-size: 10px;
+        padding-right: 10px;
+        overflow: visible;
+    }
+
+    #ui-datepicker-div {
+        z-index: 10000;
+    }
+</style>
+
+<div id="DIV_PageInnerContent">
+   @* <input type="hidden" value="@ViewBag.Role" id="Hiden_UserPrivType" />*@
+
+    <div id="DIV_LoadingReportWaitMessage">
+        <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 150px; padding-bottom: 150px;">
+            <img src="../../Content/images/loder_wait.gif" /><br />
+            Loading report. Please wait.
+        </div>
+    </div>
+    <div id="DIV_ReportPage_Main" style="display: none;">
+    </div>
+</div>
+<script type="text/javascript">
+
+    jQuery(function ($) {
+        var _url = "Analysis/TimeTrendAnalysis";
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    });
+
+    function GetFromToDateString() {
+        var _paramStr = "";
+        if ($("#Textbox_FromDate").val() != "")
+            _paramStr = "fromDate=" + $("#Textbox_FromDate").val();
+        if ($("#Textbox_ToDate").val() != "") {
+            if (_paramStr != "")
+                _paramStr += "&";
+            _paramStr += "toDate=" + $("#Textbox_ToDate").val();
+        }
+        if (_paramStr != "")
+            _paramStr = "?" + _paramStr;
+
+        return _paramStr;
+    }
+
+    function loadInOutAnalysisReport() {
+        var _url = "Analysis/TimeTrendAnalysis" + GetFromToDateString();
+        hide("DIV_ReportPage_Main");
+        show("DIV_LoadingReportWaitMessage");
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    }
+
+    function loadTeamAnalysisReport() {
+        var _url = "DailyAttendance/Index" + GetFromToDateString();
+        hide("DIV_ReportPage_Main");
+        show("DIV_LoadingReportWaitMessage");
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    }
+
+    function loadTeamSummeryReport() {
+        hide("DIV_ReportPage_Main");
+        show("DIV_LoadingReportWaitMessage");
+        var _url = "DailyAttendance/AttendanceSummery";
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    }
+
+    function loadPlannedVsActualAnalysisReport() {
+        hide("DIV_ReportPage_Main");
+        show("DIV_LoadingReportWaitMessage");
+        var _url = "Analysis/PlannedVsActualAnalysis";
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    }
+
+    function loadEmployeesAtTimeView() {
+        hide("DIV_ReportPage_Main");
+        show("DIV_LoadingReportWaitMessage");
+        var _url = "Analysis/EmployeesAtTime";
+        var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    }
+
+    function ChangeContentPane(loadUrl) {
+        $('#DIV_ReportPage_Main').html("");
+        $('#DIV_ReportPage_Main').load(loadUrl, new function () {
+            var t = setTimeout("DisplayReport()", 500);
+        });
+    }
+
+    function DisplayReport() {
+        show("DIV_ReportPage_Main");
+        hide("DIV_LoadingReportWaitMessage");
+    }
+
+    $(document).ready(function () {
+        hide("Div_SystemLodingCntent");
+        show("systemContentPage");
+    });
+    
+    //function SampleReport() {
+
+    //    var _url = "Analysis/EmployeePhysicalAvailability" + GetFromToDateString();
+    //    hide("DIV_ReportPage_Main");
+    //    show("DIV_LoadingReportWaitMessage");
+    //    var t = setTimeout("ChangeContentPane('" + _url + "','system_innerpage_content')", 500);
+    //}
+
+</script>

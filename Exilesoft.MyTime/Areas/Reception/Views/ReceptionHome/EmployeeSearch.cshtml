@@ -1,0 +1,54 @@
+﻿<div>
+    <form name="frmEmployee">
+        <span class="pane_heading clear" data-ng-show="showEmployeeTitle">Employee Details</span>
+        <div class="control-group">
+            <label class="control-label">Employee : <span style="color: red">*</span></label>
+            <div class="controls">
+                <div class="input-append">
+                    <input type="text" id="txtEmployeeName" data-ng-model="employee.employeeName" data-ng-change="searchEmployeeOnTextChange()" ng-keydown="searchEmployeeOnKeyPress($event)" />
+                    <input type="button" class="btn" data-ng-click="searchEmployeeOnSearchButtonPress()" value="Search" />
+                   
+                </div>
+                    <span id="lblEmployeeSearchStatus">{{employee.employeeSearchStatus}}</span>
+                    <input type="hidden" id="txtEmployeeId" data-ng-model="employee.employeeId">
+            </div>
+        </div>
+
+       
+        <div data-ng-show="showDetails">
+            @*<div class="control-group">
+                <label class="control-label">Access Level :</label>
+                <div class="controls">
+                    <input type="text" id="txtEmployeeCardAccessLevel" data-ng-model="employee.employeeCardAccessLevel" readonly/>
+                </div>
+            </div>*@
+
+            <div class="control-group">
+                <label class="control-label">Cards Not Returned :</label>
+                <div class="controls">
+                    <input type="text" id="txtVisitorCardsNotReturned" data-ng-model="employee.visitorCardsNotReturned" readonly />
+                </div>
+            </div>
+
+
+            <div class="control-group">
+	          
+				<label class="control-label">Temporary Card : <span style="color: red">*</span> </label>
+                <div class="controls">
+                    <input type="text" id="txtNewVisitorCard" data-ng-model="employee.newVisitorCard" required />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <input  type="button" value="Assign Card" data-ng-click="assignCardToEmployee(false)" class="btn" data-ng-disabled=employee.isAllocateButtonDisabled />
+                    <input  type="button" value="Update" data-ng-click="assignCardToEmployee(true)" class="btn" data-ng-show=employee.isAllocateButtonDisabled />
+                    <input type="button" class="btn" id="btnClearEmployee" data-ng-click="clearFields()" value="Clear All" />
+                </div>
+            </div>
+
+        </div>
+
+
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿<table >
+<tr height=3D24 style=3D'height:18.0pt'>
+            <td colspan=3D11 height=3D24 class=3Dxl82 style=3D'height:18.0pt'>
+                #@ReportHedderWeek
+            </td>
+            <td></td>
+        </tr>
+        <tr height=3D20 style=3D'mso-height-source:userset;height:15.0pt'>
+            
+            <td class=3Dxl68>
+              Employee count:
+            </td>
+           
+            <td class=3Dxl68>
+             #@EMPLOYEECOUNT
+            </td>
+           
+        </tr>		
+        
+        <tr height=3D20 style=3D'height:15.0pt'>
+            <td height=3D20 class=3Dxl65 style=3D'height:15.0pt'></td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'></td>
+           
+        </tr>
+        <tr height=3D21 style=3D'height:15.75pt'>
+		    
+            <td class=3Dxl68>Employee Name</td>
+            <td class=3Dxl68>Hours Worked</td>
+
+        </tr>
+        #@ROWBODY    
+
+    </table>

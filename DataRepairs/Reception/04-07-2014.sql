@@ -1,0 +1,1 @@
+update VisitorPassAllocations set IsActive = 0, IscardReturned = 1 where Id in( 1972, 1980)

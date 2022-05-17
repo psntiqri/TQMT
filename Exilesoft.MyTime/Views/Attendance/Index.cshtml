@@ -1,0 +1,393 @@
+﻿@{
+    Layout = null;
+}
+<script src="~/Content/scripts/frms/quickfind_frm.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#pickeddate').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            dateFormat: "dd/mm/yy"
+        });
+
+        $('#tb2').dataTable({
+            "bPaginate": false,
+            "bLengthChange": false,
+            "bFilter": false,
+            "bSort": true,
+            "bInfo": false,
+            "bAutoWidth": false
+        });
+    });
+
+    function LoadActionUrl(url)
+    {
+        debugger
+        window.location.replace("./" + url);
+    }
+</script>
+
+<style>
+    #DIV_ServiceStatusInformation {
+        font-size: 11px;
+    }
+
+        #DIV_ServiceStatusInformation select {
+            font-size: 12px !important;
+        }
+
+    .DashboardWrapperHedder {
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 0px;
+        font-weight: bold;
+        color: #333333;
+        background-color: #F4F4F4;
+        font-size: 12px;
+    }
+
+    .dygraph-axis-label {
+        font-size: 12px !important;
+    }
+
+    .dygraph-legend {
+        font-size: 12px !important;
+    }
+</style>
+
+<style>
+    #DIV_EmployeeQuickFind {
+        position: absolute;
+        top: 75px;
+        bottom: 20px;
+        left: 20px;
+        width: 500px;
+        padding: 20px;
+    }
+
+    #DIV_HiddenBackBorder {
+        position: absolute;
+        top: 75px;
+        bottom: 20px;
+        left: 20px;
+        width: 510px;
+        overflow: auto;
+        padding: 20px;
+        border: 0px;
+        border-right-style: dotted;
+        border-right-width: 1px !important;
+        border-right-color: #CCCCCC;
+    }
+
+    #DIV_EmployeeAttendance {
+        position: absolute;
+        top: 75px;
+        bottom: 20px;
+        left: 580px;
+        right: 20px;
+        overflow: auto;
+        padding: 20px;
+    }
+
+    #DIV_EmployeeFilter {
+        position: absolute;
+        top: 0px;
+        height: 40px;
+        left: 0px;
+        right: 0px;
+    }
+
+    #DIV_EmployeeQuickFindList {
+        position: absolute;
+        top: 45px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: auto;
+    }
+
+    #TextBox_Employee_GlobalSearch {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px !important;
+        bottom: 0px;
+    }
+
+    #TBL_QuickFindEmployeeList {
+        width: 520px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        border-collapse: collapse;
+    }
+
+        #TBL_QuickFindEmployeeList td {
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            border-collapse: collapse;
+            padding-top: 7px;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            border-bottom-style: dotted;
+            border-bottom-width: 1px !important;
+            border-bottom-color: #CCCCCC;
+            cursor:pointer;
+        }
+
+    #TBL_EmployeeAttendanceList {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        border-collapse: collapse;
+    }
+
+        #TBL_EmployeeAttendanceList td {
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            border-collapse: collapse;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            border-bottom-style: dotted;
+            border-bottom-width: 1px !important;
+            border-bottom-color: #CCCCCC;
+        }
+
+    .TD_QuickListEmpImg {
+        width: 55px;
+        overflow: hidden;
+        padding: 0px !important;
+        vertical-align: top;
+    }
+
+    .QuickListEmpImgCover {
+        width: 45px;
+        width: 45px;
+        overflow: hidden;
+    }
+
+    .QuickListEmpImg {
+        width: 45px;
+        border-bottom-style: dotted;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+
+    .QuickListEmpName {
+        font: 500 1.3em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        margin-top: 0;
+        vertical-align: top;
+        padding: 0px !important;
+        height: 25px !important;
+        padding-top: 5px;
+    }
+
+    .QuickListEmpContent {
+        font: 100 0.85em/1.0 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        margin-top: 0;
+        padding: 0px !important;
+        vertical-align: top;
+        padding-top: 7px;
+    }
+
+    .cleartable td {
+        border-bottom-style: none !important;
+    }
+
+    .TD_FirstIn_Text {
+        width: 30px;
+    }
+
+    .TD_FirstIn_Value {
+        width: 55px;
+    }
+
+    .TD_LastOut_Text {
+        width: 25px;
+    }
+
+    .TD_LastOut_Value {
+        width: 55px;
+    }
+
+    .TD_TotalTimeIn_Text {
+        width: 80px;
+    }
+
+    .TD_TotalTimeIn_Value {
+        width: 40px;
+    }
+
+    .TD_TotalTimeInSide_Text {
+        width: 105px;
+    }
+
+    .TD_TotalTimeInSide_Value {
+    }
+
+    #DIV_AttendanceHistoryHedding {
+        position: absolute;
+        font: 100 1.35em/1.15 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        top: 0px;
+        left: 10px;
+        height: 30px;
+        right: 0px;
+        border-bottom-style: dotted;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #CCCCCC;
+    }
+
+    #DIV_AttendanceHistoryDetail {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        bottom: 0px;
+        width:500px;
+        overflow: auto;
+    }
+
+    .TD_Date_Text {
+        width: 30px;
+    }
+
+    .TD_Date_Value {
+        width: 60px;
+    }
+
+    .TD_Time_Text {
+        width: 30px;
+    }
+
+    .TD_Time_Value {
+        width: 60px;
+    }
+
+    .TD_Mode_Text {
+        width: 30px;
+    }
+
+    .TD_Mode_Value {
+        width: 30px;
+    }
+
+    .TD_Location_Text {
+        width: 30px;
+    }
+
+    .TD_Location_Value {
+    }
+    
+</style>
+
+<input type="hidden" id="SelectedEmployeeID" value="@ViewBag.EmployeeID" />
+<input type="hidden" id="SelectedPickDate" value="@ViewBag.PickDate" />
+<input type="hidden" id="SearchUserType" value="@ViewBag.SearchUserType" />
+<input type="hidden" id="ClickStatus" value="@ViewBag.clickStatus" />
+
+<div id="DIV_PageInnerFixedContent">
+    <table class="clearTable" style="margin-bottom: 15px;">
+        <tr>
+            <td class="left_hedder_inner">Employee Quick Find
+            </td>
+            <td style="text-align: right; width: 15px;">
+                <table class="optionTable" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>Selected Date
+                            <input id="pickeddate" value = "@ViewBag.PickDate" name="pickeddate" onchange="new QuickFind().OnSelectedDateChanged()" style="width:100px;" type="text"/>
+                        </td>
+                        @if (!User.IsInRole("Employee"))
+                        {
+                            <td class="optionTableSelected" id="TD_EmployeeAttendanceOption" onclick="new QuickFind().SwitchUserType('Employee');" style="cursor: pointer;">Employee
+                            </td>
+                            <td id="TD_VisitorAttendanceOption" onclick="new QuickFind().SwitchUserType('Visitor');" style="cursor: pointer;">Visitor
+                            </td>
+                        }
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div id="DIV_HiddenBackBorder"></div>
+    <div id="DIV_EmployeeQuickFind">
+        <div id="DIV_EmployeeFilter">
+            <input id="TextBox_Employee_GlobalSearch" type="text" style="width: 350px;" class="globalSearchTextBox" onkeyup="new QuickFind().OnSearchTextChange();" />
+        </div>
+        <div id="DIV_EmployeeQuickFindList">
+            <table class="cleartable">
+                <tr>
+                    <td>
+                        <img src="../../Content/images/loding.gif" />
+                    </td>
+                    <td class="page_hedder_mid" style="vertical-align: middle; padding-left: 5px; font-size: 14px">Updating search result. Please wait.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="DIV_EmployeeAttendance">
+        <div id="DIV_AttendanceHistoryHedding">Detail Attendance History</div>
+        <div id="DIV_AttendanceHistoryDetail">
+            <div style="padding-top: 20px;">
+                <table class="cleartable">
+                    <tr>
+                        <td>
+                            <img src="../../Content/images/loding.gif" />
+                        </td>
+                        <td class="page_hedder_mid" style="vertical-align: middle; padding-left: 5px; font-size: 14px">Updating search result. Please wait.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="DIV_BusyState" style="display: none">
+    <table class="cleartable">
+        <tr>
+            <td>
+                <img src="../../Content/images/loding.gif" />
+            </td>
+            <td class="page_hedder_mid" style="vertical-align: middle; padding-left: 5px; font-size: 14px">Updating search result. Please wait.
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="DIV_EmptyState" style="display: none">
+	<table class="cleartable">
+		<tr>
+			<td class="page_hedder_max">No Records found.
+			</td>
+		</tr>
+		<tr>
+			<td class="page_hedder_mid">Please try again with different search criteria.
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="DIV_EmptyIntialState" style="display: none">
+</div>
+
+<script language="javascript">
+    $(document).ready(function () {     
+        AddWatermark("TextBox_Employee_GlobalSearch", "Who do you want to find ?");
+        if (document.getElementById("ClickStatus").value == "Link") {
+            new QuickFind().QuickFindLocation();
+        }
+        document.getElementById("DIV_EmployeeQuickFindList").innerHTML = $("#DIV_EmptyIntialState").html();
+        document.getElementById("DIV_AttendanceHistoryDetail").innerHTML = $("#DIV_EmptyIntialState").html();
+    });
+
+    $(document).ready(function () {
+        hide("Div_SystemLodingCntent");
+        show("systemContentPage");
+    });
+</script>
+
+
+
+
+

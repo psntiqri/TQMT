@@ -1,0 +1,68 @@
+﻿<table class="clearTable">
+    <tr>
+        <td>
+            <h2 style="margin-bottom: 0px !important">New On Site Attendance Entry</h2>
+        </td>
+        <td style="text-align: right; padding-top: 15px; width: 15px;"></td>
+    </tr>
+</table>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Attendance Details</legend>
+        @if (ViewBag.ErrorMessage != "")
+        {
+            <div class="validation-summary-errors" style="padding-top: 10px;">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
+        <div class="editor-label">Employee</div>
+        <div class="editor-field">
+            @Html.DropDownList("EmployeeId", (SelectList)ViewBag.EmployeeList)
+        </div>
+        <div class="editor-label">Location</div>
+        <div class="editor-field">
+            @Html.DropDownList("LocationId", (SelectList)ViewBag.LocationList)
+        </div>
+        <div class="editor-label">Mode</div>
+        <div class="editor-field">
+            <select class="valid" id="InOutMode" name="InOutMode">
+                <option value="in">In</option>
+                <option value="out">Out</option>
+            </select>
+        </div>
+
+        <div class="editor-label">Time</div>
+        <div class="editor-field">
+            @Html.TextBox("AttendanceDate")
+        </div>
+
+        <p>
+            <input type="hidden" value="@ViewBag.OnSiteAttendanceID" id="OnSiteAttendanceID" name="OnSiteAttendanceID" />
+            <input type="submit" value="Create" id="ButtonSubmit" />
+            @if (ViewBag.OnSiteSuccessMessage != "")
+            {
+                <div style="display: inline; color: green; font-weight: bold;">
+                    @ViewBag.OnSiteSuccessMessage
+                </div>
+            }
+        </p>
+    </fieldset>
+}
+<script type="text/javascript">
+    $(function () {
+
+        $('#AttendanceDate').datetimepicker({
+            dateFormat: "dd/mm/yy"
+        });
+    });
+
+    $(document).ready(function () {
+        $("#AttendanceDate").val("@ViewBag.dateTime");
+        $("#InOutMode").val("@ViewBag.InOutMode");
+        if ($("#OnSiteAttendanceID").val() != "")
+            $("#ButtonSubmit").val("Update");
+    });
+</script>

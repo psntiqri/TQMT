@@ -1,0 +1,43 @@
+﻿
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div data-ng-hide="isMobileDevice" class="span6 visible-desktop hidden-phone hidden-tablet">
+	            <div class="clear float-left " data-ng-controller="ReceptionCtrl" id ="ReceptionCtrlPendingList">
+		            <span class="pane_heading clear " style="margin-top: 98px;">Pending Visits</span>
+		            <div class="pane_content gridStyle" data-ng-grid="gridOptions">
+		            </div>
+	            </div>
+				<div class="clear float-left" data-ng-controller="ReceptionActiveCardsCtrl" >
+                    <span class="pane_heading clear">Active Cards</span>
+                     <h3 class="clear float-left margin-0">Visitor</h3>
+                    <div class="pane_content gridStyle" data-ng-grid="gridOptions"></div>
+                </div>
+                
+                <div class="clear float-left" data-ng-controller="ReceptionActiveCardsCtrl" >
+                      <h3 class="clear float-left margin-top-10">Employee</h3>
+                    <div class="pane_content gridStyle" data-ng-grid="employeeGridOptions" data-ng-init="fetchActiveCardsOfEmployee()"></div>
+                </div>
+
+            </div>
+            <div class="span6">
+                <div class="tabbable" style="margin-top: 20px;" ng-controller="ReceptionActiveCardsCtrl">
+                    <!-- Only required for left/right tabs -->
+                    <ul class="nav nav-tabs visible-desktop">
+                        <li class="active"><a data-toggle="tab" ng-click="showVisitorTab()">Visitor</a></li>
+                        <li><a data-toggle="tab" ng-click="showEmployeeTab()" >Employee</a></li>                        
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="/visitor">
+                            <div  ui-view></div>
+                        </div>
+                        <div class="tab-pane" id="/employee">
+                            <div  ui-view></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+

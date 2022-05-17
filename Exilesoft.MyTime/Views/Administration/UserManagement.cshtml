@@ -1,0 +1,59 @@
+﻿@model Exilesoft.MyTime.ViewModels.Administration.EmployeeEnrollmentViewModel
+
+@{
+    ViewBag.Title = "UserManagement";
+}
+
+<h2>User Management</h2>
+<table class="clearTable">
+    <tr>
+        <td style="width: 100px">Employee</td>
+        <td style="width: 200px;">\
+            @Html.TextBox("employeeNameTextBox")
+            @Html.Hidden("employeeIdHidden",Model.EmployeeId)
+        </td>
+
+        @*<td style="width: 100px">To Date</td>
+        <td style="width: 200px;">@Html.TextBox("DateTxtBox", Model.DateTo.ToString("dd/MM/yyyy"), new { id = "Textbox_DateTo" })</td>*@
+    </tr>
+    <tr>
+        <td style="width: 100px">Enrollment No</td>
+        <td style="width: 200px;">\
+            @Html.TextBox("EnrollmentNoTextBox",Model.CardNo)
+        </td>
+
+    </tr>
+    <tr>
+        <td style="width: 100px">User Name</td>
+        <td style="width: 200px;">\
+            @Html.TextBox("userNameTextBox",Model.UserName)
+        </td>
+
+    </tr>
+@*    <tr>
+        <td style="width: 100px">Privillage</td>
+        <td style="width: 200px;">\
+            @Html.DropDownListFor(model => model.Privillage, new SelectList(Model.Privileges, "Id", "Name", "Please Select"), new { @class = "TextBoxSmall" })
+        </td>
+
+    </tr>*@
+     <tr>
+        <td style="width: 100px">User Enable</td>
+        <td style="width: 200px;">\
+            @Html.CheckBox("isEnableCheckBox",Model.IsEnable)
+        </td>
+
+    </tr>
+    <tr>
+        <td style="width: 100px">
+              <input type="button" value="Save" class="ButtonForm" onclick="">
+        </td>
+        <td style="width: 200px;">\
+           <input type="button" value="Cancel" class="ButtonForm" onclick="">
+        </td>
+
+    </tr>
+    
+   
+                    
+</table>

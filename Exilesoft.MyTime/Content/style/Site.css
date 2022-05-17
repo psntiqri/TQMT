@@ -1,0 +1,665 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    /*background-color: #5c87b2;*/
+    /*font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;*/
+    background-color: #d8dcdc;
+    font-size: 100%;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    background-image: url('../images/pageback.gif');
+}   
+
+a:link {
+    color: #999;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+p, form {
+    font-size: 13px;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+/*h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}*/
+
+/*h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}*/
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 0 0 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    margin: 25px;
+    width: auto;
+    background-image: url('../images/pageback.gif');
+    -webkit-box-shadow: 0px 1px 3px 3px rgba(99, 99, 99, .5);
+    box-shadow: 0px 1px 3px 3px rgba(99, 99, 99, .8);
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+    header h1, #header h1 {
+        /* font-weight: bold;*/
+        padding: 5px 0;
+        margin: 0;
+        color: #484646;
+        border: none;
+        line-height: 2em;
+        font-size: 32px !important;
+        /*text-shadow: 1px 1px 2px #111;*/
+    }
+
+#main {
+    /*padding: 30px 30px 15px 30px;*/
+    padding: 10px 30px;
+    background-color: #FBFBFB;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    
+}
+
+footer,
+#footer {
+    background-color: #f5f5f5;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {
+    /*border-bottom: 1px #5C87B2 solid;*/
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+    }
+
+        ul#menu li#greeting {
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 2.8em;
+            color: #fff;
+        }
+
+        ul#menu li a {
+            padding: 10px 20px;
+            /*font-weight: bold;*/
+            text-decoration: none;
+            line-height: 2.8em;
+            background-color: #f6f6f6;
+            color: #484646;
+            border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+        }
+
+            ul#menu li a:hover {
+                background-color: #72B45D;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            ul#menu li a:active {
+                background-color: #a6e2a6;
+                text-decoration: none;
+            }
+
+        ul#menu li.selected a {
+            background-color: #fff;
+            color: #000;
+        }
+
+.selectedLink {
+    background-color: #72B45D !important;
+    text-decoration: none !important;
+    color: #fff !important;
+}
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    background: none repeat scroll 0 0 #666666;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px 4px;
+    -webkit-border-radius: 4px 4px;
+    -moz-border-radius: 4px 4px;
+}
+
+input[type="button"] {
+    background: none repeat scroll 0 0 #666666;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px 4px;
+    -webkit-border-radius: 4px 4px;
+    -moz-border-radius: 4px 4px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+    table td {
+        padding: 5px;
+        /*border: solid 1px #e8eef4;*/
+        border-top: 1px solid #eee;
+        background: #fff;
+        vertical-align: top;
+        font-size: 13px;
+    }
+
+    table th {
+        padding: 6px 5px;
+        text-align: left;
+        background-color: #FAE187;
+        border: solid 1px #FFCD91;
+        /*font-size: 14px;*/
+        font-size: 12px;
+    }
+
+.td-boder {
+    border: 1px solid #eee;
+    background: #f5f5f5;
+}
+
+
+.clearTable {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+    .clearTable td {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        border-collapse: collapse;
+        background-color: transparent;
+    }
+
+    
+.dataEntryTable {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+    .dataEntryTable td {
+        border: 0px;
+        border-collapse: collapse;
+        background-color: transparent;
+        padding:2px;
+    }
+
+.optionTable {
+    background-color: #fafafa;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+}
+
+    .optionTable td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        white-space: nowrap;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #e0e0e0;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .optionTable td:hover {
+            background-color: #fff;
+        }
+
+        .optionTable td a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #484646;
+        }
+
+.optionTableSelected {
+    background-color: #f5f5f5;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+nav,
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: #484646;
+}
+
+    #logindisplay a:link {
+        color: #484646;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:visited {
+        color: #484646;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+.icon-warning {
+    background-image: url("../images/warning.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field,
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+    .text-box.multi-line {
+        height: 6.5em;
+    }
+
+.tri-state {
+    width: 6em;
+}
+
+/*custom*/
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/*DateTime*/
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+    .ui-timepicker-div dl dt {
+        height: 25px;
+    }
+
+    .ui-timepicker-div dl dd {
+        margin: -25px 0 10px 65px;
+    }
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.DIV_employeeFindWrapper {
+    background-color: #FCFCFC;
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+}
+
+.DIV_selectedEmployeeWrapper {
+    background-color: #FCFCFC;
+    border: 1px solid #d7d7d7;
+    padding: 0px;
+}
+
+.employeelistdiv {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #CCCCCC;
+    background-color: #F8F8F8;
+    border-collapse: collapse;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+    .employeelistdiv:hover {
+        background-position: right;
+        background-color: #EBEBEB;
+        cursor: pointer;
+        background-image: url("images/addlist.png");
+        background-repeat: no-repeat;
+        border-right: 8px solid transparent;
+    }
+
+    .employeeSharedlistdiv {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #CCCCCC;
+    background-color: #F8F8F8;
+    border-collapse: collapse;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+    .employeeSharedlistdiv:hover {
+        background-position: right;
+        background-color: #EBEBEB;
+        cursor: pointer;
+        background-image: url("images/addlist.png");
+        background-repeat: no-repeat;
+        border-right: 8px solid transparent;
+    }
+.selectedemployeelistdiv {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #CCCCCC;
+    background-color: #F8F8F8;
+    border-collapse: collapse;
+    padding: 4px;
+    padding-left: 10px;
+}
+.selectedemployeelistdiv:hover {
+        background-position: right;
+        background-color: #EBEBEB;
+        cursor: pointer;
+        background-image: url("images/removelist.png");
+        background-repeat: no-repeat;
+        border-right: 8px solid transparent;
+    }
+
+.selectedsharedemployeelistdiv {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #CCCCCC;
+    background-color: #F8F8F8;
+    border-collapse: collapse;
+    padding: 4px;
+    padding-left: 10px;
+}
+.selectedsharedemployeelistdiv:hover {
+        background-position: right;
+        background-color: #EBEBEB;
+        cursor: pointer;
+        background-image: url("images/removelist.png");
+        background-repeat: no-repeat;
+        border-right: 8px solid transparent;
+    }
+
+
+.DIV_FilterEmployeeWrapper {
+    margin-top: 10px;
+    max-height: 175px;
+    overflow: auto;
+    border: 1px solid #d7d7d7;
+}
+
+.watermark {
+    color: #E8E8E8;
+}
+
+#DIV_ReportGraphWrapper {
+    background-color:#fff;
+    border: 1px solid #d7d7d7;
+}
+
+.ReportGraphWrapper {
+    background-color:#fff;
+    border: 1px solid #d7d7d7;
+}
+
+.ReportWrapperHedder {
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #EEEEEE;
+    margin-bottom:25px;
+}
+
+#DIV_ReportSummeryWrapper {
+    background-color:#fff;
+    border: 1px solid #d7d7d7;
+}
+
+.DropdownListFull {
+    width:100%;
+}
+
+#SystemMainAzyncLoadingDiv {
+    background-color:red;
+    color:white;
+    font-size:13px;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:130px;
+    padding:5px;
+    text-align:center;
+    white-space:nowrap;
+    display:none;
+}
+.ImageSelection
+{
+    background-color: #FCFCFC;
+    border: 1px solid #C0C0C0;
+    padding: 10px;
+}
+
+.imageThumbnail
+{
+    border: 0px solid #C0C0C0;
+    width: 150px;
+}
+.emptyImageThumbnail
+{
+    border: 0px solid #C0C0C0;
+    width: 125px;
+}
+
+.changeImageButton
+{
+    background-color: #F7F7F7;
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.changeImageButton:hover
+{
+    background-color: #3f80d0;
+    color: #FFFFFF;
+    cursor: pointer;
+}

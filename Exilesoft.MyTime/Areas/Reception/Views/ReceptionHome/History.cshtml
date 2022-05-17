@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "History";
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="clear float-left span12">
+            <span class="pane_heading clear">Card Assignment History</span>
+
+            <div class="control-group">
+	            @*<div class="controls">*@
+	            <div class="span2">
+		            <label class="">From Date:</label>
+		            <input type="text" datepicker ng-model="fromDate" /><br />
+	            </div>
+				<div class="span2">
+                    <label class="">To Date:</label>
+					<input type="text" datepicker ng-model="toDate" /><br />
+					</div>
+                @*</div>*@
+
+                <div class="span2 margin-top-25" >
+                    <input type="button" value="Search" data-ng-click="searchHistory()" class="btn" />
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <div class="controls">
+                    <div class="pane_content-300 grid-border " data-ng-grid="historyGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

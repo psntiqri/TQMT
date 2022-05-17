@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Exilesoft.MyTime.Models.TeamAllocation>
+
+@{
+    ViewBag.Title = "TeamAllocation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/style/main.css" rel="stylesheet" />
+@{
+    Exilesoft.MyTime.Models.Employee emp = ViewBag.Employee;
+    <p>
+        <h3>Employee Name: @Html.ActionLink(emp.Name, "Edit", new { id = emp.Id })
+            <br />
+            Current Team: @ViewBag.CurrentTeam</h3>
+    </p>
+}
+<table style="min-width: 300px;">
+    <thead>
+        <tr>
+            <th>Date From
+            </th>
+            @*<th>
+                Date To
+            </th>*@
+            <th>Team
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Exilesoft.MyTime.Models.TeamAllocation item in Model)
+        {
+            <tr>
+                <td>
+                    @item.DateFrom.ToString("dd/MM/yyyy")
+                </td>
+                @*<td>
+                @item.DateTo.ToString("dd/MM/yyyy")
+            </td>*@
+                <td>
+                    @item.Team.Name
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "DeleteTeamAlloaction", item)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h3 class="error">@ViewBag.Error</h3>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>Date From
+            </td>
+            <td>
+                <input id="pickeddateFrom" name="pickeddateFrom" value =@ViewBag.date class="TextBoxSmall" style="width:100px;" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Team
+            </td>
+            <td>
+                @Html.DropDownList("TeamID", (SelectList)ViewBag.TeamList, new { @class = "TextBoxSmall", style="width:200px;" })
+            </td>
+            <td style="background: none; border: none;">
+                <input type="submit" value="Add To Team" />
+            </td>
+        </tr>
+    </table>
+}
+
+<script language="javascript">
+    $('#pickeddateFrom').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+    $('#ui-datepicker-div').css('display','none');
+</script>

@@ -1,0 +1,163 @@
+﻿@model Exilesoft.Models.SpecialEvent
+@{
+    ViewBag.Title = "Manage Employee";
+}
+@{
+    Layout = null;
+}
+
+<style>
+    textarea {
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px !important;
+    }
+
+    fieldset {
+        border: 1px solid #d4d4d4;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        padding: 0.2em 0.5em;
+        border: 1px solid #d4d4d4;
+        color: #333;
+        font-size: 90%;
+    }
+</style>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">
+                @if (Model.Id == 0)
+                {
+                    @Html.Raw("Add Special Event");
+                }
+                else
+                {
+                    @Html.Raw("Edit Special Event - " + Model.EventName);
+                }
+
+            </td>
+            @*  <td style="text-align: right; width: 15px;">
+                <input type="button" value="Back To Admin" class="ButtonForm" onclick="new AdministrationForm().loadSpecialEventListPage();">
+            </td>*@
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                @Html.HiddenFor(model => model.Id)
+
+                <fieldset>
+
+                    <div style="padding-top: 15px;width: 400px;">
+                        <table class="dataEntryTable">
+                            <tr>
+                                <td >
+                                    @Html.LabelFor(model => model.EventName) <span class="requiredspan">*</span>
+                                </td>
+                                <td style="width: 300px;">
+                                    @Html.TextBoxFor(model => model.EventName, new { @class = "TextBoxMedium" })
+                                    @Html.ValidationMessageFor(model => model.EventName)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.Description)
+                                </td>
+                                <td>
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "TextBoxLarge", style = "width: 250px;" })
+                                    @Html.ValidationMessageFor(model => model.Description)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EventFromDate) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.EventFromDate, new { @Value = Model.EventFromDate != null ? Model.EventFromDate.Value.ToString("dd/MM/yyyy") : string.Empty, @class = "TextBoxDate" })
+                                    @Html.ValidationMessageFor(model => model.EventFromDate)
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    @Html.LabelFor(model => model.EventToDate) <span class="requiredspan">*</span>
+                                </td>
+                                <td>
+                                    @Html.TextBoxFor(model => model.EventToDate, new { @Value = Model.EventToDate != null ? Model.EventToDate.Value.ToString("dd/MM/yyyy") : string.Empty, @class = "TextBoxDate" })
+                                    @Html.ValidationMessageFor(model => model.EventToDate)
+                                </td>
+                            </tr>
+                             
+                        </table>
+                    </div>
+                </fieldset>
+
+
+
+                <div>
+                    <input type="button" value="Save Event" class="ButtonForm" onclick="new AdministrationForm().SaveEvent();">
+                    <input type="button" value="Cancel" class="ButtonForm" onclick="new AdministrationForm().loadSpecialEventListPage();">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<script language="javascript">
+    var _selectedEmployeeList = new Array();
+
+
+    $('#EventFromDate').datepicker({
+        dateFormat: "dd/mm/yy",
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2025',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+    $('#EventToDate').datepicker({
+        dateFormat: "dd/mm/yy",
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1950:2025',
+        beforeShow: function (input) {
+            $(input).css({
+                "position": "relative",
+                "z-index": 999999
+            });
+        }
+    });
+
+
+    function AttachDeleteEvent() {
+        $('#EmployeeQualificationDataTable .DeleteLink').die("click");
+        $('#EmployeeQualificationDataTable .DeleteLink').live('click', function () {
+            DeleteRow(this);
+        });
+    }
+
+    function DeleteRow(obj) {
+        var objectID;
+        var nTds = $('td', $(obj).closest('tr'));
+        var objectID = $(nTds[0]).text();
+
+        new EmployeeForm().DeleteQualification(objectID);
+    }
+
+    AttachDeleteEvent();
+
+</script>

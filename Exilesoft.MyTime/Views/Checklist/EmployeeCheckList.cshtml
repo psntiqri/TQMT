@@ -1,0 +1,235 @@
+﻿@model Exilesoft.MyTime.ViewModels.EmployeeCheckListViewModel
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>EmployeeCheckList</title>
+    <script src="~/Content/scripts/jquery-1.5.1.min.js"></script>
+    <script src="~/Content/scripts/common.js"></script>
+    <script src="~/Content/scripts/azync_helper.js"></script>
+    <script src="~/Content/scripts/jquery.idTabs.min.js"></script>
+
+
+    <link href="~/Content/style/iPhoneCheck.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+
+            $(".cb-enable").click(function () {
+                var parent = $(this).parents('.switch');
+                var tempID = $(this).parents('.switch').attr('id');
+                $('.cb-disable', parent).removeClass('selected');
+                $(this).addClass('selected');
+                $('.checkbox', parent).attr('checked', true);
+                UpdateEmployeeCheckListEntry(tempID, true);
+            });
+            $(".cb-disable").click(function () {
+                var parent = $(this).parents('.switch');
+                var tempID = $(this).parents('.switch').attr('id');                
+                $('.cb-enable', parent).removeClass('selected');
+                $(this).addClass('selected');
+                $('.checkbox', parent).attr('checked', false);
+                UpdateEmployeeCheckListEntry(tempID, false);
+            });
+        });
+
+        function UpdateEmployeeCheckListEntry(tempID, Status) {            
+            var param = tempID.replace("EmployeeCheckList_", "");
+            var employeeID = param.substring(0, param.indexOf("_"));
+            var checkListID = param.substring(param.indexOf("_") + 1);
+            var _locationObject = {
+                EmployeeID: employeeID,
+                CheckListID: checkListID,
+                Status: Status
+            };
+
+            azyncGet("/Checklist/UpdateEmployeeCheckListStatus", _locationObject,
+                UpdateEmployeeCheckListEntrySuccess, ConnectionError);
+        }
+
+        function UpdateEmployeeCheckListEntrySuccess(result) {
+            if (result != "Successful") {
+                alert(result);
+            }
+        }
+
+        function ConnectionError(err)
+        {
+            alert(err);
+        }
+    </script>
+
+    <style>
+        .cb-disable {
+            font-weight:normal !important;
+            font-size:12px;
+            cursor:pointer;
+        }
+        .cb-enable {
+            font-weight:normal !important;
+            font-size:12px;
+            cursor:pointer;
+        }
+
+        body {
+            font: .875em/1.35 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+        }
+
+        #system_header {
+            font: 100 1.5em/1.167 'Segoe UI Light', 'Segoe UI', 'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+            padding-bottom: 15px;
+        }
+
+        .clearTable {
+            background-color: transparent;
+            border: 0px;
+            padding: 0px;
+            border-collapse: collapse;
+        }
+
+            .clearTable td {
+                padding: 0px;
+                padding-bottom:0px;
+                margin: 0px;
+                border: 0px;
+                border-collapse: collapse;
+                background-color: transparent;
+            }
+    </style>
+
+    <style>
+        .usual {
+            background: #FFF;
+            color: #111;
+            padding: 0px !important;
+            border: 0px solid #d7d7d7;
+        }
+
+            .usual li {
+                list-style: none;
+                float: left;
+            }
+
+            .usual ul {
+                padding: 0px !important;
+                padding-left: 0px !important;
+                margin: 0px !important;
+            }
+
+                .usual ul a {
+                    display: block;
+                    padding: 2px 10px;
+                    text-decoration: none!important;
+                    margin: 1px;
+                    margin-left: 0;
+                    color: #000;
+                    background: #eaeaea;
+                    border: 1px solid #d7d7d7;
+                    border-bottom: 0px;
+                    font-size: 14px;
+                }
+
+                    .usual ul a:hover {
+                        color: #FFF;
+                        background: #8a8a8a;
+                    }
+
+                    .usual ul a.selected {
+                        margin-bottom: 0;
+                        color: #FFF;
+                        background: #72B45D !important;
+                        border-bottom: 1px solid snow;
+                        cursor: default;
+                        border-bottom: 0px;
+                    }
+
+            .usual div {
+                padding: 10px 10px 10px 10px;
+                clear: left;
+                border: 1px solid #d7d7d7;
+            }
+
+                .usual div a {
+                    color: #000;
+                    font-weight: bold;
+                }
+
+            .usual td a {
+                color: #000;
+                font-weight: normal;
+                white-space: nowrap;
+            }
+    </style>
+
+    <style>
+    #DIV_ServiceStatusInformation {
+        font-size: 11px;
+    }
+
+        #DIV_ServiceStatusInformation select {
+            font-size: 12px !important;
+        }
+
+    .DashboardWrapperHedder {
+        padding-left: 10px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-weight: bold;
+        color: #333333;
+        background-color: #F4F4F4;
+        font-size: 13px;
+    }
+
+    .dygraph-axis-label {
+        font-size: 12px !important;
+    }
+
+    .dygraph-legend {
+        font-size: 12px !important;
+    }
+
+        #DIV_ReportViewer td {
+            font-size:13px;
+            vertical-align:middle;
+            border-bottom: 1px solid #efecec;
+        }
+
+</style>
+
+</head>
+<body>
+    <table class="clearTable">
+        <tr>
+            <td id="system_header">Employee Checklist for - @Model.Employee.Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="Report_Dateselection_Tab" class="usual">
+                    <ul>
+                        <li><a href="#tabs1" class="selected">Onboard Checklist</a></li>
+                        <li><a href="#tabs2">Exit Checklist</a></li>
+                    </ul>
+                    <div id="tabs1">
+                        @Html.Raw(Model.OnBoardCheckListRawTable)
+                    </div>
+                    <div id="tabs2">
+                        @Html.Raw(Model.ExitCheckListRawTable)
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript">
+        $("#Report_Dateselection_Tab ul").idTabs("tabs2");
+    </script>
+
+
+    <div id="SystemMainAzyncLoadingDiv">
+    <img src="~/Content/images/azync_updt.gif" style="position:absolute; top:7px; left:7px;" /> Loading. Please wait…
+</div>
+</body>
+</html>

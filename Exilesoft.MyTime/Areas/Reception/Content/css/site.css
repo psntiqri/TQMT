@@ -1,0 +1,59 @@
+﻿#logo {
+padding-left:3px;
+}
+.venueName{
+    margin-top:6px;
+}
+.venueIcon{
+    margin-left:-7px;
+}
+
+.photoCaption{
+    margin-bottom:15px;
+}
+
+.pagination a {
+ cursor: pointer;
+}
+.seperator{
+    margin:3px 0 6px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+h3.margin-0 {
+	margin: 0 !important;
+}
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.margin-top-25 {
+    margin-top: 25px !important;
+}
+.pane_content-300 {
+	height: 300px;
+	float: left;
+    clear: both;
+    padding: 10px;
+}
+.grid-border {
+	 border: 1px solid #D4D4D4;
+}

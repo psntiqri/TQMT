@@ -1,0 +1,48 @@
+﻿<table >
+<tr height=3D24 style=3D'height:18.0pt'>
+            <td colspan=3D11 height=3D24 class=3Dxl82 style=3D'height:18.0pt'>
+                #@ReportHedderWeek
+            </td>
+            <td></td>
+        </tr>
+        <tr height=3D20 style=3D'mso-height-source:userset;height:15.0pt'>
+            
+            <td class=3Dxl68>
+                Company Coverage :#@COMPANYCOVERAGE
+            </td>
+           
+            <td class=3Dxl68>
+               Work coverage 90% achieved : #90PERCENTACHIEVED
+            </td>
+           
+        </tr>
+		<tr height=3D20 style=3D'mso-height-source:userset;height:15.0pt'>
+            <td class=3Dxl68 >          
+               
+            </td> 
+			 <td class=3Dxl68 >          
+               
+            </td>        
+            
+        </tr>
+		<tr height=3D20 style=3D'mso-height-source:userset;height:15.0pt'>
+            <td>          
+                No of Employees : #@EMPLOYEECOUNT (As a percentage of total Employees : #@EMPLOYEEPERCENTAGE )
+            </td>         
+            
+        </tr>
+        
+        <tr height=3D20 style=3D'height:15.0pt'>
+            <td height=3D20 class=3Dxl65 style=3D'height:15.0pt'></td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'></td>
+           
+        </tr>
+        <tr height=3D21 style=3D'height:15.75pt'>
+		    
+            <td class=3Dxl68>Name</td>
+            <td class=3Dxl68>Coverage</td>
+
+        </tr>
+        #@ROWBODY    
+
+    </table>

@@ -1,0 +1,147 @@
+﻿@model Exilesoft.Models.SpecialEvent
+@{
+    ViewBag.Title = "Special Event";
+}
+@{
+    Layout = null;
+}
+<style>
+    .DataTables_sort_wrapper {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .odd td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .even td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .dataTables_filter {
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px;
+    }
+
+        .demo_jui input {
+            width: 250px;
+            margin-left: 15px;
+        }
+
+    .InnerGridButton {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #b1b1b1;
+        margin: 3px;
+        margin-left: 5px;
+        padding: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-wrap: avoid;
+        color: #303030;
+        width: 10px;
+        display: inline;
+        height: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .InnerGridButton:hover {
+            background-color: #fbfbfb;
+        }
+</style>
+<script src="~/Content/scripts/frms/employee_frm.js"></script>
+<script src="~/Content/scripts/frms/administration_frm.js"></script>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">Administration
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <div id="DIV_LoadingReportWaitMessage">
+                    <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px; padding-bottom: 50px;">
+                        <img src="../../Content/images/loder_wait.gif" /><br />
+                        Loading Special Event List. Please wait.
+                    </div>
+                </div>
+                <div class="demo_jui" style="display: none; width: 800px;" id="DIV_EmployeeListTable">
+                    <table class="optionTable" border="0">
+                        <tr>
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff;">
+                                <img src="~/Content/images/ico_report.png" title="Incomplete attendence records" onclick="new AdministrationForm().GetIncompleteAttendences()" style="width: 100px; height: 100px" />
+
+                            </td>
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff;">
+                                @* <img src="~/Content/images/ico_merchant.png" onclick="new AdministrationForm().AddEditSpecialEvent()" />*@
+                                <img src="~/Content/images/ico_merchant.png" title="Special Events" onclick="new AdministrationForm().loadSpecialEventListPage()" style="width: 100px; height: 100px" />
+
+                            </td>
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; width: 100px;">
+                                <img src="~/Content/images/Admin/ico-unplanned-LR.png" title="UnPlannedLeave Report" onclick="new AdministrationForm().UnPlannedLeaves()" style="width: 100px; height: 100px" />
+
+                            </td>
+                            @if (User.IsInRole("Administrator"))
+                            {
+                                <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; height: 100px; width: 100px;">
+                                    <img src="~/Content/images/Admin/ico-new-AR.png" title="User Management" onclick="new AdministrationForm().UserManagement()" style="width: 100px; height: 100px" />
+
+                                </td>
+
+                                <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; height: 100px; width: 100px;">
+                                    <img src="~/Content/images/Admin/ico-attendance-RM.png" title="Manual Attendance" onclick="new AdministrationForm().ManualAttendance()" style="width: 100px; height: 100px" />
+                                </td>
+                            }
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; height: 100px; width: 100px;">
+                                <img src="~/Content/images/Admin/ico-FloorInformation-RM.png" title="Floor Information" onclick="new AdministrationForm().FloorInformation()" style="width: 100px; height: 100px" />
+                            </td>
+
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; height: 100px; width: 100px;">
+                                <img src="~/Content/images/Admin/ico-events.png" title="Employee Attendace Report" onclick="new AdministrationForm().EmployeeAttendanceReport()" style="width: 100px; height: 100px" />
+                            </td>
+
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff; height: 100px; width: 100px;">
+                                <img src="~/Content/images/ico_missingRecords.png" title="Employee Missing Time Entries" onclick="new AdministrationForm().MissingEntries()" style="width: 100px; height: 100px" />
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+    hide("Div_SystemLodingCntent");
+    show("systemContentPage");
+    $('#DIV_EmployeeListTable').width($('#DIV_PageInnerContent').width());
+
+    var t = setTimeout(function () {
+        UpdateEmployeeTableSuccess();
+    }, 1000);
+
+    function UpdateEmployeeTableSuccess() {
+
+        document.getElementById('DIV_LoadingReportWaitMessage').style.display = 'none';
+        document.getElementById('DIV_EmployeeListTable').style.display = 'block';
+
+    }
+
+
+</script>

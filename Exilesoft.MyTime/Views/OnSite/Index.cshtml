@@ -1,0 +1,55 @@
+﻿@*@model IEnumerable<Exilesoft.MyTime.Models.EmployeeOnSite>*@
+@model IEnumerable<Exilesoft.MyTime.ViewModels.OnSiteEmployeeViewModel>
+
+<table class="clearTable">
+    <tr>
+        <td>
+            <h2 style="margin-bottom: 0px !important">Employee On Site Deatils</h2>
+        </td>
+        <td style="text-align: right; padding-top: 15px;">
+            @Html.ActionLink("Craete New On Site Entry", "Create")
+        </td>
+    </tr>
+</table>
+
+<table width="800px">
+    <tr>
+        <th>Name
+        </th>
+        <th>From
+        </th>
+        <th>To
+        </th>
+        <th>Contact No</th>
+        <th>IsPermanant</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPermanat)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.EditLink }) |
+          @*  @Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.DeleteLink })
+
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,221 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    .DataTables_sort_wrapper {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .odd td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .even td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .dataTables_filter {
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px;
+    }
+
+        .demo_jui input {
+            width: 250px;
+            margin-left: 15px;
+        }
+
+    .InnerGridButton {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #b1b1b1;
+        margin:3px;
+        margin-left:5px;
+        padding:4px;
+        padding-left:10px;
+        padding-right:10px;
+        white-space:nowrap;
+        text-wrap:avoid;
+        color:#303030;
+        width:10px;
+        display:inline;
+        height:20px;
+        cursor:pointer;
+        text-decoration:none;
+    }
+        .InnerGridButton:hover {
+        background-color:#fbfbfb;
+        }
+</style>
+<script src="~/Content/scripts/frms/employee_frm.js"></script>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">Exilesoft Employee List
+            </td>
+            <td style="text-align: right; width: 15px;">
+                <table class="optionTable" cellpadding="0" cellspacing="0" border="0">
+                    @*<tr>
+                        <td id="exilesoftOption" class="optionTableSelected" onclick="new EmployeeForm().loadExilesoftEmployeePage()" style="cursor: pointer; background-color: #fff;">Exilesoft Employees
+                        </td>
+                        <td id="proAccountOption" onclick="new EmployeeForm().loadProAccountEmployeePage()" style="cursor: pointer;">ProAccount Employees
+                        </td>                        
+                    </tr>*@
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <div id="DIV_LoadingReportWaitMessage">
+                    <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px; padding-bottom: 50px;">
+                        <img src="../../Content/images/loder_wait.gif" /><br />
+                        Loading Employee List. Please wait.
+                    </div>
+                </div>
+                <div class="demo_jui" style="display: none; width: 800px;" id="DIV_EmployeeListTable">
+                    <table cellpadding="0" cellspacing="0" border="0" class="display" id="EmployeeListDataTable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Enrollment No</th>
+                                <th>Name</th>
+                                <th>Privilege</th>
+                                <th>Enable</th>
+                                <th>Full Name</th>
+                                <th>Gender</th>
+                                <th>NIC</th>
+                                <th>Passport </th>
+                                <th>Date of Birth</th>
+                                <th>Civil Status</th>
+                                <th>Home Phone</th>
+                                <th>Mobile Number</th>
+                                <th>Skype ID</th>
+                                <th>MSN ID</th>
+                                <th>Primary Email</th>
+                                <th>Secondary Email</th>
+                                <th>Current Address</th>
+                                <th>Permanent Address</th>
+                                <th>Designation</th>
+                                <th>Date Join</th>
+                                <th>Date Career Started</th>
+                                <th>Previous Employer </th>
+                                <th>Exp. Exilesoft</th>
+                                <th>Exp. Total</th>
+                                <th>Emer. Name</th>
+                                <th>Emer. Contact Address</th>
+                                <th>Emer. Relationship</th>
+                                <th>Emer. Contact Number</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+    hide("Div_SystemLodingCntent");
+    show("systemContentPage");
+    $('#DIV_EmployeeListTable').width($('#DIV_PageInnerContent').width());
+
+    var t = setTimeout(function () {
+        azyncPost("/Employee/GetEmployeeTableEntries", null,
+                   UpdateEmployeeTableSuccess, ConnectionError);
+    }, 1000)
+
+
+
+    function UpdateEmployeeTableSuccess(result) {
+
+        document.getElementById('DIV_LoadingReportWaitMessage').style.display = 'none';
+        document.getElementById('DIV_EmployeeListTable').style.display = 'block';
+        $("#EmployeeListDataTable").html();
+        $("#EmployeeListDataTable").dataTable().fnDestroy();
+
+        oTable = $('#EmployeeListDataTable').dataTable({
+            "bJQueryUI": true,
+            "sPaginationType": "full_numbers",
+            "bScrollInfinite": true,
+            "sScrollY": "300px",
+            "sScrollX": "100%",
+            "bFilter": true,
+            "bCollapse": true,
+            "bAutoWidth": false,
+            "iDisplayLength": 200,
+            "aaData": result,
+            "aoColumns": [
+                { "mData": "EditLink" },
+                { "mData": "AllocateLink" },
+                { "mData": "CheckListLink" },
+                { "mData": "EnrollmentNo" },
+                { "mData": "Name" },
+                { "mData": "Privilege" },
+                { "mData": "Enable" },
+                { "mData": "FullName" },
+                { "mData": "Gender" },
+                { "mData": "NIC" },
+                { "mData": "Passport" },
+                { "mData": "DateofBirth" },
+                { "mData": "CivilStatus" },
+                { "mData": "HomePhone" },
+                { "mData": "MobileNumber" },
+                { "mData": "SkypeID" },
+                { "mData": "MSNID" },
+                { "mData": "PrimaryEmail" },
+                { "mData": "SecondaryEmail" },
+                { "mData": "CurrentAddress" },
+                { "mData": "PermanentAddress" },
+                { "mData": "Designation" },
+                { "mData": "DateJoin" },
+                { "mData": "DateCareerStarted" },
+                { "mData": "PreviousEmployer" },
+                { "mData": "ExpExilesoft" },
+                { "mData": "ExpTotal" },
+                { "mData": "EmerName" },
+                { "mData": "EmerContactAddress" },
+                { "mData": "EmerRelationship" },
+                { "mData": "EmerContactNumber" }
+            ],
+            "aoColumnDefs": [
+                { sClass: "gridIconColumn", "aTargets": [0], "bSortable": false },
+                { sClass: "gridIconColumn", "aTargets": [1], "bSortable": false },
+                { sClass: "gridIconColumn", "aTargets": [2], "bSortable": false },
+                { sClass: "filledWidthColumn", "aTargets": [3] },
+                { sClass: "filledWidthColumn", "aTargets": [4] },
+                { sClass: "filledWidthColumn", "aTargets": [5] },
+                { sClass: "filledWidthColumn", "aTargets": [6] },
+                { sClass: "filledWidthColumn", "aTargets": [7] },
+                { sClass: "filledWidthColumn", "aTargets": [8] },
+                { sClass: "filledWidthColumn", "aTargets": [10] },
+                { sClass: "filledWidthColumn", "aTargets": [11] }
+
+
+            ]
+        });
+
+        $('#EmployeeListDataTable_filter').append("<div class='InnerGridButton' onclick=\"new EmployeeForm().AddEditEmployee();\">Add New Employee</div>");
+        $('#EmployeeListDataTable_filter').append("<a class='InnerGridButton iframe' href='Employee/VisitorPass'>Assign Visitor Pass</a>");
+        $('#EmployeeListDataTable_filter').append("<a class='InnerGridButton iframe' href='Employee/ManualAttendance'>New Attendance Record</a>");
+        $('#EmployeeListDataTable_filter').append("<a class='InnerGridButton iframeManageCheckList' href='Checklist/Index'>Manage Checklist</a>");
+        $('#EmployeeListDataTable_filter').append("<div class='InnerGridButton' onclick=\"new EmployeeForm().EmployeeAttendanceReport();\">Attendance Report</div>");
+        $("#EmployeeListDataTable_filter input").css('height', '20px');
+        $("#EmployeeListDataTable_filter").css('width', '100%');
+        $(".iframe").colorbox({ iframe: true, width: "700px", height: "85%" });
+        $(".iframeManageCheckList").colorbox({ iframe: true, width: "80%", height: "85%" });
+    }
+
+</script>

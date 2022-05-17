@@ -1,0 +1,18 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_errorLayout.cshtml";
+}
+
+
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>Sorry!</h1>
+            </div>
+            <h2>Application Error:</h2>
+            <p>Sorry, an error occured while processing your request!.</p>
+            <a href="#" onclick="location.href='@Url.Action("Index", "Home")'">Go To Homepage</a>
+        </div>
+    </div>
+

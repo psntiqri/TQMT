@@ -1,0 +1,184 @@
+﻿@model Exilesoft.MyTime.ViewModels.AttendanceReportViewModel
+
+@{
+    ViewBag.Title = "Employee Attendance Report";
+    Layout = null;
+}
+<link href="~/Content/style/main.css" rel="stylesheet" />
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Employee Attendance Report</legend>
+
+
+        <table class="dataEntryTable" style="display: inline;">
+
+            <tr>
+                <td>
+                    
+                    @Html.DropDownListFor(model => model.AttendenceRptTypeId, new List<SelectListItem>
+                   { new SelectListItem{Text="Attendance Repor Monthly", Value="0"},
+                     new SelectListItem{Text="Attendance Repor Team Wise Monthly", Value="1"},
+                     new SelectListItem{Text="Coverage Report Monthly", Value="2"},
+                     new SelectListItem{Text="Coverage Report Weekly", Value="3"}, 
+                     new SelectListItem{Text="Coverage Report Team Wise Monthly", Value="4"},
+                     new SelectListItem{Text="Coverage Report Team Wise Weekly", Value="5"},
+                     new SelectListItem{Text="Coverage Report Summary Monthly", Value="6"},
+                     new SelectListItem{Text="Working From Home Status Report Daily", Value="8"},
+                     new SelectListItem{Text="Daily attendence report", Value="9"}
+                   }, "Please select")
+
+
+                </td>
+                <td>
+                    <input type="submit" value="Generate Report" />
+                </td>
+            </tr>
+            <tr id="trYear">
+                <td style="width: 100px; font-size: 13px;">
+                    @Html.LabelFor(model => model.Year) <span class="requiredspan">*</span>
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Year)
+                    @Html.ValidationMessageFor(model => model.Year)
+                </td>
+            </tr>
+            <tr id="trMonth">
+                <td style="font-size: 13px;">
+                    @Html.LabelFor(model => model.Month) <span class="requiredspan">*</span></td>
+                <td>@Html.EditorFor(model => model.Month)
+                    @Html.ValidationMessageFor(model => model.Month)
+                </td>
+            </tr>
+            <tr id="trDay">
+                <td style="font-size: 13px;">
+                    @Html.LabelFor(model => model.Day) <span class="requiredspan">*</span>
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Day)
+                @Html.ValidationMessageFor(model => model.Day)
+            </td>
+        </tr>
+            <tr id="trTeam">
+                <td style="font-size: 13px;">
+                    @Html.LabelFor(model => model.TeamId) <span class="requiredspan">*</span>
+                </td>
+                <td>
+                    @Html.DropDownListFor(model => model.TeamId,new SelectList(Model.TeamList, "Id", "Name"))
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a style="background-color: transparent" href="#" onclick="loadHangfire()">Show Report Status
+                    </a>
+
+                    @* <img src="/Images/ico-mytime.png" class="img_size" />*@
+                </td>
+            </tr>
+            <tr id="trMsg1" style="display: none;">
+
+
+
+                <td colspan="2">
+
+                    <h2 style="color: red">It takes more than one hour time to generate this report.......</h2>
+                    <h3 style="color: red">Please be patient,it will be sent to your email account...</h3>
+                </td>
+
+            </tr>
+            <tr id="trMsg2" style="display: none;">
+
+                <td colspan="2">
+
+                    <h2 style="color: green">It takes some time to generate this report.......</h2>
+                    <h3 style="color: green">Please be patient,till it generates...</h3>
+                </td>
+
+            </tr>
+        </table>
+
+
+    </fieldset>
+}
+
+<script>
+    document.getElementById("trYear").style.display = "none";
+    document.getElementById("trMonth").style.display = "none";
+    document.getElementById("trTeam").style.display = "none";
+    document.getElementById("trDay").style.display = "none";
+
+    document.getElementById("AttendenceRptTypeId").onchange = function () {
+
+        var e = document.getElementById("AttendenceRptTypeId");
+        var rptType = e.options[e.selectedIndex].value;
+
+        if (rptType == "1") {
+
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trDay").style.display = "none";
+            document.getElementById("trTeam").style.display = "";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else if (rptType == "2") {
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trMsg2").style.display = "none";
+            document.getElementById("trTeam").style.display = "none";
+        }
+        else if (rptType == "3") {
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";   
+            document.getElementById("trMsg2").style.display = "none";
+            document.getElementById("trTeam").style.display = "none";
+        }
+        else if (rptType == "4") {
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trDay").style.display = "none";
+            document.getElementById("trTeam").style.display = "";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else if (rptType == "5") {
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trDay").style.display = "none";
+            document.getElementById("trTeam").style.display = "";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else if (rptType == "6") {
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trDay").style.display = "none";
+            document.getElementById("trTeam").style.display = "none";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else if (rptType == "8") {
+            document.getElementById("trDay").style.display = "";
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trTeam").style.display = "none";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else if (rptType == "9") {
+            document.getElementById("trDay").style.display = "";
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trTeam").style.display = "none";
+            document.getElementById("trMsg2").style.display = "none";
+        }
+        else {         
+            document.getElementById("trMsg2").style.display = "";
+            document.getElementById("trYear").style.display = "";
+            document.getElementById("trMonth").style.display = "";
+            document.getElementById("trTeam").style.display = "none";
+            document.getElementById("trDay").style.display = "none";
+        }
+    };
+
+  
+
+</script>
+

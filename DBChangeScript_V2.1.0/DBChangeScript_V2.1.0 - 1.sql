@@ -1,0 +1,1 @@
+ALTER TABLE [TM].[dbo].[__MigrationHistory] ADD ContextKey nvarchar(300) NULL;

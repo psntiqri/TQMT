@@ -1,0 +1,158 @@
+﻿@{
+    ViewBag.Title = "New Attendance Record";
+}
+@{
+    Layout = null;
+}
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner">New Attendance Record
+            </td>
+            <td style="text-align: right; width: 15px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div style="padding-top: 15px;">
+                        <table class="dataEntryTable" style="display: inline;">
+
+                            @using (Html.BeginForm())
+                            {
+                               
+                                <tr id="trEmployee" >
+                                    <td style="width: 140px">Employee</td>
+                                    <td style="width: 300px;">
+                                        @Html.DropDownList("EmployeeId", ViewBag.EmployeeList as SelectList, new { onchange = "new Attendence().ViewAttendence()" })
+
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td style="width: 140px">Supervisor</td>
+                                    <td style="width: 300px;">
+                                        @Html.DropDownList("SupervisorId", (SelectList)ViewBag.SupervisorList)
+                                    </td>
+                                </tr>                
+                                <tr>
+                                    <td>Strat Time</td>
+                                    <td>
+                                        @Html.TextBox("AttendanceDateIn")
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>End Time</td>
+                                    <td>
+                                        @Html.TextBox("AttendanceDateOut")
+
+                                    </td>
+
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <input id="SaveData" type="submit" class="ButtonForm" value="Create" onclick="new Attendence().SaveWorkingHome();" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                                    </td>
+                                </tr>                       
+                       
+                                <tr>
+                                    <td colspan="2">
+
+                                        <div id="webgridid">
+                                            @{ var grid = new WebGrid(ViewBag.AtendenceList, rowsPerPage: 100, canPage: false);}
+                                            @MvcHtmlString.Create(grid.GetHtml(tableStyle: "webGrid", headerStyle: "webGridHeader", alternatingRowStyle: "webGridAlt",
+                                        htmlAttributes: new { id = "employeeGrid", width = "900px" },
+                                        columns: grid.Columns(
+                                            grid.Column(header: "Date", format: @<text> @item.year - @item.Month - @item.Day</text>),
+                                            grid.Column(header: "Start Time", format: @<text>@item.InHour : @item.InMinute</text>),
+                                            grid.Column(header: "End Time", format: @<text>@item.OutHour : @item.OutMinute</text>),
+                                            grid.Column(header: "Status", format: @<text> @if (@item.ApproveType == 0)
+                                                                                          {<p>Pending</p>}
+                                                                                          else if (@item.ApproveType == 1)
+                                                                                          {<p>Confirmed</p>}
+                                                                                          else if (@item.ApproveType == 2)
+                                                                                          {<p>Rejected</p>} </text>)
+
+
+                                       )).ToString())
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+                                
+                                
+                                <script type="text/javascript">
+
+
+
+                                    $(function () {
+                                        $('#AttendanceDateIn').datetimepicker({
+                                            dateFormat: "yy-mm-dd"
+                                        });
+                                        $('#AttendanceDateOut').datetimepicker({
+                                            dateFormat: "yy-mm-dd"
+                                        });
+                                    });
+                                    $('#ui-datepicker-div').css('display', 'none');
+
+
+
+                                    $(document).ready(function () {
+                                        $('#SaveData').attr("disabled", true);
+                                        //$('#AttendanceDateIn').addClass("invalid");
+                                        //$('#AttendanceDateOut').addClass("invalid");
+                                    });
+
+                                    $('#AttendanceDateIn').change(function () {
+
+                                        var input = $(this);
+                                        var is_name = input.val();
+                                        if (is_name) { input.removeClass("invalid").addClass("valid"); }
+                                        else { input.removeClass("valid").addClass("invalid"); }
+
+                                        if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
+                                            $('#SaveData').attr("disabled", false);
+                                        }
+                                        else {
+                                            $('#SaveData').attr("disabled", true);
+                                        }
+                                    });
+
+                                    $('#AttendanceDateOut').change(function () {
+
+                                        var input = $(this);
+                                        var is_name = input.val();
+                                        if (is_name) { input.removeClass("invalid").addClass("valid"); }
+                                        else { input.removeClass("valid").addClass("invalid"); }
+
+                                        if (($('#AttendanceDateIn').val() != "") && ($('#AttendanceDateOut').val() != "")) {
+                                            $('#SaveData').attr("disabled", false);
+                                        }
+                                        else {
+                                            $('#SaveData').attr("disabled", true);
+                                        }
+                                    });
+
+
+
+
+                                </script>
+                            }
+                        </table>
+                    </div>
+                </fieldset>
+
+
+            </td>
+
+        </tr>
+    </table>
+</div>

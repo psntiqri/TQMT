@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "New Attendance Record";
+}
+@{
+    Layout = null;
+}
+
+<div id="DIV_PageInnerContent">
+<table class="clearTable" id="TBL_PageMainTable">
+    <tr>
+            <td class="left_hedder_inner">New Attendance Record
+            </td>
+        <td style="text-align: right; width: 15px;">
+                
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding-top: 10px;">
+           
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div style="padding-top: 15px;">
+                <table class="dataEntryTable" style="display:inline;">
+
+                    @using (Html.BeginForm())
+                    {
+                        <tr>
+                            <td style="width: 140px">Employee</td>
+                            <td style="width: 300px;">
+                                @Html.DropDownList("EmployeeId", (SelectList)ViewBag.EmployeeList)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >Location</td>
+                            <td >
+                                @Html.DropDownList("LocationId", (SelectList)ViewBag.LocationList)
+                            </td>
+                        </tr>   
+                         <tr>
+                            <td >Mode</td>
+                            <td >
+                                <select class="valid" id="InOutMode" name="InOutMode">
+                                    <option value="in">In</option>
+                                    <option value="out">Out</option>
+                                </select>
+                            </td>
+                        </tr>                         
+                         <tr>
+                            <td >Time</td>
+                            <td >
+                                @Html.TextBox("AttendanceDate")
+                            </td>
+                        </tr>                        
+                       
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#AttendanceDate').datetimepicker({
+                                    dateFormat: "dd/mm/yy"
+                                });
+                            });
+                            $('#ui-datepicker-div').css('display', 'none');
+                        </script>
+                    }
+                </table>
+                </div>
+            </fieldset>
+            
+            <div>
+                <p>
+                    <input type="submit" class ="ButtonForm"  value="Create" onclick="new AdministrationForm().SaveManualAttendenceDetails();" /><div style="display: inline; color: green; font-weight: bold;">@ViewBag.ManualAttendanceMesasge</div>
+                </p>
+            </div>
+        </td>
+        
+    </tr>
+</table>
+</div>

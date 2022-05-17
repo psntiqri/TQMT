@@ -1,0 +1,103 @@
+﻿@model Exilesoft.MyTime.ViewModels.DateRangeViewModel
+
+<script src="~/Content/scripts/frms/pastAttendance_frm.js"></script>
+
+<div id="DIV_Past_Attendance">
+    <br />
+    <br />
+    <table style="border: 0px; border-collapse: collapse; width: 300px">
+        <tr>
+            <td style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                <table class="clearTable">
+                    <tr>
+                        <td>From&nbsp;</td>
+                        <td style="width: 100px;">@Html.TextBoxFor(model => model.FromDate, new { @Value = Model.FromDate.ToString("dd/MM/yyyy"), onchange="new PastAttendance().UpdatePastAttendance();" ,style = "width: 100px;", id = "Textbox_FromDate" })</td>
+                        <td style="text-align: center;">&nbsp;&nbsp;To&nbsp;</td>
+                        <td style="width: 100px;">@Html.TextBoxFor(model => model.ToDate, new { @Value = Model.ToDate.ToString("dd/MM/yyyy"), onchange="new PastAttendance().UpdatePastAttendance();", style = "width: 100px;", id = "Textbox_ToDate" })</td>
+                        <td style="text-align: center;">&nbsp;&nbsp;</td>
+                        <td style="width: 300px;">
+                            <div style="width: 120px; position: absolute; z-index: 9999; top: 168px;">
+                                <input type="radio" id="columnChart" name="chartType" value="column" checked="checked" style="float: left;" />
+                                <label class="smallFont" style="float: left; margin: 3px 5px 0 0;">Column Chart</label>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div style="width: 300px;position: absolute; z-index: 9999; top: 168px;left: 540px;">
+                                <input type="radio" id="lineChart" name="chartType" value="line" style="float: left;" />
+                                <label class="smallFont" for="lineChart" style="float: left; margin: 3px 5px 0 0;">Line Chart</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <td id="TD_Graph_Past_Attendance" style="border-width: 0px; border-style: none; width: 285px;">
+                    <div class="DIV_DashbordWrapper">
+                        <div class="DashboardHedder">At Work-Absent-OnSite</div>
+                        <div style="padding-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;">
+                            <div id="DIV_AtWorkAbsentOnSiteGraph" style="width: 259px; height: 220px;">
+                                <div class="DashboardContentWrapper">
+                                    <div class="dashboardLoadingData">
+                                        <img src="../../Content/images/loder_wait.gif" /><br />
+                                        Loading data. Please wait.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <table class="clearTable">
+                                <tr>
+                                    <td class="legendCell atWorkCell" style="width: 33%">At Work : <span id="SPAN_AtWorkCount">-</span></td>
+                                    <td class="legendCell absentCell" style="width: 33%">Absent : <span id="SPAN_AbsentCount">-</span></td>
+                                    <td class="legendCell onsiteCell" style="width: 34%">OnSite : <span id="SPAN_OnSiteCount">-</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 30px"></td>
+                <td style="width: 100%">
+                    <div id="DIV_Bar_Chart_Past_Attendance"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+<script type="text/javascript">
+
+    show("Div_SystemLodingCntent");
+    hide("systemContentPage");
+
+    $(document).ready(function () {
+
+        $('#Textbox_FromDate').datepicker({
+            dateFormat: "dd/mm/yy",
+        });
+
+        $('#Textbox_ToDate').datepicker({
+            dateFormat: "dd/mm/yy",
+        });
+
+        new PastAttendance().UpdatePastAttendance();
+
+        $('input#lineChart').change(function () {
+            new PastAttendance().ChangeChartType("line");
+        });
+
+        $('input#columnChart').change(function () {
+            new PastAttendance().ChangeChartType("column");
+        });
+    });
+</script>
+
+

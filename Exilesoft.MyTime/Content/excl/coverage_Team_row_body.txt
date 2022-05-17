@@ -1,0 +1,39 @@
+﻿
+ <tr height=3D20 style=3D'height:15.0pt'> 
+  <td class=3Dxl71>
+  #@TEAM
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+  <td class=3Dxl71>
+  <td class=3Dxl71>
+  #@EMPLOYEENAME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+  <td class=3Dxl71>
+  #@COVERAGE
+  </td>
+  <td class=3Dxl71>
+  #@AVERAGEINTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+  
+  <td class=3Dxl72 align=3Dright>
+  #@AVERAGEOUTTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>  
+  <td class=3Dxl72 >
+  #@OUTOFOFFICEHOURS
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td> 
+ </tr>
+ 
+ 

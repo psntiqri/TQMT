@@ -1,0 +1,24 @@
+﻿@* -----------left pane------------ *@
+<div class="left_pane">
+    <div class="clear float-left">
+        <span class="pane_heading clear">Pending Visits</span>
+        <div class="pane_content"></div>
+    </div>
+    <div class="clear float-left">
+        <span class="pane_heading clear">Active Visits</span>
+        <div class="pane_content"></div>
+    </div>
+
+</div>
+
+
+@* ------------ search div---------- *@
+<div class="search_pane">
+    <div>
+        <input type="button" value="Visitor" class="L_button" /><input type="button" value="Employee" class="L_button" /></div>
+    <br />
+    <input type="text" id="txtempname" onkeyup="OnTextChange()" class="text-box-search" /><input type="button" value="search" class="search_button" />
+    <input type="text" id="txtemail" class="text-box-search" />
+    <input type="text" id="txtIdentificationNo" class="text-box-search" />
+    @*onchange="OnTextChange()*@
+</div>

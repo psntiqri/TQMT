@@ -1,0 +1,68 @@
+﻿
+ <tr height=3D20 style=3D'height:15.0pt'>
+  <td height=3D20 class=3Dxl70 style=3D'height:15.0pt'>
+  
+  #@BADGNO
+  
+  </td>
+  <td class=3Dxl71>
+  #@EMPLOYEENAME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td> 
+    <td class=3Dxl72 align=3Dright>
+  #@INTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+  <td class=3Dxl72 align=3Dright>
+  #@OUTTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+  <td class=3Dxl72 align=3Dright >
+  #@ACTUALWORKHOURS
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td> 
+  <td class=3Dxl72 align=3Dright >
+  #@OUTOFOFFICEHOURS
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+   <td class=3Dxl72 >
+  #@LEAVECATEGORY
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+  <td class=3Dxl72 >
+  #@LEAVETYPE
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+   <td class=3Dxl72 >
+  #@WORKATOFFICE
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+   <td class=3Dxl72 >
+  #@WORKATHOME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+  <td class=3Dxl72 >
+ 
+  #@REMARKS
+  </td>
+ </tr>
+ 
+ 

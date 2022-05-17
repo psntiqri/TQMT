@@ -1,0 +1,213 @@
+﻿@model Exilesoft.MyTime.ViewModels.LateEmployeesModel
+@{
+    Layout = null;
+}
+
+<style type="text/css">
+    .line {
+        visibility: hidden;
+        background-color: #8a8a8a;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .yline {
+        width: 100%;
+        height: 1px;
+    }
+
+    .xline {
+        height: 100%;
+        width: 1px;
+    }
+
+    .xdatadetail {
+        visibility: hidden;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .work_detail_complete {
+        border: 1px solid #009900;
+        padding: 3px;
+        background-color: #AAFFAA;
+    }
+
+    .work_detail_Incomplete {
+        border: 1px solid #CC0000;
+        background-color: #FFB3B3;
+    }
+
+    .globalSearchTextBox {
+        background-position: right center;
+        border: 1px solid #C0C0C0;
+        float: left;
+        font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, 'sans-serif !important';
+        font-size: 20px;
+        font-style: normal !important;
+        margin: 0;
+        vertical-align: top;
+        padding: 4px 3px 4px 3px;
+        width: 100%;
+        background-image: url('../images/zoom.png');
+        background-repeat: no-repeat;
+    }
+
+    .summery_report {
+        border: 1px solid #d7d7d7 !important;
+        border-collapse: collapse !important;
+    }
+
+        .summery_report td {
+            border: 1px solid #d7d7d7 !important;
+            border-collapse: collapse !important;
+            white-space: nowrap !important;
+        }
+
+    .hedder_clm {
+        background-color: #EFEFEF !important;
+        font-weight: bold !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        text-align: center !important;
+    }
+
+    .employee_clm {
+        min-width: 200px !important;
+        padding: 3px !important;
+        text-align: left !important;
+    }
+
+    .plan_span {
+        font-size: 11px !important;
+    }
+
+    .hourstd {
+        text-align: center !important;
+        padding: 3px !important;
+    }
+
+    .nametd {
+        padding: 3px !important;
+    }
+
+    .work_done {
+        color: green !important;
+    }
+
+    .work_incomplete {
+        color: red !important;
+    }
+
+    .summerytd {
+        padding: 10px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+</style>
+<table class="clearTable" style="margin-bottom: 20px;">
+    <tr>
+        <td class="left_hedder_inner">Employees At Time Analysis
+        </td>
+        <td style="text-align: right; width: 15px;">
+            <table class="optionTable" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td onclick="loadInOutAnalysisReport()" style="cursor: pointer;">Employee In-Out Time Trend
+                    </td>
+
+                     @if (!(User.IsInRole("SystemAdmin")) && !(ViewBag.Roles.Contains("Employee")))
+                    {                        
+                        <td style="cursor: pointer;" onclick="loadTeamAnalysisReport()">Team Attendance Analysis
+                        </td>
+                        if (!(User.IsInRole("Manager")))
+                         {
+                            <td class="optionTableSelected" style="cursor: pointer; background-color: #fff;">Employees At Time
+                            </td>
+                         }
+                        
+                    }
+                     else
+                     {
+  
+                     }
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table class="clearTable">
+    <tr>
+        <td style="width: 300px; border-right-width: 0px; vertical-align:top; border-right-style: solid; border-right-color: #e0e0e0; padding-right: 15px;">
+            <div id="WorkHourDuration"></div>
+            <div class="DIV_employeeFindWrapper">
+                <table style="border: 0px; border-collapse: collapse; width: 100%">
+                    <tr>
+                        <td style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                            <table class="clearTable">
+                                <tr>
+                                    <td>Date</td>
+                                    <td style="width: 200px;">@Html.TextBox("DateTxtBox", Model.Date.ToString("dd/MM/yyyy HH:mm"), new { id = "Textbox_Date" })</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    @*<tr>
+                        <td style="border: 0px; border-collapse: collapse; padding-bottom: 10px;">
+                            <table class="clearTable">
+                                <tr>
+                                    <td>Time</td>
+                                    <td style="width: 100px;">@Html.TextBox("TimeTxtBox", Model.TimeFrom.ToString("hh:mm:ss"), new {onchange = "new DailyAttendance().UpdateInOutTimeAnalysisReport();", style = "width: 100px;", id = "Textbox_FromTime" })</td>                                    
+                                    <td style="width: 100px;">@Html.TextBox("TimeTxtBox1", Model.TimeTo.ToString("hh:mm:ss"), new {onchange = "new DailyAttendance().UpdateInOutTimeAnalysisReport();", style = "width: 100px; vissibility: hidden;", id = "Textbox_ToTime" })</td>                                    
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;">View In Time</td>
+                        <td>
+                            <input type="checkbox" id="CheckBox_ViewInTime" checked="unchecked" onchange="new DailyAttendance().UpdateInOutTimeAnalysisReport();" />
+                        </td>
+                    </tr>*@
+
+                </table>
+                Please change the date and time to refresh
+            </div>
+        </td>
+        <td style="vertical-align:top;">
+            <div id="DIV_GrapfUpdateWaitMessage" style="display: none;">
+                <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px;">
+                    <img src="../../Content/images/loder_wait.gif" /><br />
+                    Loading data. Please wait.
+                </div>
+            </div>
+            <table id="TblLateEmployee" class="summery_report">
+            </table>
+        </td>
+    </tr>
+</table>
+@*<script type="text/javascript">
+    $(document).ready(function ($) {
+        new DailyAttendance().UpdateLateEmployeesTableProcess();
+    });
+</script>*@
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#Textbox_Date').datetimepicker({
+            dateFormat: "dd/mm/yy",
+            onSelect: function (dateText) {
+                new DailyAttendance().UpdateLateEmployeesTableProcess();
+            }
+        });
+    });
+</script>

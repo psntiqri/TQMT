@@ -1,0 +1,115 @@
+﻿@{
+    Layout = null;
+}
+
+<style>
+    .DataTables_sort_wrapper {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .odd td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .even td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .dataTables_filter {
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px;
+    }
+
+        .demo_jui input {
+            width: 250px;
+            margin-left: 15px;
+        }
+
+    .InnerGridButton {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #b1b1b1;
+        margin: 3px;
+        margin-left: 5px;
+        padding: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-wrap: avoid;
+        color: #303030;
+        width: 10px;
+        display: inline;
+        height: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .InnerGridButton:hover {
+            background-color: #fbfbfb;
+        }
+
+    .gridIconColumn {
+        
+    }
+</style>
+<script src="~/Content/scripts/frms/onsite_frm.js"></script>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td class="left_hedder_inner" style="padding-bottom: 15px;">My On Site Attendance History
+            </td>
+            <td style="text-align: right; width: 15px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <div id="DIV_LoadingReportWaitMessage">
+                    <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px; padding-bottom: 50px;">
+                        <img src="../../Content/images/loder_wait.gif" /><br />
+                        Loading On Site Attendance List. Please wait.
+                    </div>
+                </div>
+                <div class="demo_jui" style="display: none; width: 1000px;" id="DIV_EmployeeOnSiteEntryListTable">
+                    <table cellpadding="0" cellspacing="0" border="0" class="display" id="EmployeeOnSiteEntryListTable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Employee
+                                </th>
+                                <th>Date
+                                </th>
+                                <th>Time
+                                </th>
+                                <th>Status
+                                </th>
+                                <th>Location
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+ 
+<input type="hidden" value="@ViewBag.Role" id="UserPriviladge" />
+<script>
+    $('#EmployeeOnSiteEntryListTable').width($('#DIV_PageInnerContent').width());
+    new OnSiteForm().UpdateEmployeeOnSiteAttendaceList();
+    $(document).ready(function () {
+        hide("Div_SystemLodingCntent");
+        show("systemContentPage");
+    });
+</script>

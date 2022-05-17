@@ -1,0 +1,48 @@
+﻿
+ <tr height=3D20 style=3D'height:15.0pt'> 
+ <td height=3D20 class=3Dxl70 style=3D'height:15.0pt'>  
+  #@BADGNO  
+  </td>
+  <td class=3Dxl71>
+  #@EMPLOYEENAME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>  
+  <td class=3Dxl71>
+  #@AVERAGEINTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+  
+  <td class=3Dxl72 align=3Dright>
+  #@AVERAGEOUTTIME
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>  
+  <td class=3Dxl71 >
+  #@OUTOFOFFICEHOURS
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td> 
+  <td class=3Dxl71 >
+  #@ACTUALHOURS
+  <span
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>  
+  <td class=3Dxl71 >
+  #@HOURSREQUIRED
+  <span
+  style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </td>
+  <td class=3Dxl71>
+  #@COVERAGE
+  </td>
+ </tr>
+ 
+ 

@@ -1,0 +1,223 @@
+﻿@model Exilesoft.MyTime.ViewModels.Home.HomeViewModel
+@{
+    Layout = null;
+}
+@using Exilesoft.MyTime.Helpers
+<!DOCTYPE html>
+<link href="~/Content/style/main.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/style/colorbox.css" rel="stylesheet" />
+<link href="~/Content/style/iPhoneCheck.css" rel="stylesheet" />
+<link href="~/Content/style/datatable.custom.css" rel="stylesheet" />
+<link href="~/Content/style/demo_table_jui.css" rel="stylesheet" />
+<link href="~/Content/style/basic.css" rel="stylesheet" />
+<link href="~/Content/style/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/style/Grid.css" rel="stylesheet" />
+<link href="~/Content/style/Validation.css" rel="stylesheet" />
+<script src="~/Content/scripts/jquery.min.js"></script>
+@*<script src="~/Scripts/libs/jquery/jquery-1.9.1.min.js"></script>*@
+<script src="~/Scripts/libs/jqueryui/jquery-ui-1.10.4.min.js"></script>
+<script src="~/Scripts/libs/jqueryui/jquery-ui-1.10.4.js"></script>
+<script src="~/Content/scripts/jquery-ui-timepicker-addon.js"></script>
+<script src="~/Content/scripts/jquery.colorbox.js"></script>
+<script src="~/Content/scripts/jquery.dataTables.js"></script>
+<script src="~/Content/scripts/jquery.idTabs.min.js"></script>
+<script src="~/Content/scripts/kendo/kendo.dataviz.min.js"></script>
+<script src="~/Content/scripts/graf/dygraph-dev.js"></script>
+<script src="~/Content/scripts/azync_helper.js"></script>
+<script src="~/Content/scripts/delay_callprovider.js"></script>
+<script src="~/Content/scripts/global.js"></script>
+<script src="~/Content/scripts/common.js"></script>
+<script src="~/Content/scripts/jquery.simplemodal.js"></script>
+<style>
+    #DIV_CommentLink {
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        white-space: nowrap;
+        padding: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: #299dc3 !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 11px;
+        cursor: pointer;
+        z-index: 5000000;
+    }
+
+        #DIV_CommentLink:hover {
+            background-color: #ff6a00 !important;
+        }
+
+    #DIV_SendComment {
+        background-color: #fff;
+        border: 1px solid #d7d7d7;
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        height: 400px;
+        width: 500px;
+        z-index: 5000000;
+        display: none;
+    }
+
+    #DIV_SendCommentHedder {
+        background-color: #299dc3 !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 3px;
+        padding-left: 10px;
+    }
+
+    #SPAN_HideComment {
+        cursor: pointer;
+    }
+
+    #TextBox_MainComment {
+        width: 98%;
+        height: 330px;
+        font-family: Arial;
+        border: 1px solid #d7d7d7;
+    }
+
+    #Button_SendComment {
+        white-space: nowrap;
+        padding: 7px;
+        padding-right: 12px;
+        padding-left: 12px;
+        background-color: #299dc3 !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        z-index: 5000000;
+        border: 1px solid #d7d7d7;
+    }
+
+        #Button_SendComment:hover {
+            background-color: #ff6a00 !important;
+        }
+</style>
+
+<html>
+    <head>
+        <title>Tiqri - MyTime</title>
+     
+    </head>
+    <body>
+        <div id="DIV_PageContent">
+            <div id="system_header">
+                <table class="cleartable">
+                    <tr>
+                        <td style="padding-top: 3px;">
+                        </td>
+                        <td style="padding-top: 3px; text-align: right; padding-right: 15px;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="DIV_SystemBody">
+              @*  <div id="left_pane">
+                    <table class="cleartable">
+                        <tr>
+                            <td style="padding-left: 17px;">
+                                <table class="cleartable" style="text-align: left; width: 300px;">
+                                    <tr>
+                                        <td class="left_hedder_max">Sign In
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_mid">Please enter your details.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_small" style="padding-top: 20px;">
+                                            @Html.LabelFor(model => model.UserName)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_mid">
+                                            @Html.TextBoxFor(model => model.UserName, new { @class = "TextBoxLogin", style = "width: 250px;" , onkeypress="return new HomeLogin().ValidateLogin(event)"})
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_small" style="padding-top: 10px;">
+                                            @Html.LabelFor(model => model.Password)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_mid">
+                                            @Html.PasswordFor(model => model.Password, new { @class = "TextBoxLogin", style = "width: 250px;" , onkeypress="return new HomeLogin().ValidateLogin(event)" })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_small" style="padding-top: 15px; text-align: right">
+                                            <input id="Button1" type="button" class="ButtonLogin" onclick="new HomeLogin().LoginUser()"
+                                                   value="Sign In" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_hedder_small" style="padding-top: 15px;" dir="ltr"><strong><b>Problems with sign in?</b></strong>
+                                            <br />
+                                            Use your domain account without 'exilesoft.com’
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>*@
+
+                <div id="right_pane">
+                    <div id="Div_HomeSystemContent">
+                        <div id="LoginPageLogo"></div>
+                        <div id="login_wave"></div>
+                        <div id="mytime_banerlogo"></div>
+                        <div id="LogginSlogen_p1">"The bad news is time flies.</div>
+                        <div id="LogginSlogen_p2">The good news is you’re the pilot.” ~ Michael Altshuler</div>
+                    </div>
+                    <div id="Div_LodingCntent" style="display: none;">
+                        <table class="cleartable">
+                            <tr>
+                                <td style="padding-left: 15px; padding-right: 15px;">
+                                    <table class="cleartable" style="text-align: left;">
+                                        <tr>
+                                            <td class="right_hedder_max">&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="right_hedder_mid" align="center">Loading content. Please Wait..
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-top: 5px;" align="center">
+                                                <img src="Content/images/loding.gif" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-top: 15px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        new HomeLogin().LoginUser();
+    });
+
+</script>
+
+<script src="~/Content/scripts/frms/home_frms.js" type="text/javascript"></script>
+<div id="SystemMainAzyncLoadingDiv">
+    <img src="~/Content/images/azync_updt.gif" style="position:absolute; top:7px; left:7px;" /> Loading. Please wait…
+</div>

@@ -1,0 +1,612 @@
+﻿@model IEnumerable<Exilesoft.Models.Attendance>
+@{
+    ViewBag.Title = "Right Now Picture"; 
+    
+}
+@{
+    Layout = null;
+}
+
+
+<meta http-equiv = 'cache-control' content = 'no-cache'>
+<meta http-equiv = 'expires' content = '0'>
+<meta http-equiv = 'pragma' content = 'no-cache'>
+
+
+<script src="~/Content/scripts/frms/daily_atten_frm.js"></script>
+<style>
+    #DIV_ServiceStatusInformation {
+        font-size: 11px;
+    }
+
+        #DIV_ServiceStatusInformation select {
+            font-size: 12px !important;
+        }
+
+    .DIV_DashbordWrapper {
+        background-color: #fff;
+        border: 1px solid #d7d7d7;
+    }
+
+    .DashboardHedder {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: #333333;
+        background-color: #F4F4F4;
+        font-size: 12px;
+    }
+
+    .DashboardHedderWithGrid {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        font-weight: bold;
+        color: #333333;
+        background-color: #F4F4F4;
+        font-size: 12px;
+    }
+
+    .DashboardContentWrapper {
+        padding: 10px;
+    }
+
+    .dashboardLoadingData {
+        text-align: center;
+        font-size: 14px;
+        color: #8a8a8a;
+        border: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .dygraph-axis-label {
+        font-size: 12px !important;
+    }
+
+    .dygraph-legend {
+        font-size: 12px !important;
+    }
+
+    .dataTables_wrapper table thead {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: #333333;
+        background-color: #F4F4F4;
+        font-size: 12px;
+        display: none;
+    }
+
+    #InsideOfficeEmployeeTable_info {
+        font-size: 10px !important;
+        width: 90%;
+    }
+
+    #OutsideOfficeEmployeeTable_info {
+        font-size: 10px !important;
+        width: 90%;
+    }
+
+    #OnSiteEmployeeTable_info {
+        font-size: 10px !important;
+        width: 90%;
+    }
+
+    #AtWorkEmployeeTable_info {
+        font-size: 10px !important;
+        width: 90%;
+    }
+
+    .fg-toolbar {
+        display: none;
+    }
+
+    .legendCell {
+        color: white !important;
+        padding-left: 10px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-weight: bold !important;
+        font-size: 12px !important;
+        border-width: 0px !important;
+        border-style: none !important;
+    }
+
+    .insideCell {
+        background-color: #81C200 !important;
+        color: white !important;
+    }
+
+    .outsideCell {
+        background-color: #1e90ff !important;
+        color: white !important;
+    }
+
+    .atWorkCell {
+        background-color: #ffb400 !important;
+        color: white !important;
+    }
+
+    .absentCell {
+        background-color: #fd483b !important;
+        color: white !important;
+    }
+
+    .onsiteCell {
+        background-color: #d70bd5 !important;
+        color: white !important;
+    }
+
+    .insideCellEmployees {
+        border-bottom-color: #81C200 !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+    }
+
+    .outsideCellEmployees {
+        border-bottom-color: #1e90ff !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+    }
+
+    .atWorkCellEmployees {
+        border-bottom-color: #ffb400 !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+    }
+
+    .absentCellEmployees {
+        border-bottom-color: #fd483b !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+    }
+
+    .onsiteCellEmployees {
+        border-bottom-color: #d70bd5 !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+    }
+
+    .noDataFoundClass {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .ui_tpicker_time_label {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .ui_tpicker_time {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .ui_tpicker_hour_label {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .ui_tpicker_minute_label {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    .ui-datepicker-buttonpane {
+        padding-top: 0px;
+    }
+
+    .ui_tpicker_second {
+        display: none;
+    }
+
+    .ui_tpicker_millisec {
+        display: none;
+    }
+
+    .ui-timepicker-div dl {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    #ui-datepicker-div {
+        display: none;
+    }
+
+    #specialEventNortification {
+        clear: left;
+        height: 20px;
+        width: 120px;
+        margin-right: 10px;
+        padding: 5px;
+        float: right;
+        border-width: 1px;
+        border-color: #7f7f7f;
+        border-style: none;
+        border-radius: 5px;
+        left: 1140px;
+        top: 10px;
+    }
+</style>
+
+
+
+<div id="DIV_PageInnerContent" style="">
+    
+    <div id="specialEventNortification" style="display: none; cursor: pointer; text-decoration: underline;">
+    
+        <img id="bellImg" border="0" src="../../Content/images/bell.png" alt="" width="20" height="20">
+        Today's Events 
+           
+    </div>
+   
+    <div id="specilEventDetail" style="display:none">
+    </div>
+    <table class="optionTable" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="optionTableSelected" id="TD_RightNowImage" style="cursor: pointer;" onclick="new HomeLogin().ShowHome(this);">
+                    Right Now Image
+                </td>
+                @if (!User.IsInRole("Administrator"))
+                {
+                    <td id="TD_PastAttendance" onclick="loadPreviousAttendenceView()" style="cursor: pointer;">
+                        Past Image
+                    </td>
+
+                }
+
+                @User.Identity.Name
+                @*@ViewBag.Role*@
+
+                <td onclick="new HomeLogin().ShowAnalysis(this);">My Coverage : <strong> <span id="SPAN_My_Workcoverage"></span></strong></td>
+                <td @*onclick="new DailyAttendance().GetTeamMembersDetailsForDashboard(1159);"*@>Company Coverage : <strong> <span id="SPAN_Company_Workcoverage"></span></strong></td>
+                <td onclick="new HomeLogin().ShowCoverageListMoreThan100(this);">Work coverage 90% Achieved : <strong> <span id="SPAN_Achieved_Workcoverage"></span></strong></td>
+
+            </tr>
+        </tbody>  
+    </table>
+    <div id="DIV_DashbordViews">
+        <table class="clearTable">
+            <tr>
+                <td style="border-width: 0px; border-style: none;">
+                    <table class="clearTable">
+                        <tr>
+                            <td>
+                                <div id="specialEventDiv" style="display: none"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-width: 0px; border-style: none;">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder">Employee Availability</div>
+                                    <div style="padding-right: 15px;">
+                                        <div id="DIV_EmployeeAvailabilityGraph" style="height: 210px; margin-bottom: 15px; margin-top: 15px; width: 100%;">
+                                            <div class="DashboardContentWrapper">
+                                                <div class="dashboardLoadingData">
+                                                    <img src="../../Content/images/loder_wait.gif" /><br />
+                                                    Loading data. Please wait.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="DashboardHedder">
+                                        <table class="clearTable">
+                                            <tr>
+                                                <td style="font-size: 12px !important;" id="TD_PictureAtMessage">@ViewBag.Message: @ViewBag.date1</td>
+                                                <td style="text-align: right; font-size: 12px !important; padding-right: 15px;">
+                                                    <span style="cursor: pointer" class="changedate">Change Date</span>
+
+                                                    <div style='display: none'>
+                                                        <div id='changedate_content' style='padding: 10px; height: 100px; width: 350px; background: #fff; font-size: 16px !important;'>
+                                                            <strong><span style="font-size: 16px !important;">My Time - Change Date</span></strong>
+                                                            <div style="padding-top: 15px;">
+                                                                <table class="clearTable">
+                                                                    <tr>
+                                                                        <td style="font-size: 14px !important; width: 100px;">Change Date</td>
+                                                                        <td>
+                                                                            <input id="pickeddate" style="color:#808080;font-size: 14px !important; width:140px;" value = "@ViewBag.date1" name="pickeddate" type="text"/>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size: 14px !important; width: 100px;"></td>
+                                                                        <td style="padding-top: 10px;">
+                                                                            <input id="Button_ChangeDateTime" onclick="new DashBoard().UpdateSelectedTime()" type="submit" style="font-size: 14px !important; width: 80px;" value="Update">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td id="TD_Graph1_Primary" style="border-width: 0px; border-style: none; padding-left: 15px; width: 285px;">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder">In-Out Time Graph</div>
+                                    <div style="padding-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;">
+                                        <div id="DIV_InOutTimeGraph" style="width: 250px; height: 220px;">
+                                            <div class="DashboardContentWrapper">
+                                                <div class="dashboardLoadingData">
+                                                    <img src="../../Content/images/loder_wait.gif" /><br />
+                                                    Loading data. Please wait.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <table class="clearTable">
+                                            <tr>
+                                                <td class="legendCell insideCell" style="width: 50%">Inside Office : <span id="SPAN_InsideCount">-</span></td>
+                                                <td class="legendCell outsideCell" style="width: 50%">Out of Office : <span id="SPAN_OutsideCount">-</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td id="TD_Graph2_Primary" style="border-width: 0px; border-style: none; padding-left: 15px; width: 285px;">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder">At Work-Absent-OnSite</div>
+                                    <div style="padding-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;">
+                                        <div id="DIV_AtWorkAbsentOnSiteGraph" style="width: 250px; height: 220px;">
+                                            <div class="DashboardContentWrapper">
+                                                <div class="dashboardLoadingData">
+                                                    <img src="../../Content/images/loder_wait.gif" /><br />
+                                                    Loading data. Please wait.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <table class="clearTable">
+                                            <tr>
+                                                <td class="legendCell atWorkCell" style="width: 33%">At Work : <span id="SPAN_AtWorkCount">-</span></td>
+                                                <td class="legendCell absentCell" style="width: 33%">Absent : <span id="SPAN_AbsentCount">-</span></td>
+                                                <td class="legendCell onsiteCell" style="width: 34%">OnSite : <span id="SPAN_OnSiteCount">-</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="clearTable">
+            <tr id="TR_Graph_Secondary" style="display: none;">
+                <td style="border-width: 0px; border-style: none; padding-top: 15px; width: 100%">
+                    <table class="clearTable">
+                        <tr>
+                            <td id="TD_Graph1_Secondary" style="border-width: 0px; border-style: none; width: 285px;"></td>
+                            <td id="TD_Graph2_Secondary" style="border-width: 0px; border-style: none; padding-left: 15px; width: 285px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="clearTable">
+            <tr>
+                <td style="border-width: 0px; border-style: none; padding-top: 15px;">
+                    <table class="clearTable">
+                        <tr>
+                            <td style="border-width: 0px; border-style: none; width: 20%">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder insideCellEmployees">Inside Office</div>
+                                    <div id="DIV_EmployeesInsideOffice">
+                                        <div id="DIV_EmployeesInsideOffice_Loding" class="DashboardContentWrapper">
+                                            <div class="dashboardLoadingData">
+                                                <img src="../../Content/images/loder_wait.gif" /><br />
+                                                Loading data. Please wait.
+                                            </div>
+                                        </div>
+                                        <div id="DIV_EmployeesInsideOffice_TableData" style="display: none;">
+                                            <table id="InsideOfficeEmployeeTable" cellpadding="0" cellspacing="0" border="0" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Employee Name</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="border-width: 0px; border-style: none; padding-left: 15px; width: 20%">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder outsideCellEmployees">Outside Office</div>
+                                    <div id="DIV_EmployeesOutsideOffice">
+                                        <div id="DIV_EmployeesOutsideOffice_Loding" class="DashboardContentWrapper">
+                                            <div class="dashboardLoadingData">
+                                                <img src="../../Content/images/loder_wait.gif" /><br />
+                                                Loading data. Please wait.
+                                            </div>
+                                        </div>
+                                        <div id="DIV_EmployeesOutsideOffice_TableData" style="display: none;">
+                                            <table id="OutsideOfficeEmployeeTable" cellpadding="0" cellspacing="0" border="0" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Employee Name</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="border-width: 0px; border-style: none; padding-left: 15px; width: 20%">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder onsiteCellEmployees">On Site</div>
+                                    <div id="DIV_EmployeesOnSite">
+                                        <div class="DashboardContentWrapper" id="DIV_EmployeesOnSite_Loding">
+                                            <div class="dashboardLoadingData">
+                                                <img src="../../Content/images/loder_wait.gif" /><br />
+                                                Loading data. Please wait.
+                                            </div>
+                                        </div>
+                                        <div id="DIV_EmployeesOnSite_TableData" style="display: none;">
+                                            <table id="OnSiteEmployeeTable" cellpadding="0" cellspacing="0" border="0" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Employee Name</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="border-width: 0px; border-style: none; padding-left: 15px; width: 20%">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder absentCellEmployees">Absent</div>
+                                    <div id="DIV_EmployeesAbsent">
+                                        <div id="DIV_EmployeesAbsent_Loding" class="DashboardContentWrapper">
+                                            <div class="dashboardLoadingData">
+                                                <img src="../../Content/images/loder_wait.gif" /><br />
+                                                Loading data. Please wait.
+                                            </div>
+                                        </div>
+                                        <div id="DIV_EmployeesAbsent_TableData" style="display: none;">
+                                            <table id="AbsentEmployeeTable" cellpadding="0" cellspacing="0" border="0" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Employee Name</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="border-width: 0px; border-style: none; padding-left: 15px; width: 20%">
+                                <div class="DIV_DashbordWrapper">
+                                    <div class="DashboardHedder atWorkCellEmployees">At Work</div>
+                                    <div id="DIV_EmployeesAtWork">
+                                        <div id="DIV_EmployeesAtWork_Loding" class="DashboardContentWrapper">
+                                            <div class="dashboardLoadingData">
+                                                <img src="../../Content/images/loder_wait.gif" /><br />
+                                                Loading data. Please wait.
+                                            </div>
+                                        </div>
+                                        <div id="DIV_EmployeesAtWork_TableData" style="display: none;">
+                                            <table id="AtWorkEmployeeTable" cellpadding="0" cellspacing="0" border="0" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Employee Name</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div id="DIV_TempLoadingMessage" style="display: none;">
+            <div class="DashboardContentWrapper">
+                <div class="dashboardLoadingData">
+                    <img src="../../Content/images/loder_wait.gif" /><br />
+                    Loading data. Please wait.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.ajaxSetup({
+            cache: false
+        });
+    });
+</script>
+
+<script>
+    jQuery(function ($) {
+        if (parseInt($(window).width()) <= 1110) {
+            var graph1Content = $('#TD_Graph1_Primary').html();
+            var graph2Content = $('#TD_Graph2_Primary').html();
+
+            $('#TD_Graph1_Primary').html("");
+            $('#TD_Graph2_Primary').html("");
+            $('#TD_Graph1_Primary').css("display", "none");
+            $('#TD_Graph2_Primary').css("display", "none");
+
+            $('#TD_Graph1_Secondary').html(graph1Content);
+            $('#TD_Graph2_Secondary').html(graph2Content);
+            $('#TR_Graph_Secondary').css("display", "block");
+        }
+
+        new DashBoard().UpdateEmployeeAvailability();
+
+        $('#pickeddate').datetimepicker({
+            dateFormat: "dd/mm/yy",
+            onSelect: function (dateText) {
+                var dateAsObject = $(this).datepicker('getDate');
+                if (dateAsObject.getHours() == 0 && dateAsObject.getMinutes() == 0) {
+                    dateAsObject.setHours(23);
+                    dateAsObject.setMinutes(59);
+                    $(this).datepicker('setDate', dateAsObject);
+                }
+            }
+        });
+    });
+
+    loadPreviousAttendenceView = function () {
+        var _url = "Home/PastAttendance";
+        $("#TD_RightNowImage").removeClass("optionTableSelected");
+        $("#TD_PastAttendance").addClass("optionTableSelected");
+        //$("#DIV_DashbordViews").html('');
+        $('#DIV_DashbordViews').load(_url, new function () {
+        });
+    };
+
+    this.getcoverageResultSucess = function (result) {
+       
+       // $("#SPAN_My_Workcoverage").html(result.AttendanceStructure.WorkCoverage + " %");
+    }
+    this.getMyCoverage=function () {
+        
+        azyncPost("/Analysis/GetCoverageData", 
+              getcoverageResultSucess, ConnectionError);
+        
+    };
+
+    $(document).ready(function () {
+      
+        $(".changedate").colorbox({ inline: true, href: "#changedate_content" });
+        hide("Div_SystemLodingCntent");
+        show("systemContentPage");
+        
+        blink();
+    });
+
+    $("#specialEventNortification").click(function () {
+       
+       $("#specilEventDetail").show();
+       // alert($('#specialEventDiv').html());
+    });
+
+    function blink() {
+        
+        $('#bellImg').delay(100).fadeTo(500, 0.5).delay(100).fadeTo(100, 1, blink);
+        
+     
+    }
+
+    
+
+</script>

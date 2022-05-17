@@ -1,0 +1,148 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    .DataTables_sort_wrapper {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .odd td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .even td {
+        white-space: nowrap;
+        text-wrap: avoid;
+    }
+
+    .dataTables_filter {
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .demo_jui {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        font-size: 12px;
+    }
+
+        .demo_jui input {
+            width: 250px;
+            margin-left: 15px;
+        }
+
+    .InnerGridButton {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #b1b1b1;
+        margin:3px;
+        margin-left:5px;
+        padding:4px;
+        padding-left:10px;
+        padding-right:10px;
+        white-space:nowrap;
+        text-wrap:avoid;
+        color:#303030;
+        width:10px;
+        display:inline;
+        height:20px;
+        cursor:pointer;
+        text-decoration:none;
+    }
+        .InnerGridButton:hover {
+        background-color:#fbfbfb;
+        }
+</style>
+<script src="~/Content/scripts/frms/employee_frm.js"></script>
+<div id="DIV_PageInnerContent">
+    <table class="clearTable" id="TBL_PageMainTable">
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <div id="DIV_LoadingReportWaitMessage">
+                    <div style="text-align: center; font-size: 20px; color: #8a8a8a; border: 0px; padding-top: 50px; padding-bottom: 50px;">
+                        <img src="../../Content/images/loder_wait.gif" /><br />
+                        Loading Special Event List. Please wait.
+                    </div>
+                </div>
+                <div class="demo_jui" style="display: none; width: 800px;" id="DIV_EmployeeListTable">
+                    <table cellpadding="0" cellspacing="0" border="0" class="display" id="EmployeeListDataTable">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Event Name</th>
+                                <th>Description</th>
+                                <th>From Date</th>
+                                <th>To Date</th>
+                                
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+    hide("Div_SystemLodingCntent");
+    show("systemContentPage");
+    $('#DIV_EmployeeListTable').width($('#DIV_PageInnerContent').width());
+
+    var t = setTimeout(function () {
+        azyncPost("/Administration/GetEmployeeTableEntries", null,
+                   UpdateSpecialEventSuccess, ConnectionError);
+    }, 1000)
+
+
+
+    function UpdateSpecialEventSuccess(result) {
+
+        document.getElementById('DIV_LoadingReportWaitMessage').style.display = 'none';
+        document.getElementById('DIV_EmployeeListTable').style.display = 'block';
+        $("#EmployeeListDataTable").html();
+        $("#EmployeeListDataTable").dataTable().fnDestroy();
+
+        oTable = $('#EmployeeListDataTable').dataTable({
+            "bJQueryUI": true,
+            "sPaginationType": "full_numbers",
+            "bScrollInfinite": true,
+            "sScrollY": "300px",
+            "sScrollX": "100%",
+            "bFilter": true,
+            "bCollapse": true,
+            "bAutoWidth": false,
+            "iDisplayLength": 200,
+            "aaData": result,
+            "aoColumns": [
+                { "mData": "EditLink" },
+               // { "mData": "CheckListLink" },
+                { "mData": "EventName" },
+                { "mData": "Description" },
+                { "mData": "EventFromDate" },
+                { "mData": "EventToDate" },
+            ],
+            "aoColumnDefs": [
+                { sClass: "gridIconColumn", "aTargets": [0], "bSortable": false },
+                //{ sClass: "gridIconColumn", "aTargets": [1], "bSortable": false },
+                //{ sClass: "gridIconColumn", "aTargets": [2], "bSortable": false },
+                { sClass: "filledWidthColumn", "aTargets": [1] },
+                { sClass: "filledWidthColumn", "aTargets": [2] },
+                { sClass: "filledWidthColumn", "aTargets": [3] },
+                { sClass: "filledWidthColumn", "aTargets": [4] }
+
+            ]
+        });
+
+        $('#EmployeeListDataTable_filter').append("<div class='InnerGridButton' onclick=\"new AdministrationForm().AddEditSpecialEvent();\">Add New Special Event</div>");
+        //$("#EmployeeListDataTable_filter input").css('height', '20px');
+        //$("#EmployeeListDataTable_filter").css('width', '100%');
+        //$(".iframe").colorbox({ iframe: true, width: "700px", height: "85%" });
+        //$(".iframeManageCheckList").colorbox({ iframe: true, width: "80%", height: "85%" });
+    }
+
+</script>

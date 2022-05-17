@@ -1,0 +1,85 @@
+﻿ <table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1493 style=3D'bor=
+der-collapse:
+ collapse;table-layout:fixed;width:1119pt'>
+ <col class=3Dxl65 width=3D64 style=3D'width:48pt'>
+ <col width=3D199 style=3D'mso-width-source:userset;mso-width-alt:7277;widt=
+h:149pt'>
+ <col width=3D192 style=3D'mso-width-source:userset;mso-width-alt:7021;widt=
+h:144pt'>
+ <col width=3D117 style=3D'mso-width-source:userset;mso-width-alt:4278;widt=
+h:88pt'>
+ <col width=3D80 style=3D'mso-width-source:userset;mso-width-alt:2925;width=
+:60pt'>
+ <col width=3D99 style=3D'mso-width-source:userset;mso-width-alt:3620;width=
+:74pt'>
+ <col class=3Dxl66 width=3D64 style=3D'width:48pt'>
+ <col class=3Dxl66 width=3D87 style=3D'mso-width-source:userset;mso-width-a=
+lt:3181;
+ width:65pt'>
+ <col width=3D160 style=3D'mso-width-source:userset;mso-width-alt:5851;widt=
+h:120pt'>
+ <col width=3D128 style=3D'mso-width-source:userset;mso-width-alt:4681;widt=
+h:96pt'>
+ <col width=3D127 style=3D'mso-width-source:userset;mso-width-alt:4644;widt=
+h:95pt'>
+ <col width=3D176 style=3D'mso-width-source:userset;mso-width-alt:6436;widt=
+h:132pt'>
+ <tr height=3D20 style=3D'height:15.0pt'>
+  <td height=3D20 class=3Dxl65 width=3D64 style=3D'height:15.0pt;width:48pt=
+'></td>
+  <td width=3D199 style=3D'width:149pt'></td>
+  <td width=3D192 style=3D'width:144pt'></td>
+  <td width=3D117 style=3D'width:88pt'></td>
+  <td width=3D80 style=3D'width:60pt'></td>
+  <td width=3D99 style=3D'width:74pt'></td>
+  <td class=3Dxl66 width=3D64 style=3D'width:48pt'></td>
+  <td class=3Dxl66 width=3D87 style=3D'width:65pt'></td>
+  <td width=3D160 style=3D'width:120pt'></td>
+  <td width=3D128 style=3D'width:96pt'></td>
+  <td width=3D127 style=3D'width:95pt'></td>
+  <td width=3D176 style=3D'width:132pt'></td>
+ </tr>
+ <tr height=3D24 style=3D'height:18.0pt'>
+  <td colspan=3D11 height=3D24 class=3Dxl82 style=3D'height:18.0pt'>
+  #@ReportHedderWeek
+  </td>
+  <td></td>
+ </tr>
+ <tr height=3D20 style=3D'height:15.0pt'>
+  <td height=3D20 class=3Dxl65 style=3D'height:15.0pt'></td>
+  <td colspan=3D5 style=3D'mso-ignore:colspan'></td>
+  <td class=3Dxl66></td>
+  <td class=3Dxl66></td>
+  <td colspan=3D4 style=3D'mso-ignore:colspan'></td>
+ </tr>
+  <td height=3D21 class=3Dxl67 style=3D'height:15.75pt'>Card No.</td> 
+  <td class=3Dxl68>Employee Name</td>   
+  <td class=3Dxl68>Average In Time</td>  
+  <td class=3Dxl69>Average Out Time</td>  
+  <td class=3Dxl68>Out Of Office hrs</td>
+  <td class=3Dxl68>Out Actual nos.of hrs worked</td>
+  <td class=3Dxl68>Required nos. of hrs worked</td> 
+  <td class=3Dxl68>Coverage(%)</td>
+ </tr>
+
+
+ #@ROWBODY
+
+
+ <tr height=3D20 style=3D'height:15.0pt'>  
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+  <td class=3Dxl74>&nbsp;</td>
+<tr>  
+  <td colspan=3D8 class=3Dxl73 align=3Dcenter style=3D'border-right:.5pt solid black;border-left:none'>
+  #@COVEREDPERCENTAGE
+  </td>
+ </tr>
+ 
+
+</table>
