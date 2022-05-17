@@ -12,12 +12,6 @@ using Exilesoft.MyTime.ViewModels;
 using System.Data.Entity.SqlServer;
 using System.Configuration;
 using Hangfire;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
-using System.Net.Http;
-using System.Text;
-using System.Net;
-using System.Threading.Tasks;
 
 namespace Exilesoft.MyTime.Controllers
 {
@@ -275,68 +269,6 @@ namespace Exilesoft.MyTime.Controllers
             ViewBag.dateTime = Utility.GetDateTimeNow().ToString("dd/MM/yyyy HH:mm");
             return View();
         }
-
-        public ActionResult MissingTimeEntries()
-        {
-            IList<EmployeeWiseMissingEntries> empMissingEntries = MissingEntriesRepository.getEmployeeMissingEntries();
-            MissingEntriesViewModel missingEntriesViewModel = new MissingEntriesViewModel();
-            missingEntriesViewModel.entries = empMissingEntries;
-            return View(missingEntriesViewModel);
-        }
-
-        public async Task<ActionResult> SendEmail(string entry)
-        {
-            EmployeeWiseMissingEntries employeeWiseMissingEntries = JsonConvert.DeserializeObject<EmployeeWiseMissingEntries>(entry, new JsonSerializerSettings() { DateTimeZoneHandling = DateTimeZoneHandling.Local });
-            EmployeeData emp = EmployeeRepository.GetEmployee(Int32.Parse(employeeWiseMissingEntries.employeeId));
-
-            string msg = "";
-            msg = " <div> Hi   <label>" + emp.Name+ ",</label>" + " <p> This is to inform you that you have not entered time for following days.  </p>";
-
-            foreach(DateTime date in employeeWiseMissingEntries.missingDates)
-            {
-                msg = msg + "<div> <label>" + date.Date.ToString().Split(' ')[0]+ " </label> </div>";
-            }
-
-
-
-            var sendEmail = new {
-                email = emp.PrimaryEmailAddress,
-                body = msg,
-            };
-
-            var json = JsonConvert.SerializeObject(sendEmail);
-            var data = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var url = ConfigurationManager.AppSettings["MissingTimeEmail"]+"/api/SendEmailMonth";
-            var client = new HttpClient();
-
-            var response =  await client.PostAsync(url, data);
-
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    int id = int.Parse(employeeWiseMissingEntries.employeeId);
-            //    List<EmployeeMissingEntry> entities = dbContext.EmployeeMissingEntries.Where(item => item.EmployeeId == id).ToList();
-
-
-            //    foreach (EmployeeMissingEntry entity in entities)
-            //    {
-            //        if (entity != null)
-            //        {
-
-            //            entity.Mailed = true;
-
-
-            //        }
-            //    }
-            //    dbContext.SaveChanges();
-            //}
-            
-
-
-            return new HttpStatusCodeResult(response.StatusCode); ;
-            //string result = response.Content.ReadAsStringAsync().Result;
-        }
-
         //[Authorize]
         //[DelphiAuthentication("Admin")]
         public ActionResult ManualAttendanceBulk()

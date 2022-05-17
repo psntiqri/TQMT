@@ -110,7 +110,6 @@ function DailyAttendance() {
                 hide("DIV_ReportViewer");
                 hide("DIV_ReportViewerSummery");
                 hide("DIV_SummeryReportViewer");
-                hide("DIV_AttendanceHighlight");
                 hide("DIV_TaskSummeryReportViewer");
                 $("#DIV_ReportViewer").html($("#DIV_GrapfUpdateWaitMessage").html());
                 $("#DIV_ReportViewerSummery").html("");
@@ -388,8 +387,7 @@ function DailyAttendance() {
             }
 
         if ($('#Radio_ReportType_Summery').is(':checked')) {
-            hide("DIV_TaskSummeryReportViewer");
-            hide("DIV_AttendanceHighlight");
+                hide("DIV_TaskSummeryReportViewer");
                 $("#DIV_SummeryReportViewer").html($("#DIV_GrapfUpdateWaitMessage").html());
                 azyncPost("/DailyAttendance/GetEmployeesHorsSummeryData", _analysisModelData,
                     new DailyAttendance().UpdateSummerySucuss, ConnectionError);
@@ -478,13 +476,8 @@ function DailyAttendance() {
             new DailyAttendance().UpdateTaskSummary();
         },
         this.UpdateTaskSummerySucuss = function (result) {
-        const reportArr = result.AttendanceReport.split("<seperator>", 2)
-        
-        show("DIV_AttendanceHighlight");
-        $("#DIV_AttendanceHighlight").html(reportArr[0]);
-
-        show("DIV_TaskSummeryReportViewer");
-        $("#DIV_TaskSummeryReportViewer").html(reportArr[1]);
+            show("DIV_TaskSummeryReportViewer");
+            $("#DIV_TaskSummeryReportViewer").html(result.AttendanceReport);
         },
         this.ReportRangeChange = function () {
 
@@ -516,7 +509,6 @@ function DailyAttendance() {
                 hide("DIV_ReportViewer");
                 hide("DIV_ReportViewerSummery");
                 hide("DIV_SummeryReportViewer");
-                hide("DIV_AttendanceHighlight");
                 hide("DIV_TaskSummeryReportViewer");
                 return;
             }
