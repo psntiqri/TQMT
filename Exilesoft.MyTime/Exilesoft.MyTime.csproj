@@ -425,6 +425,7 @@
     <Content Include="Content\images\colorbox\ie6\borderTopRight.png" />
     <Content Include="Content\images\colorbox\loading.gif" />
     <Content Include="Content\images\confirmation_black.png" />
+    <Content Include="Content\images\ico_missingRecords.png" />
     <Content Include="Content\images\pen.png" />
     <Content Include="Content\images\trash.png" />
     <Content Include="Content\images\zoom_16x16.png" />
