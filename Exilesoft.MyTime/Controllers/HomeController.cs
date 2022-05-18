@@ -515,7 +515,7 @@ namespace Exilesoft.MyTime.Controllers
 
             absentCount = totalEmployeeCount - onsiteEmployeeCount - numberOfPeopleIn - numberOfPeopleOut;
 
-            //var loggedEmployeeId = int.Parse(HttpRuntime.Cache.Get("EmployeeID").ToString());
+            var loggedEmployeeId = int.Parse(Session["EmployeeId"].ToString());
 
 
             ViewModels.DailyAttendanceViewModel model = new ViewModels.DailyAttendanceViewModel();
@@ -537,11 +537,11 @@ namespace Exilesoft.MyTime.Controllers
 
 
 
-            var backGroundSlave = BacgroungRepository.getBackgroundSlaveProcesDataByEmployeeId(toDate.Year, toDate.Month, toDate.Day, EmployeeId);
+            var backGroundSlave = BacgroungRepository.getBackgroundSlaveProcesDataByEmployeeId(toDate.Year, toDate.Month, toDate.Day, loggedEmployeeId);
             decimal MyCoverage = 0.0M;
             if (backGroundSlave == null)
             {
-                EmployeeEnrollment loggedUser = dbContext.EmployeeEnrollment.FirstOrDefault(a => a.EmployeeId == EmployeeId);
+                EmployeeEnrollment loggedUser = dbContext.EmployeeEnrollment.FirstOrDefault(a => a.EmployeeId == loggedEmployeeId);
                 ViewModels.TimeTrendAnalysisViewModel _model = new ViewModels.TimeTrendAnalysisViewModel(loggedUser, null, null);
                 var Ep = Repositories.TimeTrendRepository.GetEmployeesInOutGraphData(_model);
                 MyCoverage = Ep.WorkCoverage;
@@ -635,49 +635,52 @@ namespace Exilesoft.MyTime.Controllers
                 var orderedLastItem = orderedItem.Last();
                 var employee = employeeList.FirstOrDefault(a => a.Id == orderedLastItem.EmployeeId);
 
-                displayText = employee.Name;
-                // if (loggedUser.Privillage > 0 || employee.Id == loggedUser.EmployeeId)
-                if (!(CrrentloggedUser.IsInRole("Employee")))
-                    displayText = string.Format("<a href=\"javascript:new HomeLogin().QuickFindWithEmployee({0},'{1}');\" style=\"text-decoration:none;\">{2}</a>",
-                    employee.Id, selectedDate.Value.ToString("dd/MM/yyyy"), employee.Name);
+                if (employee != null)
+                {
+                    displayText = employee.Name;
+                    // if (loggedUser.Privillage > 0 || employee.Id == loggedUser.EmployeeId)
+                    if (!(CrrentloggedUser.IsInRole("Employee")))
+                        displayText = string.Format("<a href=\"javascript:new HomeLogin().QuickFindWithEmployee({0},'{1}');\" style=\"text-decoration:none;\">{2}</a>",
+                        employee.Id, selectedDate.Value.ToString("dd/MM/yyyy"), employee.Name);
 
-                model.AtWorkEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
-                {
-                    EmployeeID = orderedLastItem.EmployeeId.ToString(),
-                    DisplayText = displayText,
-                    EmployeeName = employee.Name
-                });
+                    model.AtWorkEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                    {
+                        EmployeeID = orderedLastItem.EmployeeId.ToString(),
+                        DisplayText = displayText,
+                        EmployeeName = employee.Name
+                    });
 
-                if (orderedLastItem.InOutMode == "in")
-                {
-                    if (!onSiteLocationList.Any(a => a.Id == orderedLastItem.LocationId))
+                    if (orderedLastItem.InOutMode == "in")
                     {
-                        model.InsideEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                        if (!onSiteLocationList.Any(a => a.Id == orderedLastItem.LocationId))
                         {
-                            EmployeeID = orderedLastItem.EmployeeId.ToString(),
-                            DisplayText = displayText,
-                            EmployeeName = employee.Name
-                        });
+                            model.InsideEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                            {
+                                EmployeeID = orderedLastItem.EmployeeId.ToString(),
+                                DisplayText = displayText,
+                                EmployeeName = employee.Name
+                            });
+                        }
                     }
-                }
-                else if (orderedLastItem.InOutMode == "out")
-                {
-                    if (!deviceList.Contains(orderedLastItem.LocationId))
+                    else if (orderedLastItem.InOutMode == "out")
                     {
-                        model.InsideEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                        if (!deviceList.Contains(orderedLastItem.LocationId))
                         {
-                            EmployeeID = orderedLastItem.EmployeeId.ToString(),
-                            DisplayText = displayText,
-                            EmployeeName = employee.Name
-                        });
+                            model.InsideEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                            {
+                                EmployeeID = orderedLastItem.EmployeeId.ToString(),
+                                DisplayText = displayText,
+                                EmployeeName = employee.Name
+                            });
+                        }
+                        else
+                            model.OutOfOfficeEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
+                            {
+                                EmployeeID = orderedLastItem.EmployeeId.ToString(CultureInfo.InvariantCulture),
+                                DisplayText = displayText,
+                                EmployeeName = employee.Name
+                            });
                     }
-                    else
-                        model.OutOfOfficeEmployeeList.Add(new ViewModels.DashBoardEmployeeViewModel()
-                        {
-                            EmployeeID = orderedLastItem.EmployeeId.ToString(CultureInfo.InvariantCulture),
-                            DisplayText = displayText,
-                            EmployeeName = employee.Name
-                        });
                 }
             }
 
@@ -1246,6 +1249,7 @@ namespace Exilesoft.MyTime.Controllers
                     EmployeeName = EmployeeName,
                     ImageUrl = ImageUrl,
                     Coverage = item.Coverage,
+                    WFHPercentage = item.WFHPercentage,
                     MonthName = ((MonthsOfyear)item.Month).ToString()
                 };
                 empCoverageList.Add(employeeCoverageViewModel);
@@ -1291,6 +1295,7 @@ namespace Exilesoft.MyTime.Controllers
                         EmployeeName = EmployeeName,
                         ImageUrl = ImageUrl,
                         Coverage = item.Coverage,
+                        WFHPercentage = item.WFHPercentage,
                         MonthName = ((MonthsOfyear)item.Month).ToString()
                     };
                     empCoverageList.Add(employeeCoverageRowViewModel);
@@ -1337,6 +1342,7 @@ namespace Exilesoft.MyTime.Controllers
                         EmployeeName = EmployeeName,
                         ImageUrl = ImageUrl,
                         Coverage = item.Coverage,
+                        WFHPercentage = item.WFHPercentage,
                         MonthName = ((MonthsOfyear)item.Month).ToString()
                     };
                     empCoverageList.Add(employeeCoveragerowViewModel);
@@ -1383,6 +1389,7 @@ namespace Exilesoft.MyTime.Controllers
                         EmployeeName = EmployeeName,
                         ImageUrl = ImageUrl,
                         Coverage = item.Coverage,
+                        WFHPercentage = item.WFHPercentage,
                         MonthName = ((MonthsOfyear)item.Month).ToString()
                     };
                     empCoverageList.Add(employeeCoverageRowViewModel);
@@ -1747,7 +1754,7 @@ namespace Exilesoft.MyTime.Controllers
                             }
                         }
                         transaction.Commit();
-                        //Val = SendWorkingFromHomemail(attendanceDateIn, attendanceDateOut, EmployeeId, SupervisorId, GUIDobj, Description, CaptureAllTasks(WorkingFromHomeTaskList));
+                        Val = SendWorkingFromHomemail(attendanceDateIn, attendanceDateOut, EmployeeId, SupervisorId, GUIDobj, Description, CaptureAllTasks(WorkingFromHomeTaskList));
                     }
                     catch (Exception ex)
                     {
@@ -1798,52 +1805,52 @@ namespace Exilesoft.MyTime.Controllers
             //{
 
 
-                //if ((attendanceDateIn == null) || (attendanceDateOut == null) || (attendanceDateOut.Year != attendanceDateIn.Year) || (attendanceDateOut.Month != attendanceDateIn.Month)
-                //    || (attendanceDateOut.Day != attendanceDateIn.Day) || (attendanceDateOut.Hour < attendanceDateIn.Hour))
-                //{
-                //    return Json(new { status = "Incorrect reported time.....\n" + "From " + attendanceDateIn + " to " + attendanceDateOut });
-                //}
-                //var isValid = ValidateTaskTimeAgainstInOutTime(attendanceDateIn, attendanceDateOut, WorkingFromHomeTaskList);
-                //if (!isValid)
-                //{
-                //    return Json(new { status = "Total number of hours reported under tasks should be less than or equal to time clocked with start and end time\n" });
-                //}
+            //if ((attendanceDateIn == null) || (attendanceDateOut == null) || (attendanceDateOut.Year != attendanceDateIn.Year) || (attendanceDateOut.Month != attendanceDateIn.Month)
+            //    || (attendanceDateOut.Day != attendanceDateIn.Day) || (attendanceDateOut.Hour < attendanceDateIn.Hour))
+            //{
+            //    return Json(new { status = "Incorrect reported time.....\n" + "From " + attendanceDateIn + " to " + attendanceDateOut });
+            //}
+            //var isValid = ValidateTaskTimeAgainstInOutTime(attendanceDateIn, attendanceDateOut, WorkingFromHomeTaskList);
+            //if (!isValid)
+            //{
+            //    return Json(new { status = "Total number of hours reported under tasks should be less than or equal to time clocked with start and end time\n" });
+            //}
 
-                if (UpdateRecordId > 0)
+            if (UpdateRecordId > 0)
+            {
+                var updateTemplate = dbContext.WorkingFromHomeTaskTemplates.FirstOrDefault(x => x.Id == UpdateRecordId);
+                updateTemplate.EmployeeId = EmployeeId;
+                updateTemplate.SupervisorId = SupervisorId;
+                //updateTemplate.StartTime = attendanceDateIn.ToString();
+                //updateTemplate.EndTime = attendanceDateOut.ToString();
+                updateTemplate.Description = Description;
+                updateTemplate.Name = TemplateName;
+                updateTemplate.TaskList = string.Join("%@@@@%", WorkingFromHomeTaskList.Select(x => x.Description));
+                updateTemplate.IsEnable = true;
+                dbContext.SaveChanges();
+                return Json(new { status = "Operation Success....." });
+            }
+            else
+            {
+                try
                 {
-                    var updateTemplate = dbContext.WorkingFromHomeTaskTemplates.FirstOrDefault(x => x.Id == UpdateRecordId);
-                    updateTemplate.EmployeeId = EmployeeId;
-                    updateTemplate.SupervisorId = SupervisorId;
-                    //updateTemplate.StartTime = attendanceDateIn.ToString();
-                    //updateTemplate.EndTime = attendanceDateOut.ToString();
-                    updateTemplate.Description = Description;
-                    updateTemplate.Name = TemplateName;
-                    updateTemplate.TaskList = string.Join("%@@@@%", WorkingFromHomeTaskList.Select(x => x.Description));
-                    updateTemplate.IsEnable = true;
+                    var template = new WorkingFromHomeTaskTemplate();
+                    template.EmployeeId = EmployeeId;
+                    template.SupervisorId = SupervisorId;
+                    //template.StartTime = attendanceDateIn.ToString();
+                    //template.EndTime = attendanceDateOut.ToString();
+                    template.Description = Description;
+                    template.Name = TemplateName;
+                    template.TaskList = string.Join("%@@@@%", WorkingFromHomeTaskList.Select(x => x.Description));
+                    template.IsEnable = true;
+                    dbContext.WorkingFromHomeTaskTemplates.Add(template);
                     dbContext.SaveChanges();
-                    return Json(new { status = "Operation Success....." });
                 }
-                else
+                catch (Exception ex)
                 {
-                    try
-                    {
-                        var template = new WorkingFromHomeTaskTemplate();
-                        template.EmployeeId = EmployeeId;
-                        template.SupervisorId = SupervisorId;
-                        //template.StartTime = attendanceDateIn.ToString();
-                        //template.EndTime = attendanceDateOut.ToString();
-                        template.Description = Description;
-                        template.Name = TemplateName;
-                        template.TaskList = string.Join("%@@@@%", WorkingFromHomeTaskList.Select(x => x.Description));
-                        template.IsEnable = true;
-                        dbContext.WorkingFromHomeTaskTemplates.Add(template);
-                        dbContext.SaveChanges();
-                    }
-                    catch (Exception ex)
-                    {
-                        return Json(new { Success = "False", Message = ex.InnerException.InnerException.Message });
-                    }
+                    return Json(new { Success = "False", Message = ex.InnerException.InnerException.Message });
                 }
+            }
 
             //}
             //else
@@ -1892,7 +1899,7 @@ namespace Exilesoft.MyTime.Controllers
 
         public JsonResult LoadTemplate(int TemplateId)
         {
-            TemplateDetailsViewModel temp  = new TemplateDetailsViewModel();
+            TemplateDetailsViewModel temp = new TemplateDetailsViewModel();
             var template = dbContext.WorkingFromHomeTaskTemplates.FirstOrDefault(x => x.Id == TemplateId && x.IsEnable == true);
             //temp.TemplateName = template.Name;
             //temp.SupervisorName = EmployeeRepository.GetEmployee(template.SupervisorId).Name;

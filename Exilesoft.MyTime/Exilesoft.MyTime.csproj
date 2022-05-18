@@ -285,6 +285,7 @@
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Repositories\HolidayRepository.cs" />
     <Compile Include="Repositories\LeaveRepository.cs" />
+    <Compile Include="Repositories\MissingEntriesRepository.cs" />
     <Compile Include="Repositories\OnSiteRepository.cs" />
     <Compile Include="Repositories\PrivilegesRepository.cs" />
     <Compile Include="Repositories\TeamManagementRepository.cs" />
@@ -314,6 +315,7 @@
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="ViewModels\Home\TemplateDetailsViewModel.cs" />
     <Compile Include="ViewModels\ManualAttendenceViewModel.cs" />
+    <Compile Include="ViewModels\MissingEntriesViewModel.cs" />
     <Compile Include="ViewModels\MyLeaveViewModel.cs" />
     <Compile Include="ViewModels\OnSiteAttendanceViewModel.cs" />
     <Compile Include="ViewModels\OnSiteEmployeeViewModel.cs" />

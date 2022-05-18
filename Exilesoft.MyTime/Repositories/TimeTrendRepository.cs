@@ -196,12 +196,20 @@ namespace Exilesoft.MyTime.Repositories
 
 
             decimal TotalOutOfOffice = attendanceCoverageReportModel.EmployeeOutOfOfficeList.Sum(a => a.OutMinits);
-            
+            decimal TotalOutOfWFH = TotalOutOfWFH = attendanceCoverageReportModel.EmployeeOutOfWFHList.Sum(a => a.OutMinits);
             if (attendanceCoverageReportModel.TotalPlanned > 0)
             {              
 
                 attendanceCoverageReportModel.WorkCoverage = Math.Round((((attendanceCoverageReportModel.TotalActual - TotalOutOfOffice) / attendanceCoverageReportModel.TotalPlanned) * 100), 2);
 
+                if (!((attendanceCoverageReportModel.TotalActual - TotalOutOfOffice) <= 0))
+                {
+                    attendanceCoverageReportModel.WFHPercentage = Math.Round((((attendanceCoverageReportModel.TotalActualWFH - TotalOutOfWFH) * 100) / (attendanceCoverageReportModel.TotalActual - TotalOutOfOffice)), 2);
+                    if (attendanceCoverageReportModel.WFHPercentage > 100)
+                    {
+                        attendanceCoverageReportModel.WFHPercentage = 100;
+                    }
+                }
             }
             
             attendanceCoverageReportModel.ResultGraphData = _sb.ToString();
@@ -346,7 +354,10 @@ namespace Exilesoft.MyTime.Repositories
 
                     TimeSpan _ts = _lastOutTime.Value - _firstInTime;
                     attendanceCoverageReportModel.TotalActual += (decimal)_ts.TotalMinutes;
-
+                    if (_firstInAttendance.LocationId == 27)
+                    {
+                        attendanceCoverageReportModel.TotalActualWFH += (decimal)_ts.TotalMinutes;
+                    }
                     #region --- Calculate OutTime Deviation ---
 
                     if (validateDeviation)
@@ -411,6 +422,18 @@ namespace Exilesoft.MyTime.Repositories
                                             ToTime = decimal.Parse(string.Format("{0}.{1}", _backtoOfficeTime.Hour.ToString(), _backtoOfficeTime.Minute.ToString())),
                                             OutMinits = (decimal)_tsOutOfOffice.TotalMinutes
                                         });
+
+                                        if (_outOfficeEntry.LocationId == 27 && _backtoOfficeEntry.LocationId == 27)
+                                        {
+                                            attendanceCoverageReportModel.EmployeeOutOfWFHList.Add(new ViewModels.EmployeeOutOfWFH()
+                                            {
+                                                EmployeeID = model.SelectedEmployeeID,
+                                                OutDate = queryDate.ToString("yyyy/MM/dd"),
+                                                FromTime = decimal.Parse(string.Format("{0}.{1}", _outOfOfficeTime.Hour.ToString(), _outOfOfficeTime.Minute.ToString())),
+                                                ToTime = decimal.Parse(string.Format("{0}.{1}", _backtoOfficeTime.Hour.ToString(), _backtoOfficeTime.Minute.ToString())),
+                                                OutMinits = (decimal)_tsOutOfOffice.TotalMinutes
+                                            });
+                                        }
                                     }
                                 }
                             }
