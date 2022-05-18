@@ -15,7 +15,6 @@ namespace Exilesoft.Models
         public int Day { get; set; }
         public int EmployeeId { get; set; }
         public decimal Coverage { get; set; }
-        public decimal? WFHPercentage { get; set; }
         public DateTime TimeStamp { get; set; }
     }
 }

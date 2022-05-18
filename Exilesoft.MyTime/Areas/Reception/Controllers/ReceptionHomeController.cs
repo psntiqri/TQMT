@@ -5,7 +5,6 @@ using System.IO;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using System.Web.Security;
@@ -13,8 +12,6 @@ using Exilesoft.MyTime.Areas.Reception.Common;
 using Exilesoft.MyTime.Areas.Reception.Filters;
 using Exilesoft.MyTime.Areas.Reception.Repositories;
 using Exilesoft.MyTime.Helpers;
-using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.OpenIdConnect;
 
 namespace Exilesoft.MyTime.Areas.Reception.Controllers
 {
@@ -31,42 +28,28 @@ namespace Exilesoft.MyTime.Areas.Reception.Controllers
 
 		public ActionResult Index()
 		{
-
-
-			//var authCookie = System.Web.HttpContext.Current.Request.Cookies.Get(CookieName);
-
-			//if (authCookie == null || string.IsNullOrEmpty(authCookie.Value))
-			//{
-			//    return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
-			//}
-
-			//FormsAuthenticationTicket authenticationTicket = FormsAuthentication.Decrypt(authCookie.Value);
-
-			//if (authenticationTicket == null)
-			//{
-			//    return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
-			//}
-
-			//if (authenticationTicket.Expired)
-			//{
-			//    return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
-			//}
-			if (!Request.IsAuthenticated)
-			{
-				HttpContext.GetOwinContext().Authentication.Challenge(
-					new AuthenticationProperties { RedirectUri = "/" },
-					OpenIdConnectAuthenticationDefaults.AuthenticationType);
-			}
-			if (User.IsInRole("Receptionist"))
-			{
-				return View();
-			}
-			else
-			{
-				return Content("<html><p><i>Hello! You don't have permission to view this page.</u></i></p></html>", "text/html");
-			}
-
 			
+
+            var authCookie = System.Web.HttpContext.Current.Request.Cookies.Get(CookieName);
+
+            if (authCookie == null || string.IsNullOrEmpty(authCookie.Value))
+            {
+                return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
+            }
+
+            FormsAuthenticationTicket authenticationTicket = FormsAuthentication.Decrypt(authCookie.Value);
+
+            if (authenticationTicket == null)
+            {
+                return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
+            }
+
+            if (authenticationTicket.Expired)
+            {
+                return Redirect(ReceptionHelper.Authenticate(DeviceType.Desktop));
+            }
+
+			return View();
 		}
 
         //[ReceptionAuthentication("Admin", "PMO", "Receptionist")]

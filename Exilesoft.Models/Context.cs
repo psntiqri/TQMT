@@ -42,7 +42,7 @@ namespace Exilesoft.Models
         public DbSet<Visitor> Visitors { get; set; }
         public DbSet<VisitInformation> VisitInformation { get; set; }
         public DbSet<TimeRecord> TimeRecords { get; set; }
-        public DbSet<EmployeeMissingEntry> EmployeeMissingEntries { get; set; }
+        public DbSet<WorkingFromHomeTaskTemplate> WorkingFromHomeTaskTemplates{ get; set; }
 
         public Context()
         {

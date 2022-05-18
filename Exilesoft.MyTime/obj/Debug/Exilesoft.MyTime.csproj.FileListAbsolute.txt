@@ -1,139 +1,1050 @@
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EPPlus.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IO.RecyclableMemoryStream.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Net.Http.Formatting.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EPPlus.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IO.RecyclableMemoryStream.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Net.Http.Formatting.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Net.Http.Formatting.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Net.Http.Formatting.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+C:\Work\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll.config
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll.config
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\prod\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll.config
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+C:\Users\psn\source\repos\dev\updated\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceRejected.html
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Owin.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Providers.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\WebGrease.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Exilesoft.Models.dll.config
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.Core.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Spatial.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Razor.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\AttendenceConfirmed.html
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_row_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_row_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_row_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_row_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_body.txt
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Monthly_rpt.mht
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\coverage_Weekly_rpt.mht
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Monthly_rpt.mht
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\excl\Team_Coverage_Weekly_rpt.mht
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Content\scripts\jquery-1.5.1.js
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\AttendenceRejected.html
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\AttendenceAllReadyConfirmed.html
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\AttendenceAllReadyRejected.html
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll.config
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.MyTime.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.MyTime.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Antlr3.Runtime.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\EntityFramework.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\EntityFramework.SqlServer.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.Models.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Hangfire.Core.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Hangfire.SqlServer.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Data.Edm.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Data.OData.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Newtonsoft.Json.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Owin.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Spatial.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Helpers.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Http.WebHost.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Mvc.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Optimization.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Providers.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Razor.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\WebGrease.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.Models.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Exilesoft.Models.dll.config
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Antlr3.Runtime.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\EntityFramework.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\EntityFramework.SqlServer.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Hangfire.Core.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Hangfire.SqlServer.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Data.Edm.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Data.OData.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Logging.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\Newtonsoft.Json.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Spatial.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Helpers.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Mvc.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Optimization.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Razor.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\System.Web.Http.WebHost.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\es\Hangfire.Core.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh\Hangfire.Core.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-TW\Hangfire.Core.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\de\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\es\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\it\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\de\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\es\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\fr\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\it\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ja\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ko\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\ru\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hans\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\bin\zh-Hant\System.Spatial.resources.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.AssemblyReference.cache
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CoreCompileInputs.cache
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.csproj.CopyComplete
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.MyTime\obj\Debug\Exilesoft.MyTime.pdb

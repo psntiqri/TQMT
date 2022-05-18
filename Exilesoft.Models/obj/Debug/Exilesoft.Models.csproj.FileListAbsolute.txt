@@ -1,42 +1,165 @@
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Owin.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.AssemblyReference.cache
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CoreCompileInputs.cache
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CopyComplete
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.dll
-C:\Users\psn\Documents\Tiqri\temp mtm\new clone with changes\TQMT\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Owin.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CoreCompileInputs.cache
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CopyComplete
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.dll
+D:\Projects\TiqriInternal\Source\MyTime\tiqri-mytime-65ec502b2caa\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Owin.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CoreCompileInputs.cache
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CopyComplete
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.dll
+C:\Users\psn\Documents\Tiqri\TIQRI_MyTime\TIQRI_MyTime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Exilesoft.Models.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Owin.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\Newtonsoft.Json.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CoreCompileInputs.cache
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CopyComplete
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.dll
+D:\Temp\mytimetemp\TIQRI Mytime\TIQRI Mytime\2-Implementation\Trunk\Application\Exilesoft.Models\obj\Debug\Exilesoft.Models.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Exilesoft.Models.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Exilesoft.Models.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\EntityFramework.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Owin.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\EntityFramework.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CoreCompileInputs.cache
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.CopyComplete
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\obj\Debug\Exilesoft.Models.dll
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\obj\Debug\Exilesoft.Models.pdb
+D:\Projects\Repos\TQRMTM\Exilesoft.Models\obj\Debug\Exilesoft.Models.csproj.AssemblyReference.cache
