@@ -1280,6 +1280,7 @@
     <Content Include="Views\Home\ShowEmployeeAttendence.cshtml" />
     <Content Include="Views\Home\CoverageList.cshtml" />
     <Content Include="Views\Shared\_errorLayout.cshtml" />
+    <Content Include="Views\Administration\MissingTimeEntries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

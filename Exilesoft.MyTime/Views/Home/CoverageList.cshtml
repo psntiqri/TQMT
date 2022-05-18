@@ -84,12 +84,12 @@
                                             htmlAttributes: new { id = "employeeGrid", width = "900px" },
                                             columns: grid.Columns(
                                             grid.Column(header: "Employee", format: @<text><p class="row-workingformhome">
-                                                <img src=@item.ImageUrl width="48">
-                                                <span>@item.EmployeeName</span>
-                                            </p></text>),
-                                            grid.Column(header: "Coverage", format: @<text> <span style="text-emphasis-color: red">@item.Coverage</span></text>)
-
-                                       )).ToString())
+                                                        <img src=@item.ImageUrl width="48">
+                                                        <span>@item.EmployeeName</span>
+                                                    </p></text>),
+                                         grid.Column(header: "Coverage", format: @<text> <span style="text-emphasis-color: red">@item.Coverage</span></text>)
+grid.Column(header: "WFH Percentage", format: @<text> <span style="text-emphasis-color: red">@item.WFHPercentage</span></text>)
+)).ToString())
                                         </div>
 
 
