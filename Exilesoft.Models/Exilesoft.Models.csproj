@@ -107,6 +107,8 @@
     </Compile>
     <Compile Include="CardCategory.cs" />
     <Compile Include="CivilStatus.cs" />
+    <Compile Include="EmployeeMissingEntry.cs" />
+    <Compile Include="EmployeeWiseMissingEntries.cs" />
     <Compile Include="LeaveApprover.cs" />
     <Compile Include="LocalContext.cs" />
     <Compile Include="Context.cs">
