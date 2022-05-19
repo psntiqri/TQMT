@@ -107,13 +107,13 @@
     </Compile>
     <Compile Include="CardCategory.cs" />
     <Compile Include="CivilStatus.cs" />
+    <Compile Include="Context.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="EmployeeMissingEntry.cs" />
     <Compile Include="EmployeeWiseMissingEntries.cs" />
     <Compile Include="LeaveApprover.cs" />
     <Compile Include="LocalContext.cs" />
-    <Compile Include="Context.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="DropdownListItem.cs" />
     <Compile Include="EmployeeData.cs" />
     <Compile Include="EmployeeEnrollment.cs" />

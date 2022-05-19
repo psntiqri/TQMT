@@ -12,10 +12,10 @@
     .tablink {
         background-color: #03040245;
         color: white;
-        float: left;        
+        float: left;
         outline: none;
         cursor: pointer;
-        padding: 14px 16px;        
+        padding: 14px 16px;
         width: inherit;
     }
 
@@ -29,20 +29,21 @@
         display: none;
         padding: 100px 20px;
         height: 100%;
-        margin-left:20px;
+        margin-left: 20px;
     }
 </style>
 
 <div id="DIV_PageInnerContent">
     <table class="clearTable" id="TBL_PageMainTable">
         <tr>
-            <td class="left_hedder_inner">Coverage List
+            <td class="left_hedder_inner">
+                Coverage List
             </td>
             <td style="text-align: right; width: 15px;"></td>
         </tr>
         @* <tr  onclick="new HomeLogin().ShowCoverageListMoreThan100(this)" > <td>Coverage more than 100 %</td></tr>
-        <tr  onclick="new HomeLogin().ShowCoverageListMore90Less100(this)" > <td>Coverage more than 90% > and less than 100% %</td></tr>
-        <tr  onclick="new HomeLogin().ShowCoverageList90Less(this)" > <td>Coverage less than 90 %</td></tr>	*@
+            <tr  onclick="new HomeLogin().ShowCoverageListMore90Less100(this)" > <td>Coverage more than 90% > and less than 100% %</td></tr>
+            <tr  onclick="new HomeLogin().ShowCoverageList90Less(this)" > <td>Coverage less than 90 %</td></tr>	*@
 
 
 
@@ -65,12 +66,13 @@
                             @using (Html.BeginForm())
                             {
                                 <tr>
-                                    <td >
+                                    <td>
                                         <button id="More100" class="tablink" onclick="new HomeLogin().ShowCoverageListMoreThan100(this)">More 100 % </button>
                                         <button id="Between90&100" class="tablink" onclick="new HomeLogin().ShowCoverageListMore90Less100(this)">Between 90 % & 100%</button>
                                         <button id="LessThan90" class="tablink" onclick="new HomeLogin().ShowCoverageList90Less(this)">Less 90% </button>
                                     </td>
-                                </tr> 
+                                </tr>
+
                                 <tr>
 
 
@@ -87,7 +89,7 @@
                                                         <img src=@item.ImageUrl width="48">
                                                         <span>@item.EmployeeName</span>
                                                     </p></text>),
-                                         grid.Column(header: "Coverage", format: @<text> <span style="text-emphasis-color: red">@item.Coverage</span></text>)
+                              grid.Column(header: "Coverage", format: @<text> <span style="text-emphasis-color: red">@item.Coverage</span></text>),
 grid.Column(header: "WFH Percentage", format: @<text> <span style="text-emphasis-color: red">@item.WFHPercentage</span></text>)
 )).ToString())
                                         </div>
@@ -96,7 +98,7 @@ grid.Column(header: "WFH Percentage", format: @<text> <span style="text-emphasis
                                     </td>
 
                                 </tr>
-                                
+
                             }
                         </table>
                     </div>
@@ -118,7 +120,7 @@ grid.Column(header: "WFH Percentage", format: @<text> <span style="text-emphasis
         }else if (@Model.TabCount==3){
             document.getElementById('LessThan90').style.backgroundColor = "#777";
         }
-             
+
     });
-                               
+
 </script>

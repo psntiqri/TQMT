@@ -298,7 +298,9 @@
                                         <td colspan="2">
 
                                             <div id="webgridid">
-                                                @{ var grid = new WebGrid(Model.WorkingFromHomeRowList, rowsPerPage: 100, canPage: false);}
+                                                @{ var grid = new WebGrid(Model.WorkingFromHomeRowList, rowsPerPage: 50, canPage: true, ajaxUpdateContainerId: "webgridid");
+                                                    grid.Pager(WebGridPagerModes.NextPrevious);
+                                                    }
                                                 @MvcHtmlString.Create(grid.GetHtml(tableStyle: "webGrid", headerStyle: "webGridHeader", alternatingRowStyle: "webGridAlt",
                                      htmlAttributes: new { id = "employeeGrid", width = "auto" },
                                             columns: grid.Columns(
